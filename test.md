@@ -1,2 +1,2 @@
 Hello world
-[home](readme.md)
+[home](https://kathep.github.io/ethics/)
