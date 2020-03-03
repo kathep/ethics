@@ -8,7 +8,9 @@
 
 The poster was inspired by [Dave Maas](https://www.eff.org/about/staff/dave-maass), from Electronic Frontier Foundation. In his duties as a visiting professor at the [University of Nevada, Reno](https://www.unr.edu/) in May 2018, we talked about ethical visualization and he read an in-press copy of Racism in the Machine. He asked for the figure of the workflow from the paper, and I realised in that moment, that the workflow itself did not follow ethical data visualization principles, and was not in a format to be easily shared or understood. 
 
-In May 2018, the first version of the ethical visualization poster was produced by Aras Diler, Kacee Johnson, and Sarah Krutz, as a class project for JOUR648 Data Visualization for Social Engagement at the University of Nevada, Reno. 
+In May 2018, the first version of the ethical visualization poster was produced by Aras Diler, Kacee Johnson, and Sarah Krutz, as a class project for [JOUR648 Data Visualization for Social Engagement](http://kathep.com/teach/archive/data/data-2019-spring/) at the University of Nevada, Reno. 
+
+While the students did an excellent job designing the poster, some of the language they used was not ethical. Therefore, this version is not shared publicly.
 
 -----------------------------
 ### Credits
