@@ -11,7 +11,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Investigate through analysis
 ### Explore through play
 
-- iterate -
+/- iterate -
 
 ## 2 Scope the impact
 ### Assess stakes
@@ -19,7 +19,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Investigate audiences
 ### Determine impact type
 
-- iterate -
+/- iterate -
 
 ## 3 Develop the frame
 ### Research audience need
@@ -27,7 +27,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Create frame
 ### Review literature about frame
 
-- iterate -
+/- iterate -
 
 ## 4 Prepare the dataset
 ### Combine sources
@@ -35,7 +35,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Structure data
 ### Refine frame
 
-- iterate -
+/- iterate -
 
 ## 5 Visualize the frame
 ### Review ethics of visualization literature
@@ -43,7 +43,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Design visualization
 ### Test frame
 
-- iterate -
+/- iterate -
 
 ## 6 Publish the visualization
 ### Release visualization
@@ -55,8 +55,14 @@ Originally developed for big data and medium data contexts in the digital humani
 
 from Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for Impact in the Sciences and Data Sciences", *HCII Conference 2020 Proceedings*.
 
-## More
+## Development
 
-Development of the Ethical Visualization Workflow.
+| Version   | Date  | Title  |
+|---|---|---|
+| [Version 3](versions/v2_1_ethical_visualization_oct_2019.md)   |   | March 2020  |   |
+| [Version 2.1](versions/v2_1_ethical_visualization_oct_2019.md)   |   | October 2019  |   |
+| [Version 2.0]   | October 2019  |   |
+| [Version 1.1]   | May 2019  | Ethical Visualization  |
+| [Version 1]   | December 2018  | Ethical Visualization Workflow  |
 
 [site](https://kathep.github.io/ethics/)
