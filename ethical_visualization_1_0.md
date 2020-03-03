@@ -1,6 +1,6 @@
 # Ethical Visualization Workflow
 
-#### Details
+### Details
 Version: 1.0
 
 Date: December 2018
