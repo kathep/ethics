@@ -1,8 +1,8 @@
 # Visualization Ethics
 
 ### Details
-Version: 2.1  
-Date: October 2019
+**Version:** 2.1  
+**Date:** October 2019
 
 -----------------------------
 A project developing a method for ethically visualizing data. 

@@ -3,6 +3,7 @@
 ## Contents
 
 - [The Steps](#the-steps)
+- [Poster](#poster)
 - [Credits](#credits)
 - [Development](#development)
 
@@ -55,6 +56,12 @@
 #### Feedback results
 
 -----------------------------
+
+## Poster
+
+The poster for this version is currently under development. 
+
+The most recent poster available (for version 2.1) is [avaialble here](/pdfs/ethical_visualization_poster_2_1.pdf).
 
 ## Credits
 
