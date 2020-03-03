@@ -1,17 +1,24 @@
 # Ethical Visualization for Impact
 
-## About
+## Contents
+
+- [About](#about)
+- [The Steps](#the-steps)
+- [Credits](#credits)
+- [Development](#development)
+
+## [About](#about)
 A method for ethically visualizing data. 
 
 Originally developed for big data and medium data contexts in the digital humanities, it is currently also being used by tech startups, and in visualization of broader impacts by research groups in the humanities, sciences, and social sciences.
 
-## The steps
+## [The steps](#the-steps)
 
 ## 1 Discover the data
 ### Investigate through analysis
 ### Explore through play
 
-/- iterate -
+/ - iterate -
 
 ## 2 Scope the impact
 ### Assess stakes
@@ -19,7 +26,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Investigate audiences
 ### Determine impact type
 
-/- iterate -
+/ - iterate -
 
 ## 3 Develop the frame
 ### Research audience need
@@ -27,7 +34,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Create frame
 ### Review literature about frame
 
-/- iterate -
+/ - iterate -
 
 ## 4 Prepare the dataset
 ### Combine sources
@@ -35,7 +42,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Structure data
 ### Refine frame
 
-/- iterate -
+/ - iterate -
 
 ## 5 Visualize the frame
 ### Review ethics of visualization literature
@@ -43,7 +50,7 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Design visualization
 ### Test frame
 
-/- iterate -
+/ - iterate -
 
 ## 6 Publish the visualization
 ### Release visualization
@@ -51,11 +58,11 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Measure efficacy
 ### Feedback results
 
-## Credits
+## [Credits](#credits)
 
 from Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for Impact in the Sciences and Data Sciences", *HCII Conference 2020 Proceedings*.
 
-## Development
+## [Development](#development)
 
 | Version   | Date  | Title  |
 |---|---|---|
