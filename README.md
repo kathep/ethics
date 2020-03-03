@@ -7,7 +7,7 @@
 - [Credits](#credits)
 - [Development](#development)
 
-## [About](#about)
+## About(#about)
 A method for ethically visualizing data. 
 
 Originally developed for big data and medium data contexts in the digital humanities, it is currently also being used by tech startups, and in visualization of broader impacts by research groups in the humanities, sciences, and social sciences.
