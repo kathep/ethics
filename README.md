@@ -2,7 +2,6 @@
 
 ## Contents
 
-- [About](#about)
 - [The Steps](#the-steps)
 - [Credits](#credits)
 - [Development](#development)
