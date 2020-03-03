@@ -14,9 +14,9 @@
 
 <details>
 <summary>
-### 1 Discover the data
+<h3>### 1 Discover the data</h3>
 </summary>
-#### Investigate through analysis
+<h4>#### Investigate through analysis</h4>
 #### Explore through play
 </details>
 
