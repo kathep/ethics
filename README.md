@@ -61,7 +61,7 @@
 
 The poster for this version is currently under development. 
 
-The most recent poster available (for version 2.1) is [avaialble here](/pdfs/ethical_visualization_poster_2_1.pdf).
+The most recent poster available (for version 2.1) is [available here](/pdfs/ethical_visualization_poster_2_1.pdf).
 
 ## Credits
 
