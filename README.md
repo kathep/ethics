@@ -2,7 +2,7 @@
 
 ## Contents
 
-- [The Steps](#the-steps)
+- [The steps](#the-steps)
 - [Poster](#poster)
 - [Credits](#credits)
 - [Versions](#versions)
