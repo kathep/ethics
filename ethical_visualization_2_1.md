@@ -1,6 +1,6 @@
 # Visualization Ethics
 
-## Details
+#### Details
 Version: 2.1
 
 Date: October 2019
