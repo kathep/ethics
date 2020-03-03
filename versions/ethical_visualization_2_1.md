@@ -6,7 +6,7 @@ Originally developed for big data and medium data contexts in the digital humani
 
 Development of the Ethical Visualization Workflow, as shown below.
 
-![Ethical Visualization Workflow poster](/images/ethical_visualization_workflow_poster_2_1.png)
+![Ethical Visualization Workflow poster](/images/ethical_visualization_poster_2_1.png)
 
 ## Credits
 
