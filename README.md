@@ -7,10 +7,7 @@
 - [Credits](#credits)
 - [Development](#development)
 
-## About
-A method for ethically visualizing data. 
-
-Originally developed for big data and medium data contexts in the digital humanities, it is currently also being used by tech startups, and in visualization of broader impacts by research groups in the humanities, sciences, and social sciences.
+------------------------------
 
 ## The steps
 
@@ -58,6 +55,8 @@ Originally developed for big data and medium data contexts in the digital humani
 #### Measure efficacy
 #### Feedback results
 
+-----------------------------
+
 ## Credits
 
 From Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for Impact in the Sciences and Data Sciences", *HCII Conference 2020 Proceedings*.
@@ -72,4 +71,4 @@ From Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for I
 | [Version 1.1]   | May 2019  | Ethical Visualization  |
 | [Version 1]   | December 2018  | Ethical Visualization Workflow  |
 
-[site](https://kathep.github.io/ethics/)
+
