@@ -59,9 +59,9 @@ from Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for I
 
 | Version   | Date  | Title  |
 |---|---|---|
-| [Version 3](versions/v2_1_ethical_visualization_oct_2019.md)   |   | March 2020  |   |
-| [Version 2.1](versions/v2_1_ethical_visualization_oct_2019.md)   |   | October 2019  |   |
-| [Version 2.0]   | October 2019  |   |
+| [Version 3](versions/v2_1_ethical_visualization_oct_2019.md)   |   | March 2020  | Ethical Visualization for Impacy  |
+| [Version 2.1](versions/ethical_visualization_2_1.md)   | October 2019  | Ethical Visualization  |
+| [Version 2.0]   | October 2019  | Ethical Visualization  |
 | [Version 1.1]   | May 2019  | Ethical Visualization  |
 | [Version 1]   | December 2018  | Ethical Visualization Workflow  |
 
