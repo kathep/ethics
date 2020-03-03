@@ -12,13 +12,10 @@
 
 ## The steps
 
-<details>
-<summary>
-<h3>### 1 Discover the data</h3>
-</summary>
-<h4>#### Investigate through analysis</h4>
+### 1 Discover the data
+#### Investigate through analysis
 #### Explore through play
-</details>
+
 
 / - iterate -
 
