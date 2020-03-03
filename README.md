@@ -5,6 +5,7 @@
 - [The Steps](#the-steps)
 - [Poster](#poster)
 - [Credits](#credits)
+- [Versions](#versions)
 - [Development](#development)
 
 ------------------------------
@@ -67,7 +68,7 @@ The most recent poster available (for version 2.1) is [available here](/pdfs/eth
 
 From Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for Impact in the Sciences and Data Sciences", *HCII Conference 2020 Proceedings*.
 
-## Development
+## Versions
 
 | Version   | Date  | Title  |
 |---|---|---|
@@ -77,5 +78,8 @@ From Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for I
 | [Version 1.1](ethical_visualization_1_1.md)   | May 2019  | Ethical Visualization  |
 | [Version 1](ethical_visualization_1_0.md)   | December 2018  | Ethical Visualization Workflow  |
 
+## Development
+
+This method is under continual development. It is the main activity of my sabbatical research.
 
 [Back to top](#ethical-visualization-for-impact)
