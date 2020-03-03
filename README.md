@@ -12,7 +12,7 @@ A method for ethically visualizing data.
 
 Originally developed for big data and medium data contexts in the digital humanities, it is currently also being used by tech startups, and in visualization of broader impacts by research groups in the humanities, sciences, and social sciences.
 
-## [The steps](#the-steps)
+## The steps
 
 ## 1 Discover the data
 ### Investigate through analysis
@@ -58,11 +58,11 @@ Originally developed for big data and medium data contexts in the digital humani
 ### Measure efficacy
 ### Feedback results
 
-## [Credits](#credits)
+## Credits
 
 from Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for Impact in the Sciences and Data Sciences", *HCII Conference 2020 Proceedings*.
 
-## [Development](#development)
+## Development
 
 | Version   | Date  | Title  |
 |---|---|---|
