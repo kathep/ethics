@@ -203,7 +203,7 @@ This method is under regularly updated. It is a key activity of Katherine Hepwor
 ### Versions
 
 |Version    |Date   |Title   |
-|---|---|---|
+|:---|:---|:---|
 | Version 3.1 | April 2020  | Ethical Visualization for Impact  |
 | [Version 3.0](../ethical_visualization_3_0.md) | March 2020  | Ethical Visualization for Impact  |
 | [Version 2.1](../ethical_visualization_2_1.md) | October 2019  | Ethical Visualization  |
