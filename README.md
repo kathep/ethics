@@ -19,11 +19,11 @@
 *Lead by:* Subject expert 
 *For:* Subject expert
 
-- **Investigate through analysis**\
+- **Investigate through analysis**  
     *What can you find in the data using reason-led investigation?*
     
     
-- **Explore through play**_
+- **Explore through play**  
     *What can you find in the data using intuition-led exploration?*
 
 
@@ -33,7 +33,7 @@
 *Lead by:* Visual storyteller
 *For:* Audience
 
-- **Assess stakes**<br>
+- **Assess stakes**  
     *What is at stake in this visualization effort?*
 
 
@@ -41,11 +41,11 @@
     *What is your motivation for sharing what you discovered in this data?*
 
 
-- **Identify intended and unintended audiences**
+- **Identify intended and unintended audiences**  
     *Who do you want your visualization to reach the most?*
 
 
-- **Determine impact type**
+- **Determine impact type**  
     *Which impact type will be most effective for your audiences?*
 
 
@@ -55,19 +55,19 @@
 *Lead by:* Audience
 *For:* Data wrangler
 
-- **Empathize with audience**
+- **Empathize with audience**  
     *What are your audiences’ greatest needs?*
     
     
-- **Formulate goal**
+- **Formulate goal**  
     *What is the goal for the visualization?*
     
     
-- **Create frame**
+- **Create frame**  
     *What kind of frame best achieves this goal?*
     
     
-- **Review frame literature**
+- **Review frame literature**  
     *What does the literature say about this frame?*
 
 ### D. DATASET | Prepare the dataset 
@@ -76,61 +76,61 @@
 *Lead by:* Data wrangler
 *For:* Visual storyteller
 
-- **Combine sources**
+- **Combine sources**  
     *What sources will you draw from?*
     
     
-- **Improve veracity**
+- **Improve veracity**  
     *Will the data hold up under scrutiny?*
     
     
-- **Structure data**
+- **Structure data**  
     *Is the dataset intelligible and navigable?*
     
     
-- **Refine frame**
+- **Refine frame**  
     *How does the frame need to be adjusted?*
 
 ### E. VISUALIZE | Visualize the frame
 
 **Roles**  
-*Lead by:* Visual storyteller
-*For:* Subject expert
+*Lead by:* Visual storyteller  
+*For:* Subject expert  
 
-- **Review visualization ethics literature**
+- **Review visualization ethics literature**  
     *What are the latest ethical recommendations?*
     
     
-- **Determine context**
+- **Determine context**  
     *What is the most appropriate media context for your frame?*
     
     
-- **Design visualization**
+- **Design visualization**  
     *What design decisions will visualize the frame effectively?*
     
     
-- **Test frame**
+- **Test frame**  
     *Does your visualization communicate the frame?*
 
 ### F. PUBLISH | Publish the visualization
 
 **Roles**  
-*Lead by:* Subject expert
-*For:* Audience
+*Lead by:* Subject expert  
+*For:* Audience  
 
-- **Release visualization**
+- **Release visualization**  
     *Will publishing base data do harm to any intended or unintended audience?*
     
     
-- **Show process & affiliations**
+- **Show process & affiliations**  
     *How can your ethical process be best demonstrated?*
     
     
-- **Measure impact**
+- **Measure impact**  
     *What is the felt impact of your published visualization?*
  
  
-- **Feedback results**
+- **Feedback results**  
     *How do the visualization’s intended impact and felt impact compare?*
     
 &nbsp;
@@ -148,17 +148,18 @@ The most recent poster available (for version 2.1) is [available here](/pdfs/eth
 ## Roles
 Ethically visualizing data is a team effort, requiring multiple roles that have traditionally been associated with vastly different disciplinary traditions and siloes of knowldge. Four recommended roles outlined below. Some of these skill areas may be found in more than one person. One or more people may fill each role. The more receipients are involved in the process, the better. 
 
-- **Subject expert**
-  A person with in-depth subject expertise.
-  *Includes:* academic, community organizer, and/or public official
-- **Visual storyteller** 
-  A person with skill at ethically simplifying information and communicating it using visual means.
-  *Includes:* communication designer, game designer, graphic recorder, illustrator,  and/or journalist
-- **Audience**
-  A person or people who are as close to the intended audience(s) as possible. Co-creation is key to impact.
+- **Audience**  
+  A person or people who from, or are as close as possible to, the intended audience(s). Co-creation is key to impact.  
   *Includes:* readers, participants, users and/or viewers
-- **Data wrangler**
-  *Includes:* data analyst, digital humanist, librarian, and/or statistician
+- **Data wrangler**  
+  A person with skill at cleaning, processing, and structuring data for visual display.  
+  *Includes:* data analyst, digital humanist, librarian, and/or statistician  
+- **Subject expert**  
+  A person with in-depth subject expertise.  
+  *Includes:* academic, community organizer, and/or public official
+- **Visual storyteller**  
+  A person with skill at ethically simplifying information and communicating it using visual means.  
+  *Includes:* communication designer, game designer, graphic recorder, illustrator,  and/or journalist
 
 &nbsp;
 -----------------------------
