@@ -43,7 +43,7 @@
 
 ### C. FRAME | Develop the frame
 
-- **Empathize with audience**  
+- **Empathize with audiences**  
     *What are your audiences’ greatest needs?*
     
     
@@ -129,13 +129,13 @@ Ethically visualizing data is a team effort, requiring multiple roles that have 
   *Includes:* readers, participants, users and/or viewers
 - **Data wrangler**  
   A person with skill at cleaning, processing, and structuring data for visual display.  
-  *Includes:* data analyst, digital humanist, librarian, and/or statistician  
+  *Includes:* computer scientist, data analyst, digital humanist, and/or statistician  
 - **Subject expert**  
   A person with in-depth subject expertise.  
-  *Includes:* academic, community organizer, and/or public official
+  *Includes:* academic, community organizer, public official and/or scientist
 - **Visual storyteller**  
   A person with skill at ethically simplifying information and communicating it using visual means.  
-  *Includes:* communication designer, game designer, graphic recorder, illustrator,  and/or journalist
+  *Includes:* communication designer, game designer, graphic recorder, illustrator, and/or journalist
   
 **A. DISCOVERY**  
 *Lead by:* Subject expert  
@@ -190,6 +190,9 @@ The following institutions have supported development of this method.
 - National Endowment of the Humanities Office of Digital Humanities, Award No. HAA-266490-19
 - University of Nevada, Reno, various internal grants
 - Mick Hitchcock Ph.D. Project for Visualizing Science
+
+### Acknowledgements
+Acknowledgement of previous versions can be found in the documentation for each one, listed below. In addition to previous contributions, I am grateful for the contributions, discussion, and feedback on this version from [Sage Cheng](https://www.accessnow.org/profile/sage-cheng/) at Access Now, Sonia Jalfin at [Sociopublico](http://sociopublico.com/en/us.php), [Max Frischknecht](https://maxfrischknecht.ch/) of Bern University of the Applied Arts, and [Georgia Bullen](https://simplysecure.org/who-we-are/georgia.html) of Simply Secure. 
 
 &nbsp;
 -----------------------------
