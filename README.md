@@ -19,7 +19,7 @@
 *Lead by:* Subject expert 
 *For:* Subject expert
 
-- **Investigate through analysis**
+- **Investigate through analysis**\
     *What can you find in the data using reason-led investigation?*
     
     
