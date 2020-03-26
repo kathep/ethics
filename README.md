@@ -15,10 +15,6 @@
 
 ### A. DISCOVERY | Discover the data
 
-**Roles**
-*Lead by:* Subject expert 
-*For:* Subject expert
-
 - **Investigate through analysis**  
     *What can you find in the data using reason-led investigation?*
     
@@ -28,10 +24,6 @@
 
 
 ### B. IMPACT | Scope the Impact 
-
-**Roles**  
-*Lead by:* Visual storyteller
-*For:* Audience
 
 - **Assess stakes**  
     *What is at stake in this visualization effort?*
@@ -51,10 +43,6 @@
 
 ### C. FRAME | Develop the frame
 
-**Roles**  
-*Lead by:* Audience
-*For:* Data wrangler
-
 - **Empathize with audience**  
     *What are your audiences’ greatest needs?*
     
@@ -71,10 +59,6 @@
     *What does the literature say about this frame?*
 
 ### D. DATASET | Prepare the dataset 
-
-**Roles**  
-*Lead by:* Data wrangler
-*For:* Visual storyteller
 
 - **Combine sources**  
     *What sources will you draw from?*
@@ -93,10 +77,6 @@
 
 ### E. VISUALIZE | Visualize the frame
 
-**Roles**  
-*Lead by:* Visual storyteller  
-*For:* Subject expert  
-
 - **Review visualization ethics literature**  
     *What are the latest ethical recommendations?*
     
@@ -114,10 +94,6 @@
 
 ### F. PUBLISH | Publish the visualization
 
-**Roles**  
-*Lead by:* Subject expert  
-*For:* Audience  
-
 - **Release visualization**  
     *Will publishing base data do harm to any intended or unintended audience?*
     
@@ -132,7 +108,7 @@
  
 - **Feedback results**  
     *How do the visualization’s intended impact and felt impact compare?*
-    
+
 &nbsp;
 -----------------------------
 
@@ -160,6 +136,31 @@ Ethically visualizing data is a team effort, requiring multiple roles that have 
 - **Visual storyteller**  
   A person with skill at ethically simplifying information and communicating it using visual means.  
   *Includes:* communication designer, game designer, graphic recorder, illustrator,  and/or journalist
+  
+**A. DISCOVERY**  
+*Lead by:* Subject expert  
+*For:* Subject expert
+
+**B. IMPACT**  
+*Lead by:* Visual storyteller  
+*For:* Audience
+
+**C. FRAME**  
+*Lead by:* Audience  
+*For:* Data wrangler
+
+**D. DATASET**  
+*Lead by:* Data wrangler  
+*For:* Visual storyteller
+
+**E. VISUALIZE**  
+*Lead by:* Visual storyteller  
+*For:* Subject expert
+
+**F. PUBLISH**  
+*Lead by:* Subject expert  
+*For:* Audience
+
 
 &nbsp;
 -----------------------------
