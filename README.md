@@ -19,11 +19,11 @@
 *Lead by:* Subject expert 
 *For:* Subject expert
 
-- **Investigate through analysis**__
+- **Investigate through analysis**\
     *What can you find in the data using reason-led investigation?*
     
     
-- **Explore through play**
+- **Explore through play**_
     *What can you find in the data using intuition-led exploration?*
 
 
@@ -33,11 +33,11 @@
 *Lead by:* Visual storyteller
 *For:* Audience
 
-- **Assess stakes**
+- **Assess stakes**<br>
     *What is at stake in this visualization effort?*
 
 
-- **Establish purpose**
+- **Establish purpose**  
     *What is your motivation for sharing what you discovered in this data?*
 
 
