@@ -208,11 +208,11 @@ This method is under regularly updated. It is a key activity of Katherine Hepwor
 |Version    |Date   |Title   |
 |:---|:---|:---|
 | Version 3.1 | April 2020  | Ethical Visualization for Impact  |
-| [Version 3.0](../ethical_visualization_3_0.md) | March 2020  | Ethical Visualization for Impact  |
-| [Version 2.1](../ethical_visualization_2_1.md) | October 2019  | Ethical Visualization  |
-| [Version 2.0](../ethical_visualization_2_0.md)   | October 2019  | Ethical Visualization  |
+| [Version 3.0](ethical_visualization_3_0.md) | March 2020  | Ethical Visualization for Impact  |
+| [Version 2.1](ethical_visualization_2_1.md) | October 2019  | Ethical Visualization  |
+| [Version 2.0](ethical_visualization_2_0.md)   | October 2019  | Ethical Visualization  |
 | [Version 1.1](ethical_visualization_1_1.md)   | May 2019  | Ethical Visualization  |
-| [Version 1](../ethical_visualization_1_0.md)   | December 2018  | Ethical Visualization Workflow  |
+| [Version 1](ethical_visualization_1_0.md)   | December 2018  | Ethical Visualization Workflow  |
 
 &nbsp;
 -----------------------------
