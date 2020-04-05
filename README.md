@@ -187,7 +187,7 @@ From Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for I
 ### Funding
 The following institutions have supported development of this method.
 - Nevada NASA (National Aeronautics and Space Administration) Space Grant Consortium, Award No. NNX15AI02H
-- National Endowment of the Humanities Office of Digital Humanities, Award No. HAA-266490-19
+- National Endowment of the Humanities Office of Digital Humanities, Award No. [HAA-266490-19](https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-266490-19)
 - University of Nevada, Reno, various internal grants
 - Mick Hitchcock Ph.D. Project for Visualizing Science
 
