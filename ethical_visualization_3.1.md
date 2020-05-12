@@ -1,61 +1,19 @@
-# Ethical & Effective Visualization
+# Ethical Visualization for Impact
 
 ## Contents
 
-- [Poster](#poster)
 - [The steps](#the-steps)
+- [Poster](#poster)
+- [Roles](#roles)
 - [Participate](#participate)
 - [Credits](#credits)
 - [Development](#development)
-
------------------------------
-
-## Poster
-
-![image of ethical visualization poster](images/ethical_visualization_poster_3_2.png)
-
-Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
-
-&nbsp;
 
 ------------------------------
 
 ## The steps
 
-### 1. UNDERSTANDING
-
-#### 1A. STRATEGY
-> What is your motivation to visualize?
-
-- **Formulate goal**  
-  Are you visualizing for...
-  - education?
-  - outreach?
-  - dissemination?
-  - other?
-
-
-- **Assemble a team**  
-  Who will help you meet that goal?
-
-
-  Ethically visualizing data is a team effort, requiring multiple roles that have traditionally been associated with vastly different disciplinary traditions and siloes of knowledge. Four recommended roles outlined below. Some of these skill areas may be found in more than one person. One or more people may fill each role. The more recipients are involved in the process, the better.
-
-  - **Audience**  
-    A person or people who from, or are as close as possible to, the intended audience(s). Co-creation is key to impact.  
-    *Includes:* readers, participants, users and/or viewers
-  - **Data wrangler**  
-    A person with skill at cleaning, processing, and structuring data for visual display.  
-    *Includes:* computer scientist, data analyst, digital humanist, and/or statistician  
-  - **Subject expert**  
-    A person with in-depth subject expertise.  
-    *Includes:* academic, community organizer, public official and/or scientist
-  - **Visual storyteller**  
-    A person with skill at ethically simplifying information and communicating it using visual means.  
-    *Includes:* communication designer, game designer, graphic recorder, illustrator, and/or journalist
-
-#### 1B. DISCOVERY
-> What data have you got?
+### A. DISCOVERY | Discover the data
 
 - **Investigate through analysis**  
     *What can you find in the data using reason-led investigation?*
@@ -65,8 +23,7 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
     *What can you find in the data using intuition-led exploration?*
 
 
-#### 1C. STAKES
-> Who needs it and how badly?
+### B. IMPACT | Scope the Impact
 
 - **Assess stakes**  
     *What is at stake in this visualization effort?*
@@ -84,26 +41,24 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
     *Which impact type will be most effective for your audiences?*
 
 
-#### 1D. STORY
-> What story makes it relevant to them?
+### C. FRAME | Develop the frame
 
 - **Empathize with audiences**  
     *What are your audiences’ greatest needs?*
 
 
-- **Refine goal**  
-    *What is the audience-oriented goal for the visualization?*
+- **Formulate goal**  
+    *What is the goal for the visualization?*
 
 
-- **Create story**  
-    *What kind of story best achieves this goal?*
+- **Create frame**  
+    *What kind of frame best achieves this goal?*
 
 
-- **Review narrative/framing literature**  
-    *What does the literature say about this story?*
+- **Review frame literature**  
+    *What does the literature say about this frame?*
 
-#### 1E. DATASET
-> How will you process and contextualize the data to tell that story?
+### D. DATASET | Prepare the dataset
 
 - **Combine sources**  
     *What sources will you draw from?*
@@ -120,48 +75,24 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 - **Refine frame**  
     *How does the frame need to be adjusted?*
 
-### 2. VISUALIZE
-> What visual data curation best conveys your story?
-
-#### 2A. CURATION
-
-- **Determine media context**  
-    *What is the most appropriate media context for your story to reach your audience?*
-
-- **Chooose chart type(s)**  
-    *Which chart types tell your story effectively?*
-
-
-#### 2B. LAYOUT
-
-- **Design visualization**  
-    *What design decisions will visualize the story effectively?*
-
-- **Ensure legibility**
-
-- **Adhere to design principles**
-
-- **Enforce visual consistency**
-
-#### 2C. LANGUAGE
-
-- **Ensure readability**
-
-- **Test story**  
-    *Does your visualization communicate the story to your audience?*
-
-
-#### 2D. GUIDANCE
+### E. VISUALIZE | Visualize the frame
 
 - **Review visualization ethics literature**  
     *What are the latest ethical recommendations?*
 
-- **Re-test story**  
-    *Does your visualization communicate the story to your audience better?*
+
+- **Determine context**  
+    *What is the most appropriate media context for your frame?*
 
 
-### 3. PUBLISH
-> Why should they trust you?
+- **Design visualization**  
+    *What design decisions will visualize the frame effectively?*
+
+
+- **Test frame**  
+    *Does your visualization communicate the frame?*
+
+### F. PUBLISH | Publish the visualization
 
 - **Release visualization**  
     *Will publishing base data do harm to any intended or unintended audience?*
@@ -177,6 +108,61 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 
 - **Feedback results**  
     *How do the visualization’s intended impact and felt impact compare?*
+
+&nbsp;
+
+-----------------------------
+
+## Poster
+
+The poster for this version is currently under development.
+
+The most recent poster available (for version 2.1) is [available here](/pdfs/ethical_visualization_poster_2_1.pdf).
+
+&nbsp;
+
+------------------------------
+
+## Roles
+Ethically visualizing data is a team effort, requiring multiple roles that have traditionally been associated with vastly different disciplinary traditions and siloes of knowledge. Four recommended roles outlined below. Some of these skill areas may be found in more than one person. One or more people may fill each role. The more recipients are involved in the process, the better.
+
+- **Audience**  
+  A person or people who from, or are as close as possible to, the intended audience(s). Co-creation is key to impact.  
+  *Includes:* readers, participants, users and/or viewers
+- **Data wrangler**  
+  A person with skill at cleaning, processing, and structuring data for visual display.  
+  *Includes:* computer scientist, data analyst, digital humanist, and/or statistician  
+- **Subject expert**  
+  A person with in-depth subject expertise.  
+  *Includes:* academic, community organizer, public official and/or scientist
+- **Visual storyteller**  
+  A person with skill at ethically simplifying information and communicating it using visual means.  
+  *Includes:* communication designer, game designer, graphic recorder, illustrator, and/or journalist
+
+**A. DISCOVERY**  
+*Lead by:* Subject expert  
+*For:* Subject expert
+
+**B. IMPACT**  
+*Lead by:* Visual storyteller  
+*For:* Audience
+
+**C. FRAME**  
+*Lead by:* Audience  
+*For:* Data wrangler
+
+**D. DATASET**  
+*Lead by:* Data wrangler  
+*For:* Visual storyteller
+
+**E. VISUALIZE**  
+*Lead by:* Visual storyteller  
+*For:* Subject expert
+
+**F. PUBLISH**  
+*Lead by:* Subject expert  
+*For:* Audience
+
 
 &nbsp;
 
@@ -200,7 +186,7 @@ Have a high-stakes visualization you need to make an impact? There are a limited
 ## Credits
 
 ### Citation
-Hepworth, K. (2020). *Ethical & Effective Visualization.* [![DOI](https://zenodo.org/badge/232150677.svg)](https://zenodo.org/badge/latestdoi/232150677)
+Hepworth, K. (2020). *Ethical Visualization for Impact.* [![DOI](https://zenodo.org/badge/232150677.svg)](https://zenodo.org/badge/latestdoi/232150677)
 
 From Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for Impact in the Sciences and Data Sciences", *HCII Conference 2020 Proceedings*.
 
