@@ -1,5 +1,3 @@
-# Ethical & Effective Visualization
-
 ## Contents
 
 - [Poster](#poster)
