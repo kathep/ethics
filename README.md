@@ -120,10 +120,11 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 - **Refine frame**  
     *How does the frame need to be adjusted?*
 
-### 2. VISUALIZE
+### 2. VISUALIZING
 > What visual data curation best conveys your story?
 
 #### 2A. CURATION
+> What platform, chart type(s) and data will visualize your story?
 
 - **Determine media context**  
     *What is the most appropriate media context for your story to reach your audience?*
@@ -133,6 +134,7 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 
 
 #### 2B. LAYOUT
+> How can you arrange all elements so they can understand the story?
 
 - **Design visualization**  
     *What design decisions will visualize the story effectively?*
@@ -144,6 +146,7 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 - **Enforce visual consistency**
 
 #### 2C. LANGUAGE
+> How can you use titles, labels, and captions to reinforce the story?
 
 - **Ensure readability**
 
@@ -152,6 +155,7 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 
 
 #### 2D. GUIDANCE
+> How can you guide them through the story with annotations, nudges, and animations.
 
 - **Review visualization ethics literature**  
     *What are the latest ethical recommendations?*
@@ -160,7 +164,7 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
     *Does your visualization communicate the story to your audience better?*
 
 
-### 3. PUBLISH
+### 3. PUBLISHING
 > Why should they trust you?
 
 - **Release visualization**  
@@ -212,7 +216,7 @@ The following institutions have supported development of this method.
 - Mick Hitchcock Ph.D. Project for Visualizing Science
 
 ### Acknowledgements
-Acknowledgement of previous versions can be found in the documentation for each one, listed below. In addition to previous contributions, I am grateful for the contributions, discussion, and feedback on this version from [Sage Cheng](https://www.accessnow.org/profile/sage-cheng/) at Access Now, Sonia Jalfin at [Sociopublico](http://sociopublico.com/en/us.php), [Max Frischknecht](https://maxfrischknecht.ch/) of Bern University of the Applied Arts, and [Georgia Bullen](https://simplysecure.org/who-we-are/georgia.html) of Simply Secure.
+Acknowledgement of previous versions can be found in the documentation for each one, listed below. In addition to previous contributions, I am grateful for the discussion and exchanges with the following people, who have informed this version: Jason Forrest of McKinsey, Georgie Rogers, Amanda Makulec, Bridget Cogley, Josh Smith, and Neil Richards of Groupon.
 
 &nbsp;
 
@@ -222,12 +226,13 @@ Acknowledgement of previous versions can be found in the documentation for each 
 
 ### Updates
 
-This method is under regularly updated. It is a key activity of Katherine Hepworth's interdisciplinary research.
+This method is regularly updated. It is a key activity of Katherine Hepworth's interdisciplinary research.
 
 ### Versions
 
 |Version    |Date   |Title   |
 |:---|:---|:---|
+| Version 3.2 | May 2020  | Ethical & Effective Visualization  |
 | Version 3.1 | April 2020  | Ethical Visualization for Impact  |
 | [Version 3.0](ethical_visualization_3_0.md) | March 2020  | Ethical Visualization for Impact  |
 | [Version 2.1](ethical_visualization_2_1.md) | October 2019  | Ethical Visualization  |
