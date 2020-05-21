@@ -1,13 +1,3 @@
-## Contents
-
-- [Poster](#poster)
-- [The steps](#the-steps)
-- [Participate](#participate)
-- [Credits](#credits)
-- [Development](#development)
-
------------------------------
-
 ## Poster
 
 ![image of ethical visualization poster](images/ethical_visualization_poster_3_2.png)
