@@ -12,7 +12,7 @@ $cream: #fafbe9;
 body {
   font: 100% $font-stack;
   color: $grey;
-}
+  }
 
 a {
   color: $orange;
@@ -21,14 +21,15 @@ a {
   &:hover {
           font-weight: normal;
           text-decoration: underline;
-      }
-      &:active {
+          }
+  &:active {
           font-weight: normal;
           text-decoration: underline;
-}
+          }
+  }
 
 hr {
     height: 1px;
     background-color: $blue50;
     border: none;
-  }
+    }
