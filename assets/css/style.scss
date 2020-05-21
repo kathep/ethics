@@ -6,11 +6,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 $font-stack: 'Open Sans', sans-serif;
-$grey: #414042;
+$primary-color: $orange;
+$secondary-color: $blue;
+$text-color1: $grey;
+
+
+/** colors **/
 $orange: #f15e3d;
 $blue: #0cb3b6;
 $blue50: #9ed3d6;
-$cream: #fcfdf3;
+$cream: #fefef8;
+$grey: #414042;
+$grey70: #7b7c7f;
+$grey50: #9d9fa2;
+
 
 body {
   font: 100% $font-stack;
@@ -34,6 +43,10 @@ ul {
   padding-inline-start: 20px;
 }
 
+li {
+  list-style-type: disc;
+}
+
 header dt {
     list-style: none;
     height: 40px;
@@ -41,6 +54,7 @@ header dt {
     background: none;
     border-radius: none;
     border: 1px 0 1px 0;
+    border-color: $secondary-color;
     width: 270px;
 }
 
