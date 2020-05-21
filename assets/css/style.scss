@@ -27,12 +27,12 @@ header {
     color: $blue;
     font-weight: normal;
   }
-  ul {
+  ul.contents {
   padding: 0.5em 0 0 20px;
   margin: 0 2em;
   background:linear-gradient(to right, transparent 20px, lightgray 20px);
   }
-  li {
+  li.contents {
     list-style-type: none;
     padding-left: 20px;
   }
@@ -49,6 +49,7 @@ header {
 
 ul {
   0 0 20px 0;
+  padding-inline-start: 20px;
 }
 
 a {
