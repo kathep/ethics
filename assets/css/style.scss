@@ -2,7 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
-$font-stack:    Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$font-stack:    Lato, sans-serif;
 $grey: #414042;
 $orange: #f15e3d;
 $blue: #0cb3b6;
@@ -17,7 +19,8 @@ body {
 
 header {
   h3 {
-    color: $blue
+    color: $blue;
+    font-weight: normal;
   }
 }
 
@@ -31,6 +34,12 @@ a {
           text-decoration: underline;
           }
   &:active {
+          color: $orange;
+          font-weight: normal;
+          text-decoration: underline;
+          }
+  &:visited {
+          color: $orange;
           font-weight: normal;
           text-decoration: underline;
           }
