@@ -22,8 +22,7 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 
 ### 1. UNDERSTANDING
 
-#### 1A. STRATEGY
-> What is your motivation to visualize?
+#### 1A. STRATEGYVFFVF###########FVVVFFF~> What is your motivation to visualize?
 
 - **Formulate goal**  
   Are you visualizing for...
