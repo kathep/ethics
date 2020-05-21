@@ -27,10 +27,23 @@ header {
     color: $blue;
     font-weight: normal;
   }
-  ul {
-  padding: 0.5em 0 0 20px;
-  margin: 0 2em;
-  }
+}
+
+ul {
+  0 0 20px 0;
+  padding-inline-start: 20px;
+}
+
+header .contents ul {
+    list-style: none;
+    height: 40px;
+    padding: 0;
+    background: ;
+    border-radius: none;
+    border: 1px 0 1px 0;
+    width: 270px;
+}
+
   li {
     list-style-type: none;
     padding-left: 20px;
@@ -44,22 +57,7 @@ header {
     width: 20px;
     margin-left: -20px;
   }
-}
 
-ul {
-  0 0 20px 0;
-  padding-inline-start: 20px;
-}
-
-header ul {
-    list-style: none;
-    height: 40px;
-    padding: 0;
-    background: ;
-    border-radius: none;
-    border: 1px 0 1px 0;
-    width: 270px;
-}
 
 a {
   color: $orange;
