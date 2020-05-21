@@ -8,7 +8,6 @@
 $font-stack: 'Open Sans', sans-serif;
 $primary-color: $orange;
 $secondary-color: $blue;
-$text-color1: $grey;
 
 
 /** colors **/
@@ -38,6 +37,8 @@ header {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $grey70;
 
 
 ul {
