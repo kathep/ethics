@@ -2,7 +2,33 @@
 ---
 
 @import "{{ site.theme }}";
-a {
-  color: red;
-  font-weight: normal;
+$font-stack:    Helvetica, sans-serif;
+$grey: #414042;
+$orange: #f15e3d;
+$blue: #0cb3b6;
+$blue50: #9ed3d6;
+$cream: #fafbe9;
+
+body {
+  font: 100% $font-stack;
+  color: $grey;
 }
+
+a {
+  color: $orange;
+  font-weight: normal;
+  text-decoration: none;
+  &:hover {
+          font-weight: normal;
+          text-decoration: underline;
+      }
+      &:active {
+          font-weight: normal;
+          text-decoration: underline;
+}
+
+hr {
+    height: 1px;
+    background-color: $blue50;
+    border: none;
+  }

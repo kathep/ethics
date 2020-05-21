@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 
 title: Ethical and Effective Visualization
-description: A method for ethically visualizing data.
- Originally developed for big data and medium data contexts in the digital humanities, it is currently also being used by tech startups, and in visualization of broader impacts by research groups in the humanities, sciences, and social sciences.
+tagline: A method for ethically visualizing data
+description: Originally developed for big data and medium data contexts in the digital humanities, this method is currently also being used by tech startups, and in visualization of broader impacts by research groups in the humanities, sciences, and social sciences.
 test: Extra content
 show_downloads: false
