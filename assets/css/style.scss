@@ -14,11 +14,18 @@ body {
   color: $grey;
   }
 
+header {
+  h3 {
+    color: $blue
+  }
+}
+
 a {
   color: $orange;
   font-weight: normal;
   text-decoration: none;
   &:hover {
+          color: $orange;
           font-weight: normal;
           text-decoration: underline;
           }
