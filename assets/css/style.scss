@@ -34,21 +34,21 @@ ul {
   padding-inline-start: 20px;
 }
 
-header .contents ul {
+header dl {
     list-style: none;
     height: 40px;
     padding: 0;
-    background: ;
+    background: none;
     border-radius: none;
     border: 1px 0 1px 0;
     width: 270px;
 }
 
-  li {
+  dt {
     list-style-type: none;
     padding-left: 20px;
   }
-  li:before {
+  dt:before {
     content: '';
     float: left;
     display: list-item;
