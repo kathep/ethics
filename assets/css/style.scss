@@ -46,7 +46,7 @@ header {
 
 header ul.toc {
     list-style: none;
-    height: 20px ;
+    height: auto ;
     padding: 0;
     background: none;
     border-radius: 0px;
@@ -64,9 +64,18 @@ header ul a {
     /* color: #676767; */
     display: block;
     text-align: left;
-    padding-top: 6px;
-    /* height: 34px; */
+    padding-top: 10px;
+    height: auto;
 }
+
+header ul {
+    list-style: none;
+    /* height: 40px; */
+    padding: 0;
+    background: none;
+    border-radius: 0px;
+    /*border: 1px solid #e0e0e0; */
+    /* width: 270px;*/
 
 header li {
     float: left;
