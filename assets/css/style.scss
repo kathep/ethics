@@ -60,11 +60,12 @@ header dt {
     width: 270px;
 }
 
-  dt {
+dt {
     list-style-type: none;
     padding-left: 20px;
-  }
-  dt:before {
+}
+
+dt:before {
     content: '';
     float: left;
     display: list-item;
@@ -79,21 +80,24 @@ a {
   color: $orange;
   font-weight: normal;
   text-decoration: none;
-  &:hover {
+}
+
+a:hover {
           color: $orange;
           font-weight: normal;
           text-decoration: underline;
-          }
-  &:active {
+}
+
+a:active {
           color: $orange;
           font-weight: normal;
           text-decoration: underline;
-          }
-  &:visited {
+}
+
+a:visited {
           color: $orange;
           font-weight: normal;
           text-decoration: underline;
-          }
 }
 
 hr {
@@ -101,4 +105,3 @@ hr {
     background-color: $blue50;
     border: none;
     }
-}
