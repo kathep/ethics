@@ -68,14 +68,20 @@ header ul a {
     /* height: 34px; */
 }
 
+header li {
+    float: left;
+    border-bottom: 1px solid $blue50;
+    height: 30px;
+}
+
 header ul.toc a {
     display: inline;
 }
 
 header dt, header ul.toc li {
     list-style: none;
-    padding: 0;
-    margin: 1px 0 1px 0 solid $blue50;
+    padding: 10px 0 0 0;
+    /*margin: 1px 0 1px 0 solid $blue50;*/
     width: 150px;
     list-style-type: none;
 }
