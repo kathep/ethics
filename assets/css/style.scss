@@ -64,14 +64,11 @@ header dt, header ul.toc li {
     padding: 0;
     font-size: 14px;
     line-height: 20px;
-    border: 1px 0 1px 0 solid $blue50;
+    margin: 1px 0 1px 0 solid $blue50;
     width: 270px;
+    list-style-type: none;
 }
 
-dt, header ul.toc li {
-    list-style-type: none;
-    padding-left: 20px;
-}
 
 /*dt:before, header li:before {
     content: '';
