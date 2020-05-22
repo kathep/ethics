@@ -57,14 +57,14 @@ header ul.toc {
 
 header ul.toc a {
     display: inline;
-    border: 1px 0 1px 0 solid $blue50;
 }
 
 header dt, header ul.toc li {
     list-style: none;
     padding: 0;
-    border: 1px 0 1px 0;
-    border-color: $secondary-color;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px 0 1px 0 solid $blue50;
     width: 270px;
 }
 
@@ -73,7 +73,7 @@ dt, header ul.toc li {
     padding-left: 20px;
 }
 
-dt:before, header li:before {
+/*dt:before, header li:before {
     content: '';
     float: left;
     display: list-item;
@@ -81,7 +81,7 @@ dt:before, header li:before {
     list-style-position: inside;
     width: 20px;
     margin-left: -20px;
-  }
+  }*/
 
 /** HEADING **/
 h1, h2 {
