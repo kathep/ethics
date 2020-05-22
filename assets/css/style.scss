@@ -51,8 +51,11 @@ header ul.toc {
     background: none;
     border-radius: 0px;
     border: 0px;
-    width: 100px;
+    width: 150px;
     display: inline;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 1px 0 1px 0 solid $blue50;
 }
 
 header ul.toc a {
@@ -62,10 +65,8 @@ header ul.toc a {
 header dt, header ul.toc li {
     list-style: none;
     padding: 0;
-    font-size: 14px;
-    line-height: 20px;
     margin: 1px 0 1px 0 solid $blue50;
-    width: 270px;
+    width: 150px;
     list-style-type: none;
 }
 
@@ -111,19 +112,19 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, .toc a:hover {
           color: $blue;
           font-weight: normal;
           text-decoration: underline;
 }
 
-a:active {
+a:active, .toc a:active  {
           color: $blue;
           font-weight: normal;
           text-decoration: underline;
 }
 
-a:visited {
+a:visited, .toc a:visited {
           color: $blue;
           font-weight: normal;
           text-decoration: underline;
