@@ -58,6 +58,16 @@ header ul.toc {
     margin: 1px 0 1px 0 solid $blue50;
 }
 
+header ul a {
+    line-height: 20px;
+    font-size: 14px;
+    /* color: #676767; */
+    display: block;
+    text-align: left;
+    padding-top: 6px;
+    /* height: 34px; */
+}
+
 header ul.toc a {
     display: inline;
 }
