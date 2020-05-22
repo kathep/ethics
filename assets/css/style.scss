@@ -51,7 +51,12 @@ header ul {
     background: none;
     border-radius: 0px;
     border: 0px;
-  /*  width: 270px;*/
+    width: 100px;
+}
+
+header ul a {
+    display: block;
+    border: 1px 0 1px 0 solid $blue50;
 }
 
 header dt, header li {
@@ -93,7 +98,7 @@ h3, h4, h5, h6 {
 
 
 ul {
-  padding: 0 0 20px 0;
+  padding: 0;
   padding-inline-start: 20px;
 }
 
