@@ -44,7 +44,17 @@ header {
         }
 }
 
-header dt, header p.toc li {
+header ul {
+    list-style: none;
+    height: 20px;
+    padding: 0;
+    background: none;
+    border-radius: 0px;
+    border: 0px solid #e0e0e0;
+    width: 270px;
+}
+
+header dt, header li {
     list-style: none;
     padding: 0;
     border: 1px 0 1px 0;
@@ -52,12 +62,12 @@ header dt, header p.toc li {
     width: 270px;
 }
 
-dt, header p.toc li {
+dt, header li {
     list-style-type: none;
     padding-left: 20px;
 }
 
-dt:before, header p.toc li:before {
+dt:before, header li:before {
     content: '';
     float: left;
     display: list-item;
