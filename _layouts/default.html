@@ -24,6 +24,10 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
+        <p>test dynamic {{% include toc.html html=content %}}</p>
+        
+        <p>test static</p>
+
       <h2 id="contents">Contents</h2>
 
         <dl >
@@ -34,7 +38,6 @@
           <dt><a href="#development">Development</a></dt>
         </dl>
 
-        <p>test{{% include toc.html html=content %}}</p>
 
       </header>
       <section>
