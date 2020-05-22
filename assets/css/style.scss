@@ -22,8 +22,9 @@ $grey50: #9d9fa2;
 body {
   font: 100% $font-stack;
   color: $grey;
-  line-height: 1.4em;
+  line-height: 20px;
   background-color: $cream;
+  padding: 0 0 10px 0;
   }
 
 header {
@@ -33,11 +34,13 @@ header {
   h3, h1 {
     color: $blue;
     font-weight: normal;
+    padding: 20px 0 0 0;
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $grey70;
+  line-height: 20px;
 }
 
 ul {
