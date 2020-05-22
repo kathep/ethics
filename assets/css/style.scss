@@ -44,7 +44,7 @@ header {
         }
 }
 
-header ul {
+header ul.toc {
     list-style: none;
     height: 20px ;
     padding: 0;
@@ -54,12 +54,12 @@ header ul {
     width: 100px;
 }
 
-header ul a {
+header ul.toc a {
     display: block;
     border: 1px 0 1px 0 solid $blue50;
 }
 
-header dt, header li {
+header dt, header ul.toc li {
     list-style: none;
     padding: 0;
     border: 1px 0 1px 0;
@@ -67,7 +67,7 @@ header dt, header li {
     width: 270px;
 }
 
-dt, header li {
+dt, header ul.toc li {
     list-style-type: none;
     padding-left: 20px;
 }
