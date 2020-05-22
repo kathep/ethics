@@ -25,8 +25,8 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
       <h2 id="contents">Contents</h2>
-        <p>test dynamic27</p>
-        {% include toc.html html=content h_min=1 h_max=2 skipNoIDs=true class="toc" baseurl= {{ absolute_url "/" | site.github.repository_name }} %}
+        <p>test dynamic28</p>
+        {% include toc.html html=content h_min=1 h_max=2 skipNoIDs=true class="toc" baseurl={{ absolute_url "/" site.github.repository_name }} %}
 
 
       </header>
