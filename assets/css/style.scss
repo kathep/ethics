@@ -9,7 +9,7 @@ $font-stack: 'Open Sans', sans-serif;
 $primary-color: #f15e3d;
 $secondary-color: #0cb3b6;
 
-
+/** HEADING **/
 $orange: #f15e3d;
 $blue: #0cb3b6;
 $blue50: #9ed3d6;
@@ -18,15 +18,17 @@ $grey: #414042;
 $grey70: #7b7c7f;
 $grey50: #9d9fa2;
 
-
+/** HEADING **/
 body {
   font: 100% $font-stack;
   color: $grey;
   line-height: 20px;
+  font-size: 14px;
   background-color: $cream;
   padding: 0 0 10px 0;
   }
 
+/** NAV PANE LEFT **/
 header {
   a {
     color: $blue;
@@ -36,20 +38,6 @@ header {
     font-weight: normal;
     padding: 20px 0 0 0;
     }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: $grey70;
-  line-height: 20px;
-}
-
-ul {
-  padding: 0 0 20px 0;
-  padding-inline-start: 20px;
-}
-
-li {
-  list-style-type: disc;
 }
 
 header dt {
@@ -76,26 +64,52 @@ dt:before {
   }
 
 
+
+/** HEADING **/
+h1, h2 {
+  color: $grey70;
+  line-height: 30px;
+  font-size:
+  padding: 20px 0 0 0;
+}
+
+h3, h4, h5, h6 {
+  color: $grey70;
+  line-height: 20px;
+  padding: 20px 0 0 0;
+}
+
+
+ul {
+  padding: 0 0 20px 0;
+  padding-inline-start: 20px;
+}
+
+li {
+  list-style-type: disc;
+}
+
+
 a {
-  color: $orange;
+  color: $blue;
   font-weight: normal;
   text-decoration: none;
 }
 
 a:hover {
-          color: $orange;
+          color: $blue;
           font-weight: normal;
           text-decoration: underline;
 }
 
 a:active {
-          color: $orange;
+          color: $blue;
           font-weight: normal;
           text-decoration: underline;
 }
 
 a:visited {
-          color: $orange;
+          color: $blue;
           font-weight: normal;
           text-decoration: underline;
 }
