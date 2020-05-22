@@ -52,10 +52,11 @@ header ul.toc {
     border-radius: 0px;
     border: 0px;
     width: 100px;
+    display: inline;
 }
 
 header ul.toc a {
-    display: block;
+    display: inline;
     border: 1px 0 1px 0 solid $blue50;
 }
 
