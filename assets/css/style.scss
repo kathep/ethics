@@ -38,7 +38,7 @@ header {
   a {
     color: $blue;
     }
-  h3, h1 {
+  h3.tagline, h1 {
     color: $blue;
     font-weight: normal;
     padding: 20px 0 0 0;
@@ -47,7 +47,7 @@ header {
         font-size: 25px;
         line-height: 40px;
         }
-  h3 {
+  h3.tagline {
     padding-bottom: 20px;
   }
 }
