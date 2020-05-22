@@ -70,7 +70,8 @@ header ul a {
 
 header li {
     float: left;
-    border: 1px 0 0 0 solid $blue50;
+    border-bottom: 1px solid $blue50;
+    border-right: 0px;
     height: 30px;
 }
 
