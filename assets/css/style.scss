@@ -111,25 +111,6 @@ header ul.toc a:hover {
     background-color: $cream;
 }
 
-header  h1 a {
-    color: $blue-aqua;
-    font-weight: 300;
-    padding: 10px 0 0 0;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 50px;
-    text-decoration: none;
-    }
-
-header  h1 a:hover {
-    color: $blue50;
-    font-weight: 800;
-    padding: 20px 0 0 0;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 40px;
-    text-decoration: none;
-    }
 
 
 header dt, header ul.toc li {
@@ -234,6 +215,22 @@ hr {
     border: none;
     margin: 0;
     }
+
+header  h1 a {
+    color: $blue-aqua;
+    font-weight: 300;
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+    text-decoration: none;
+    }
+
+header  h1 a:hover {
+    color: $blue50;
+    text-decoration: none;
+    }
+
 
 footer {
   bottom: 30px;
