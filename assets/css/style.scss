@@ -25,10 +25,10 @@ $grey50: #9d9fa2;
 /** HEADING **/
 body {
   font: 100% $font-stack;
-  color: $grey;
+  color: $taupe;
   line-height: 20px;
   font-size: 14px;
-  background-color: $cream;
+  background-color: #FFF;
   padding: 0 0 10px 0;
   }
 
@@ -42,7 +42,15 @@ header {
   a {
     color: $blue;
     }
-  h3.tagline, h1 {
+  h1 {
+    color: $blue-aqua;
+    font-weight: 800;
+    padding: 20px 0 0 0;
+    }
+  h3 {
+    color: $taupe;
+  }
+  h3.tagline {
     color: $blue;
     font-weight: normal;
     padding: 20px 0 0 0;
@@ -131,7 +139,7 @@ h1, h2 {
 }
 
 h4, h5, h6 {
-  color: $grey;
+  color: $taupe;
   font-size: 14px;
   line-height: 20px;
   padding: 10px 0 0 0;
@@ -142,18 +150,20 @@ h1 {
   font-size: 30px;
   font-weight:800;
   line-height: 40px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 0 0;
+  margin: 0 0 20px;
 }
 
 h2 {
   font-size: 25px;
   font-weight:600;
   line-height: 35px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 0 0;
+  margin: 0 0 20px;
 }
 
 h3 {
-  color: $taupe;
+  color: $blue;
   font-size: 20px;
   font-weight:300;
   line-height: 25px;
