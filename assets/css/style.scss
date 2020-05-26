@@ -107,24 +107,24 @@ li {
 
 a {
   color: $orange-dark;
-  font-weight: normal;
+  font-weight: 400;
   text-decoration: none;
 }
 
-a:hover {
-          color: $orange;
+a:visited {
+          color: $orange-dark;
           font-weight: 400;
           text-decoration: none;
 }
 
 a:active  {
-          color: $orange-dark;
+          color: $orange;
           font-weight: 400;
           text-decoration: none;
 }
 
-a:visited {
-          color: $orange-dark;
+a:hover {
+          color: $orange;
           font-weight: 400;
           text-decoration: none;
 }
