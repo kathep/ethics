@@ -11,7 +11,10 @@ $secondary-color: #0cb3b6;
 
 /** HEADING **/
 $orange: #f15e3d;
+$orange-dark: #c3674d;
+$taupe: #727668;
 $blue: #0a8a8c;
+$blue-dark: #38817c;
 $blue-aqua: #0cb3b6;
 $blue50: #9ed3d6;
 $cream: #fefef8;
@@ -120,25 +123,42 @@ header dt, header ul.toc li {
 
 /** HEADING **/
 h1, h2 {
-  color: $grey70;
+  color: $taupe;
   line-height: 40px;
   font-size: 30px;
   padding: 20px 0 0 0;
   margin: 0 0 20px;
 }
 
-h3, h4, h5, h6 {
-  color: $grey70;
+h4, h5, h6 {
+  color: $grey;
+  font-size: 14px;
   line-height: 20px;
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   margin: 0;
 }
 
 h1 {
   font-size: 30px;
   font-weight:800;
-  line-height: ;
-  padding: ;
+  line-height: 40px;
+  padding: 20px 0 20px 0;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight:600;
+  line-height: 35px;
+  padding: 20px 0 20px 0;
+}
+
+h3 {
+  color: $taupe;
+  font-size: 20px;
+  font-weight:300;
+  line-height: 25px;
+  padding: 20px 0 0 0;
+  margin: 0;
 }
 
 ul {
