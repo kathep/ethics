@@ -107,11 +107,11 @@ header ul.toc a {
 
 header  h1 a {
     color: $blue-aqua;
+    font-weight: 300;
+    padding: 10px 0 0 0;
+    font-size: 40px;
     font-weight: 800;
-    padding: 20px 0 0 0;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 40px;
+    line-height: 50px;
     text-decoration: none;
     }
 
@@ -185,7 +185,7 @@ h4, h5, h6 {
 
 strong {
   color: $blue-dark;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 ul {
