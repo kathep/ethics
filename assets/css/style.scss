@@ -112,6 +112,7 @@ header li {
 
 header ul.toc a {
     display: inline;
+    color: $blue;
 }
 
 header dt, header ul.toc li {
@@ -198,7 +199,7 @@ a:hover, .toc a:hover {
 }
 
 a:active, .toc a:active  {
-          color: $blue-aqua;
+          color: $blue;
           font-weight: normal;
           text-decoration: none;
 }
