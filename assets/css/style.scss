@@ -42,6 +42,7 @@ p {
 header {
   a {
     color: $blue;
+    text-decoration: none;
     }
   h1 {
     color: $blue-aqua;
@@ -83,7 +84,7 @@ header ul.toc {
 header ul a {
     line-height: 20px;
     font-size: 14px;
-    /* color: #676767; */
+    color: $blue;
     display: block;
     text-align: left;
     padding-top: 10px;
