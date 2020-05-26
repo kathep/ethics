@@ -166,7 +166,7 @@ header ul.toc {
     padding: 0;
     background: none;
     border: 0px;
-    width: 70%;
+    width: inherit;
     display: inline-block;
     font-size: 14px;
     line-height: 20px;
@@ -218,7 +218,7 @@ header li {
 
 header dt, header ul.toc li {
     list-style: none;
-    padding: 10px 0 0 0;
+    padding: 5px 0 5px 0;
     /*margin: 1px 0 1px 0 solid $blue-aqua50;*/
     width: 100%;
     list-style-type: none;
@@ -245,6 +245,7 @@ header h1 a:hover, header h1 a:active {
 
 header {
   top: 25px;
+  width: 240px;
 }
 
 th {
