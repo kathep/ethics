@@ -13,7 +13,8 @@ $secondary-color: #0cb3b6;
 $orange: #f15e3d;
 $orange-dark: #c3674d;
 $taupe: #727668;
-$blue: #0a8a8c;
+$blue: #097b7d;
+$blue-test: #0a8a8c;
 $blue-dark: #38817c;
 $blue-aqua: #0cb3b6;
 $blue50: #9ed3d6;
@@ -188,19 +189,19 @@ a {
 }
 
 a:hover, .toc a:hover {
-          color: $blue;
+          color: $blue-aqua;
           font-weight: normal;
-          text-decoration: underline;
+          text-decoration: none;
 }
 
 a:active, .toc a:active  {
-          color: $blue;
+          color: $blue-aqua;
           font-weight: normal;
-          text-decoration: underline;
+          text-decoration: none;
 }
 
 a:visited, .toc a:visited {
-          color: $blue;
+          color: $blue-aqua;
           font-weight: normal;
           text-decoration: underline;
 }
