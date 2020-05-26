@@ -105,6 +105,12 @@ header ul.toc a {
     color: $blue;
 }
 
+header ul.toc a:hover {
+    display: inline;
+    color: $blue-aqua;
+    background-color: $cream;
+}
+
 header  h1 a {
     color: $blue-aqua;
     font-weight: 300;
@@ -199,25 +205,25 @@ li {
 
 
 a {
-  color: $blue;
+  color: $orange-dark;
   font-weight: normal;
   text-decoration: none;
 }
 
 a:hover, .toc a:hover {
-          color: $blue-aqua;
+          color: $orange;
           font-weight: normal;
           text-decoration: none;
 }
 
 a:active, .toc a:active  {
-          color: $blue;
+          color: $orange-dark;
           font-weight: normal;
           text-decoration: none;
 }
 
 a:visited, .toc a:visited {
-          color: $blue;
+          color: $orange-darkest;
           font-weight: normal;
           text-decoration: none;
 }
