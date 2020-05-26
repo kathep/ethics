@@ -68,8 +68,8 @@ h2 {
   font-size: 25px;
   font-weight:700;
   line-height: 35px;
-  padding: 20px 0 0 0;
-  margin: 0 0 20px;
+  padding: 40px 0 0 0;
+  margin: 0 0 0px;
 }
 
 h3 {
@@ -111,21 +111,21 @@ a {
   text-decoration: none;
 }
 
-a:hover, .toc a:hover {
+a:hover {
           color: $orange;
-          font-weight: normal;
+          font-weight: 400;
           text-decoration: none;
 }
 
-a:active, .toc a:active  {
+a:active  {
           color: $orange-dark;
-          font-weight: normal;
+          font-weight: 400;
           text-decoration: none;
 }
 
-a:visited, .toc a:visited {
-          color: $orange-darkest;
-          font-weight: normal;
+a:visited {
+          color: $orange;
+          font-weight: 400;
           text-decoration: none;
 }
 
@@ -137,7 +137,7 @@ hr {
     }
 
 img {
-  paddign: 20px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 section {
@@ -204,15 +204,19 @@ header li {
     height: auto;
 }
 
-header ul.toc a {
+header ul.toc a, header ul.toc a:visited  {
     display: inline;
+    text-decoration: none;
+    font-weight: 400;
     color: $blue;
 }
 
 header ul.toc a:hover {
     display: inline;
+    font-weight: 400;
+    text-decoration: none;
     color: $blue-aqua;
-    background-color: $cream;
+    background-color: $orange;
 }
 
 header dt, header ul.toc li {
@@ -221,6 +225,10 @@ header dt, header ul.toc li {
     /*margin: 1px 0 1px 0 solid $blue50;*/
     width: 150px;
     list-style-type: none;
+}
+
+header h1 {
+  padding: 0;
 }
 
 header h1 a, header h1 a:visited, header h1 a:active {
