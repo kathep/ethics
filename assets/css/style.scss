@@ -40,86 +40,6 @@ p {
     margin-block-end: 0.5em;
 }
 
-/** NAV PANE LEFT **/
-header {
-  a {
-    color: $blue;
-    text-decoration: none;
-    }
-  h3 {
-    color: $taupe;
-  }
-  h3.tagline {
-    color: $blue;
-    font-weight: normal;
-    padding: 20px 0 0 0;
-    }
-  h3.tagline {
-    padding-bottom: 20px;
-  }
-}
-
-header ul.toc {
-    list-style: none;
-    height: auto ;
-    padding: 0;
-    background: none;
-    border-radius: 0px;
-    border: 0px;
-    width: 150px;
-    display: inline;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 1px 0 1px 0 solid $blue50;
-}
-
-header ul a {
-    line-height: 20px;
-    font-size: 14px;
-    color: $blue;
-    display: block;
-    text-align: left;
-    padding-top: 10px;
-    height:inherit;
-}
-
-header ul {
-    list-style: none;
-    height: auto;
-    padding: 0;
-    background: none;
-    border-radius: 0px;
-    border: 0px;
-    width: inherit;
-}
-
-header li {
-    float: left;
-    border-bottom: 1px solid $blue50;
-    border-right: 0px;
-    height: auto;
-}
-
-header ul.toc a {
-    display: inline;
-    color: $blue;
-}
-
-header ul.toc a:hover {
-    display: inline;
-    color: $blue-aqua;
-    background-color: $cream;
-}
-
-
-
-header dt, header ul.toc li {
-    list-style: none;
-    padding: 10px 0 0 0;
-    /*margin: 1px 0 1px 0 solid $blue50;*/
-    width: 150px;
-    list-style-type: none;
-}
 
 
 /*dt:before, header li:before {
@@ -216,7 +136,94 @@ hr {
     margin: 0;
     }
 
-header  h1 a {
+img {
+  paddign: 20px 0 0 0;
+}
+
+section {
+  top: 30px;
+}
+
+/** NAV PANE LEFT **/
+header {
+  a {
+    color: $blue;
+    text-decoration: none;
+    }
+  h3 {
+    color: $taupe;
+  }
+  h3.tagline {
+    color: $blue;
+    font-weight: normal;
+    padding: 20px 0 0 0;
+    }
+  h3.tagline {
+    padding-bottom: 20px;
+  }
+}
+
+header ul.toc {
+    list-style: none;
+    height: auto ;
+    padding: 0;
+    background: none;
+    border-radius: 0px;
+    border: 0px;
+    width: 150px;
+    display: inline;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 1px 0 1px 0 solid $blue50;
+}
+
+header ul a {
+    line-height: 20px;
+    font-size: 14px;
+    color: $blue;
+    display: block;
+    text-align: left;
+    padding-top: 10px;
+    height:inherit;
+}
+
+header ul {
+    list-style: none;
+    height: auto;
+    padding: 0;
+    background: none;
+    border-radius: 0px;
+    border: 0px;
+    width: inherit;
+}
+
+header li {
+    float: left;
+    border-bottom: 1px solid $blue50;
+    border-right: 0px;
+    height: auto;
+}
+
+header ul.toc a {
+    display: inline;
+    color: $blue;
+}
+
+header ul.toc a:hover {
+    display: inline;
+    color: $blue-aqua;
+    background-color: $cream;
+}
+
+header dt, header ul.toc li {
+    list-style: none;
+    padding: 10px 0 0 0;
+    /*margin: 1px 0 1px 0 solid $blue50;*/
+    width: 150px;
+    list-style-type: none;
+}
+
+header h1 a, header h1 a:visited, header h1 a:active {
     color: $blue-aqua;
     font-weight: 300;
     padding: 10px 0 0 0;
@@ -228,6 +235,7 @@ header  h1 a {
 
 header  h1 a:hover {
     color: $blue50;
+    font-weight: 300;
     text-decoration: none;
     }
 
