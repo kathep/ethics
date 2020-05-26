@@ -124,7 +124,7 @@ a:active  {
 }
 
 a:visited {
-          color: $orange;
+          color: $orange-dark;
           font-weight: 400;
           text-decoration: none;
 }
@@ -154,9 +154,9 @@ header {
     color: $taupe;
   }
   h3.tagline {
-    color: $blue;
-    font-weight: normal;
-    padding: 20px 0 60px 0;
+    color: $blue-dark;
+    font-weight: 400;
+    padding: 20px 0 50px 0;
     }
 }
 
@@ -165,10 +165,9 @@ header ul.toc {
     height: auto ;
     padding: 0;
     background: none;
-    border-radius: 0px;
     border: 0px;
-    width: 150px;
-    display: inline;
+    width: 70%;
+    display: inline-block;
     font-size: 14px;
     line-height: 20px;
     margin: 1px 0 1px 0 solid $blue-aqua50;
@@ -178,6 +177,7 @@ header ul a {
     line-height: 20px;
     font-size: 14px;
     color: $blue;
+    border-radius: 0px;
     display: block;
     text-align: left;
     padding-top: 10px;
@@ -213,7 +213,6 @@ header ul.toc a:hover {
     font-weight: 400;
     text-decoration: none;
     color: $blue-aqua;
-    background-color: $orange;
 }
 
 header dt, header ul.toc li {
