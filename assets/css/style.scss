@@ -140,7 +140,7 @@ h1, h2 {
 }
 
 h4, h5, h6 {
-  color: $taupe;
+  color: $orange-dark;
   font-size: 14px;
   line-height: 20px;
   padding: 10px 0 0 0;
@@ -156,6 +156,7 @@ h1 {
 }
 
 h2 {
+  color: $blue;
   font-size: 25px;
   font-weight:600;
   line-height: 35px;
@@ -164,12 +165,16 @@ h2 {
 }
 
 h3 {
-  color: $blue;
+  color: $orange-dark;
   font-size: 20px;
   font-weight:300;
   line-height: 25px;
   padding: 20px 0 0 0;
   margin: 0;
+}
+
+strong {
+  color: $orange-dark;
 }
 
 ul {
