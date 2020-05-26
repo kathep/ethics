@@ -12,6 +12,7 @@ $secondary-color: #0cb3b6;
 /** HEADING **/
 $orange: #f15e3d;
 $orange-dark: #c3674d;
+$orange-darkest: #965949;
 $taupe: #727668;
 $blue: #097b7d;
 $blue-test: #0a8a8c;
@@ -29,6 +30,7 @@ body {
   color: $taupe;
   line-height: 20px;
   font-size: 14px;
+  font-weight: 400;
   background-color: #FFF;
   padding: 0 0 10px 0;
   }
@@ -132,23 +134,9 @@ header dt, header ul.toc li {
   }*/
 
 /** HEADING **/
-h1, h2 {
-  color: $taupe;
-  line-height: 40px;
-  font-size: 30px;
-  padding: 20px 0 0 0;
-  margin: 0 0 20px;
-}
-
-h4, h5, h6 {
-  color: $orange-dark;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 10px 0 0 0;
-  margin: 0;
-}
 
 h1 {
+  color: $blue;
   font-size: 30px;
   font-weight:800;
   line-height: 40px;
@@ -157,7 +145,7 @@ h1 {
 }
 
 h2 {
-  color: $blue;
+  color: $taupe;
   font-size: 25px;
   font-weight:700;
   line-height: 35px;
@@ -166,7 +154,7 @@ h2 {
 }
 
 h3 {
-  color: $orange-dark;
+  color: $blue;
   font-size: 20px;
   font-weight:300;
   line-height: 25px;
@@ -174,8 +162,16 @@ h3 {
   margin: 0;
 }
 
+h4, h5, h6 {
+  color: $orange-darkest;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
 strong {
-  color: $orange-dark;
+  color: $orange-darkest;
   font-weight: 500;
 }
 
