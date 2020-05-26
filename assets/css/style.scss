@@ -46,11 +46,6 @@ header {
     color: $blue;
     text-decoration: none;
     }
-  h1 {
-    color: $blue-aqua;
-    font-weight: 800;
-    padding: 20px 0 0 0;
-    }
   h3 {
     color: $taupe;
   }
@@ -59,11 +54,6 @@ header {
     font-weight: normal;
     padding: 20px 0 0 0;
     }
-  h1 {
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 40px;
-        }
   h3.tagline {
     padding-bottom: 20px;
   }
@@ -115,6 +105,27 @@ header ul.toc a {
     color: $blue;
 }
 
+header  h1 a {
+    color: $blue-aqua;
+    font-weight: 800;
+    padding: 20px 0 0 0;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    text-decoration: none;
+    }
+
+header  h1 a:hover {
+    color: $blue50;
+    font-weight: 800;
+    padding: 20px 0 0 0;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    text-decoration: none;
+    }
+
+
 header dt, header ul.toc li {
     list-style: none;
     padding: 10px 0 0 0;
@@ -164,15 +175,16 @@ h3 {
 }
 
 h4, h5, h6 {
-  color: $orange-darkest;
+  color: $blue-dark;
   font-size: 14px;
+  font-weight: 600;
   line-height: 20px;
   padding: 10px 0 0 0;
   margin: 0;
 }
 
 strong {
-  color: $orange-darkest;
+  color: $blue-dark;
   font-weight: 500;
 }
 
@@ -205,9 +217,9 @@ a:active, .toc a:active  {
 }
 
 a:visited, .toc a:visited {
-          color: $blue-aqua;
+          color: $blue;
           font-weight: normal;
-          text-decoration: underline;
+          text-decoration: none;
 }
 
 hr {
