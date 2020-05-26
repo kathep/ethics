@@ -11,7 +11,8 @@ $secondary-color: #0cb3b6;
 
 /** HEADING **/
 $orange: #f15e3d;
-$blue: #0cb3b6;
+$blue: #0a8a8c;
+$blue-aqua: #0cb3b6;
 $blue50: #9ed3d6;
 $cream: #fefef8;
 $grey: #414042;
@@ -44,7 +45,8 @@ header {
     padding: 20px 0 0 0;
     }
   h1 {
-        font-size: 25px;
+        font-size: 30px;
+        font-weight: 800;
         line-height: 40px;
         }
   h3.tagline {
@@ -132,6 +134,12 @@ h3, h4, h5, h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight:800;
+  line-height: ;
+  padding: ;
+}
 
 ul {
   padding: 0;
