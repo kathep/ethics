@@ -140,8 +140,13 @@ img {
   padding: 20px 0 0 0;
 }
 
+.wrapper {
+  width:1000px;
+}
+
 section {
-  top: 30px;
+  width: 720px;
+  padding-bottom: 480px;
 }
 
 /** NAV PANE LEFT **/
