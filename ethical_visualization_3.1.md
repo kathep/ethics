@@ -1,5 +1,10 @@
 # Ethical Visualization for Impact
 
+### Details
+*Version:* 3.1  
+*Date:* April 2020
+
+------------------------------
 ## Contents
 
 - [The steps](#the-steps)

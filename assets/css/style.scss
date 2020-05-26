@@ -18,7 +18,7 @@ $blue: #097b7d;
 $blue-test: #0a8a8c;
 $blue-dark: #38817c;
 $blue-aqua: #0cb3b6;
-$blue50: #9ed3d6;
+$blue-aqua50: #9ed3d6;
 $cream: #fefef8;
 $grey: #414042;
 $grey70: #7b7c7f;
@@ -131,7 +131,7 @@ a:visited {
 
 hr {
     height: 1px;
-    background-color: $blue50;
+    background-color: $blue-aqua50;
     border: none;
     margin: 0;
     }
@@ -156,11 +156,8 @@ header {
   h3.tagline {
     color: $blue;
     font-weight: normal;
-    padding: 20px 0 0 0;
+    padding: 20px 0 60px 0;
     }
-  h3.tagline {
-    padding-bottom: 20px;
-  }
 }
 
 header ul.toc {
@@ -174,7 +171,7 @@ header ul.toc {
     display: inline;
     font-size: 14px;
     line-height: 20px;
-    margin: 1px 0 1px 0 solid $blue50;
+    margin: 1px 0 1px 0 solid $blue-aqua50;
 }
 
 header ul a {
@@ -199,7 +196,7 @@ header ul {
 
 header li {
     float: left;
-    border-bottom: 1px solid $blue50;
+    border-bottom: 1px solid $blue-aqua50;
     border-right: 0px;
     height: auto;
 }
@@ -222,7 +219,7 @@ header ul.toc a:hover {
 header dt, header ul.toc li {
     list-style: none;
     padding: 10px 0 0 0;
-    /*margin: 1px 0 1px 0 solid $blue50;*/
+    /*margin: 1px 0 1px 0 solid $blue-aqua50;*/
     width: 150px;
     list-style-type: none;
 }
@@ -232,9 +229,8 @@ header h1 {
 }
 
 header h1 a, header h1 a:visited, header h1 a:active {
-    color: $blue-aqua;
+    color: $blue;
     font-weight: 300;
-    padding: 10px 0 0 0;
     font-size: 40px;
     font-weight: 300;
     line-height: 50px;
@@ -242,11 +238,25 @@ header h1 a, header h1 a:visited, header h1 a:active {
     }
 
 header  h1 a:hover {
-    color: $blue50;
+    color: $blue-aqua;
     font-weight: 300;
     text-decoration: none;
     }
 
+header {
+  top: 25px;
+}
+
+th {
+  text-align: left;
+  color: $blue-dark;
+  font-weight: 600;
+}
+
+th, td {
+  border-bottom: 1px solid $blue-aqua50;
+  padding: 5px 10px 5px 0;
+}
 
 footer {
   bottom: 30px;
