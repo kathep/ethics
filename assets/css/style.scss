@@ -194,12 +194,6 @@ header ul {
     width: inherit;
 }
 
-header li {
-    float: left;
-    border-bottom: 1px solid $blue-aqua50;
-    border-right: 0px;
-    height: auto;
-}
 
 header ul.toc a, header ul.toc a:visited  {
     display: inline;
@@ -215,11 +209,18 @@ header ul.toc a:hover {
     color: $blue-aqua;
 }
 
+header li {
+    float: left;
+    border-bottom: 1px solid $blue-aqua50;
+    border-right: 0px;
+    height: auto;
+}
+
 header dt, header ul.toc li {
     list-style: none;
     padding: 10px 0 0 0;
     /*margin: 1px 0 1px 0 solid $blue-aqua50;*/
-    width: 150px;
+    width: 100%;
     list-style-type: none;
 }
 
@@ -227,7 +228,7 @@ header h1 {
   padding: 0;
 }
 
-header h1 a, header h1 a:visited, header h1 a:active {
+header h1 a, header h1 a:visited {
     color: $blue;
     font-weight: 300;
     font-size: 40px;
@@ -236,7 +237,7 @@ header h1 a, header h1 a:visited, header h1 a:active {
     text-decoration: none;
     }
 
-header  h1 a:hover {
+header h1 a:hover, header h1 a:active {
     color: $blue-aqua;
     font-weight: 300;
     text-decoration: none;

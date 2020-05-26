@@ -8,7 +8,7 @@ Download a printable pdf [here](pdfs/ethical_visualization_poster_3_2.pdf).
 
 ------------------------------
 
-## The steps test really long heading
+## The steps
 
 ### 1. UNDERSTANDING
 
