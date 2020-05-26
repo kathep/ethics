@@ -230,15 +230,15 @@ header dt, header ul.toc li {
 }
 
 header h1 {
-  padding: 0;
+  padding: 10px 0 0 0;
 }
 
 header h1 a, header h1 a:visited {
     color: $blue;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
-    line-height: 50px;
+    line-height: 45px;
     text-decoration: none;
     }
 
