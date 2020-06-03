@@ -1,5 +1,7 @@
 ---
 title: Version 3.2 Acknowledgements
+date-start: 2020-01-04
+date-end: 2020-11-05
 people:
 - name: Amanda Makulec
   company: Excella
