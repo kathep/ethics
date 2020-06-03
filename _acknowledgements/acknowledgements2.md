@@ -1,7 +1,7 @@
 ---
-title: Acknowledgements
+title: Acknowledgements2
 ---
-# Acknowledgements
+# Acknowledgements2
 
 {% for acknowledgement in site.data.acknowledgements %}
 ## Version {{ acknowledgement.version }}
