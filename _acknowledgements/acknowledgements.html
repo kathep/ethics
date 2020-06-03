@@ -5,6 +5,15 @@ title: Acknowledgements
     <h2>Version {{ acknowledgement.version }} {{ acknowledgement.title }}</h2>
     <h4>Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-start | date_to_long_string }}</h4>
     <p>test2</p>
+    <ul>
+{% for person_hash in site.data.acknowledgements %}
+{% assign person = person_hash[1] %}
+  <li>
+      {{ person.name }}
+    ({{ person.people | size }} members)
+  </li>
+{% endfor %}
+</ul>
 
   <div class="people">
     <ul>
