@@ -7,8 +7,14 @@ title: Acknowledgements
     <h4>Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-start | date_to_long_string }}</h4>
 
   <div class="acknowledgement">
-    <h4>{{ acknowledgement.people.name }}</h4>
-    <p>{{ acknowledgement.people.company }}</p>
-    <p>{{ acknowledgement.people.company }}</p>
   </div>
+
+  <ul>
+{% for people in site.acknowledgements.people %}
+  <li>
+    <strong>{{ people.name }}</strong><br>
+    {{ people.company }}, {{ people.company }}
+  </li>
+{% endfor %}
+</ul>
 {% endfor %}
