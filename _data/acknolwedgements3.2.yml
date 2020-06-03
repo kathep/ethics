@@ -1,5 +1,4 @@
----
-title: Version 3.2 Acknowledgements
+version: 3.2
 date-start: 2020-01-04
 date-end: 2020-11-05
 people:
@@ -58,5 +57,3 @@ people:
   company: University of Nevada, Reno
   relationship: student
   contribution: Feedback on 3.1 in Make Me Care paper. Suggestions for application to harm reduction context.
-
----

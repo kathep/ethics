@@ -1,20 +1,18 @@
 ---
-layout: page
 title: Acknowledgements
 ---
-{% for acknowledgement in site.acknowledgements %}
-    <h2><a href="{{ acknowledgement.url }}">{{ acknowledgement.title }}</a></h2>
-    <h4>Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-start | date_to_long_string }}</h4>
+{% for version in site.data.acknowledgements %}
+    <h2>{{ version.version }}</h2>
+    <h4>Date: {{ version.date-start | date_to_long_string }} - {{ version.date-start | date_to_long_string }}</h4>
 
-  <div class="acknowledgement">
+  <div class="people">
+    <ul>
+      {% for people in site.data.acknowledgements.people %}
+        <li>
+          <strong>Ms {{ people.name }}</strong><br>
+          {{ people.company }}, {{ people.company }}
+        </li>
+      {% endfor %}
+  </ul>
   </div>
-
-  <ul>
-{% for people in site.acknowledgements.people %}
-  <li>
-    <strong>Test li{{ people.name }}</strong><br>
-    {{ people.company }}, {{ people.company }}
-  </li>
-{% endfor %}
-</ul>
 {% endfor %}
