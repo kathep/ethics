@@ -1,19 +1,22 @@
-# Acknowledgements2
+# AcknowledgementsMD
 
 {% for acknowledgement in site.data.acknowledgements.versions %}
 ## Version {{ acknowledgement.version }}  {{ acknowledgement.title }}
 **Date:** {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-end | date_to_long_string }}
 
 ### Credits
-The
-{% for person_hash in site.data.acknowledgements.versions %}
-{% assign per = person_hash[1] %}
-{{ per.people | size }} people who influenced this version are detailed below, along with details of their contribution.
-{% endfor %}
+The people who influenced this version are detailed below, along with details of their contribution.
 
   {% for person in acknowledgement.people %}
+
+    {% if person.link != "" and person.company != "" %}
 - #### [{{person.name}}](person.link), {{person.company}}  
   *Contribution:* {{person.contribution}}
+    {% else %}
+- #### {{person.name}}, {{person.company}}  
+  *Contribution:* {{person.contribution}}
+    {% endif %}
+
   {% endfor %}
 
 {% endfor %}
