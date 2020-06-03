@@ -1,3 +1,8 @@
+---
+version: 3.2
+
+---
+
 ## Poster
 
 ![image of ethical visualization poster](images/ethical_visualization_poster_3_2.png)
@@ -205,6 +210,14 @@ The following institutions have supported development of this method.
 
 ### Acknowledgements
 Acknowledgement of previous versions can be found in the documentation for each one, listed below. In addition to previous contributions, I am grateful for the discussion and exchanges with the following people, who have informed this version: Jason Forrest of McKinsey, Georgie Rogers, Amanda Makulec, Bridget Cogley, Josh Smith, and Neil Richards of Groupon.
+
+#### test acknowledgement
+{% assign version = site.data.acknowledgements[page.version] %}
+<a rel="author"
+  href="https://twitter.com/{{ version.twitter }}"
+  title="{{ version.name }}">
+    {{ version.name }}
+</a>
 
 &nbsp;
 
