@@ -8,15 +8,9 @@
 The people who influenced this version are detailed below, along with details of their contribution.
 
   {% for person in acknowledgement.people %}
-
-<!--    {% if person.link != "" and person.company != "" %}-->
 - #### [{{person.name}}](person.link), {{person.company}}  
   *Contribution:* {{person.contribution}}
-<!--    {% else %}
-- #### {{person.name}}, {{person.company}}  -->
   *Contribution:* {{person.contribution}}
-<!--    {% endif %} -->
-
   {% endfor %}
 
 {% endfor %}

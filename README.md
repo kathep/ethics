@@ -207,6 +207,8 @@ The following institutions have supported development of this method.
 Acknowledgement of previous versions can be found in the documentation for each one, listed below. In addition to previous contributions, I am grateful for the discussion and exchanges with the following people, who have informed this version: Jason Forrest of McKinsey, Georgie Rogers, Amanda Makulec, Bridget Cogley, Josh Smith, and Neil Richards of Groupon.
 
 #### test acknowledgement
+The people who influenced this version are detailed below, along with details of their contribution.
+
 {% for acknowledgement in site.data.acknowledgements.versions %}
 
   {% for person in acknowledgement.people | where: "version", "3.2" %}
