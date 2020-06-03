@@ -15,7 +15,7 @@ The people who influenced this version are detailed below, along with details of
 <!--    {% else %}
 - #### {{person.name}}, {{person.company}}  -->
   *Contribution:* {{person.contribution}}
-    {% endif %}
+<!--    {% endif %} -->
 
   {% endfor %}
 
