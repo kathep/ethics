@@ -10,10 +10,9 @@ title: Acknowledgements
 
     <ul>
 {% for person_hash in site.data.acknowledgements.versions %}
-{% assign person = person_hash[1] %}
+{% assign number = person_hash[1] %}
   <li>
-      {{ person.name }}
-    ({{ person.people | size }} members)
+    ({{ number.people | size }} people influenced this version)
   </li>
 {% endfor %}
 </ul>

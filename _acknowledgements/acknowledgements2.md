@@ -3,12 +3,13 @@ title: Acknowledgements2
 ---
 # Acknowledgements2
 
-{% for acknowledgement in site.data.acknowledgements %}
+{% for acknowledgement in site.data.acknowledgements.versions %}
 ## Version {{ acknowledgement.version }}
 #### Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-end | date_to_long_string }}
 
   {% for person in acknowledgement.people %}
-Mr {{person.name}}</p>
+**{{person.name}}**
+
   {% endfor %}
 
   {% for person2 in site.data.acknowledgements.version %}
