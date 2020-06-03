@@ -1,5 +1,5 @@
 versions:
-  
+
 - version: 3.2
   title: Ethical & Effective Visualization
   date-start: 2020-01-04
@@ -10,7 +10,6 @@ versions:
     link: https://www.linkedin.com/in/abmakulec/
     location: New York
     relationship: co-author
-    contributed_to: 3.2
     contribution: Co-author ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
 
   - name: Jason Forrest
