@@ -1,6 +1,3 @@
----
-title: Acknowledgements2
----
 # Acknowledgements2
 
 {% for acknowledgement in site.data.acknowledgements.versions %}
