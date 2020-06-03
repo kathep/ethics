@@ -7,7 +7,7 @@ title: Acknowledgements2
 ## Version {{ acknowledgement.version }}
 #### Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-end | date_to_long_string }}
 
-  {% for person in version.people %}
+  {% for person in acknowledgement.people %}
 Mr {{person.name}}</p>
   {% endfor %}
 
