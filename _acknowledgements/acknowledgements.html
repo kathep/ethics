@@ -2,12 +2,13 @@
 title: Acknowledgements
 ---
 {% for acknowledgement in site.data.acknowledgements %}
-    <h2>{{ acknowledgement.version }}</h2>
+    <h2>Version {{ acknowledgement.version }} {{ acknowledgement.title }}</h2>
     <h4>Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-start | date_to_long_string }}</h4>
+    <p>test</p>
 
   <div class="people">
     <ul>
-      {% for people in site.data.acknowledgements.people %}
+      {% for person in site.data.acknowledgements.version.people %}
         <li>
           <strong>Ms {{ people.name }}</strong><br>
           {{ people.company }}, {{ people.company }}

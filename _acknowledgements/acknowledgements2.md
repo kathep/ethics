@@ -1,4 +1,7 @@
-# Acknowledgements2
+---
+title: Acknowledgements
+---
+# Acknowledgements
 
 {% for acknowledgement in site.data.acknowledgements %}
 ## Version {{ acknowledgement.version }}
@@ -14,4 +17,4 @@
       {% endfor %}
   </ul>
   </div>
-{% endfor %} -->
+{% endfor %} --

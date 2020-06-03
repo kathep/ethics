@@ -1,5 +1,5 @@
 - version: 3.2
-  name: Ethical & Effective Visualization
+  title: Ethical & Effective Visualization
   date-start: 2020-01-04
   date-end: 2020-11-05
   people:
@@ -60,6 +60,7 @@
     contribution: Feedback on 3.1 in Make Me Care paper. Suggestions for application to harm reduction context.
 
 - version: 3.1
+  title: Ethical Visualization for Impact
   date-start: 2020-01-02
   date-end: 2020-01-04
   people:
