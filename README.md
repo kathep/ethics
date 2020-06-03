@@ -207,12 +207,13 @@ The following institutions have supported development of this method.
 Acknowledgement of previous versions can be found in the documentation for each one, listed below. In addition to previous contributions, I am grateful for the discussion and exchanges with the following people, who have informed this version: Jason Forrest of McKinsey, Georgie Rogers, Amanda Makulec, Bridget Cogley, Josh Smith, and Neil Richards of Groupon.
 
 #### test acknowledgement
-{% assign this_version = site.data.acknowledgements.versions | where: "version", "3.2" %}
+{% for acknowledgement in site.data.acknowledgements.versions | where: "version", "3.2" %}
 
-{% for person in this_version %}
+  {% for person in acknowledgement.people %}
 - Mr {{ person.name }}
-{% endfor %}
+  {% endfor %}
 
+{% endfor %}
 
 &nbsp;
 
