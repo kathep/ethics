@@ -1,0 +1,11 @@
+<ul>
+{% for acknowledgements_hash in site.data.acknowledgements %}
+{% assign acknowledgement = acknowledgements_hash[1] %}
+  <li>
+    <a href="acknowledgement.name">
+      {{ acknowledgement.name }}
+    </a>
+    ({{ acknowledgement.people | size }} contributors), <em>Contribution:</em> {{acknowledgement.contribution}}
+  </li>
+{% endfor %}
+</ul>

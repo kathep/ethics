@@ -1,0 +1,9 @@
+{% for current in site.data.acknowledgements %}
+{% assign org = org_hash[1] %}
+{% for acknowledgement in site.data.acknowledgements | where:"version","3.2" %}
+
+  {% for person in acknowledgement.people %}
+- {{ person.name }}
+  {% endfor %}
+
+{% endfor %}
