@@ -1,4 +1,4 @@
-# AcknowledgementsMD
+# Acknowledgements
 
 {% for acknowledgement in site.data.acknowledgements.versions %}
 ## Version {{ acknowledgement.version }}  {{ acknowledgement.title }}
