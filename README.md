@@ -1,8 +1,3 @@
----
-version: 3.2
-
----
-
 ## Poster
 
 ![image of ethical visualization poster](images/ethical_visualization_poster_3_2.png)
