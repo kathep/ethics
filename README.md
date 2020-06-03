@@ -209,9 +209,9 @@ Acknowledgement of previous versions can be found in the documentation for each 
 #### test acknowledgement
 The people who influenced this version are detailed below, along with details of their contribution.
 
-{% for acknowledgement in site.data.acknowledgements.versions %}
+{% for acknowledgement in site.data.acknowledgements.versions | where:"version","3.2" %}
 
-  {% for person in acknowledgement.people | where: "version", "3.2" %}
+  {% for person in acknowledgement.people %}
 - {{ person.name }}
   {% endfor %}
 
