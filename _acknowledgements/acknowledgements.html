@@ -1,0 +1,12 @@
+---
+layout: page
+title: Cookies
+---
+{% for acknowledgement in site.acknowledgements %}
+    <h2><a href="{{ acknowledgement.url }}">{{ acknowledgement.title }}</a></h2>
+  <div class="acknowledgement">
+    <h4>{{ acknowledgement.people.name }}</h4>
+    <p>{{ acknowledgement.people.company }}</p>
+    <p>{{ acknowledgement.people.company }}</p>
+  </div>
+{% endfor %}
