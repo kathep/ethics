@@ -8,7 +8,11 @@ title: Acknowledgements2
 **Date:** {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-end | date_to_long_string }}
 
 ### Credits
-The {{ number.people | size }} people who influenced this version are detailed below, along with details of their contribution.
+The
+{% for person_hash in site.data.acknowledgements.versions %}
+{% assign per = person_hash[1] %}
+{{ per.people | size }} people who influenced this version are detailed below, along with details of their contribution.
+{% endfor %}
 
   {% for person in acknowledgement.people %}
 - #### [{{person.name}}](person.link), {{person.company}}  
