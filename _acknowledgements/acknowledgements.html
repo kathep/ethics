@@ -1,16 +1,15 @@
 ---
 title: Acknowledgements
 ---
-{% for acknowledgement in site.data.acknowledgements %}
+{% for acknowledgement in site.data.acknowledgements.versions %}
     <h2>Version {{ acknowledgement.version }} {{ acknowledgement.title }}</h2>
     <h4>Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-end | date_to_long_string }}</h4>
-    <p>test2</p>
-    {% for person in version.people %}
+    {% for person in acknowledgement.people %}
       <p>Mr {{person.name}}</p>
     {% endfor %}
 
     <ul>
-{% for person_hash in site.data.acknowledgements %}
+{% for person_hash in site.data.acknowledgements.versions %}
 {% assign person = person_hash[1] %}
   <li>
       {{ person.name }}
