@@ -1,6 +1,3 @@
----
-title: Acknowledgements
----
 # Acknowledgements
 
 {% for acknowledgement in site.data.acknowledgements %}
