@@ -1,16 +1,20 @@
 <ul>
 {% for version_hash in site.data.acknowledgements %}
   {% assign vers = version_hash[1]  %}
-  <li>
-     <a href="version/{{ vers.version }}">
+  <h3>
        {{ vers.version }}  {{ vers.title }}
-     </a>
-     ({{ vers.people | size }} contributors)
+  </h3>
+  {% if vers.people %}
+    <p>
+       ({{ vers.people | size }} people contributed to this version of the method and/or poster.
+    </p>
+  {% endif %}
     {% if vers.people %}
         <ul>
         {% for person in vers.people %}
           <li>
-            {{ person.name }}, <em>Contribution:</em> {{ person.contribution }}
+            <strong>{{ person.name }}</strong>, <br>
+            <em>Contribution:</em> {{ person.contribution }}
           </li>
         {% endfor %}
         </ul>

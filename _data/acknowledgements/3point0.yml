@@ -1,9 +1,10 @@
 version: 3.0
 title: Ethical Visualization for Impact
-date-start: 2019-11-02
-date-end: 2020-02-03
+date: 2019-03-01
 people:
-  - name: Test 3.2 Person
+  - name:
+    company:
     link:
-    relationship: personal
-    contribution: Discussion of ethical visualization; feedback on 3.0 and poster.
+    location:
+    relationship:
+    contribution:

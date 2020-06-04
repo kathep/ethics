@@ -1,7 +1,6 @@
 version: 3.2
 title: Ethical & Effective Visualization
-date-start: 2020-01-04
-date-end: 2020-11-05
+date: 2020-05-25
 people:
   - name: Amanda Makulec
     company: Excella
@@ -39,13 +38,13 @@ people:
 
   - name: Sue Perks
     company: University of the Creative Arts
-    link: 
+    link:
     relationship: research collaborator
     contribution: Feedback on 3.1 in Make Me Care paper; suggestion of checklist format.
 
   - name: Wibo Bakker
     company: ...
-    link: ...
+    link:
     relationship: research collaborator
     contribution: Feedback on 3.1 in Make Me Care paper.
 

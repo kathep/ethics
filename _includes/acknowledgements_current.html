@@ -9,6 +9,12 @@
     {% else %}
       {{ person.name }}
     {% endif %}
+
+    {% if person.company %}
+      , at {{ person.company }}
+    {% else %}
+      ,
+    {% endif %}
       , <em>Contribution:</em> {{ person.contribution }}
 
     </li>
