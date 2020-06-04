@@ -1,20 +1,33 @@
-{% for version in site.data.acknowledgements %}
-<h3>{{version.version}} {{version.title}}</h3>
-<ul>
-test {% for person in version.people %}
-<li>{{person.name}}</li>
+{% assign acknowledgements = site.data.acknowledgements | sort: "version" | reverse %}
+{% for version in acknowledgements %}
+
+<h3>{{ version.version }} {{ version.title }}</h3>
+
+<h4>{{ version.date-end | date: '%B %Y'  }}</h4>
+
+  {% for people in version %}
+  <ul>
+  test {% for person in version.people %}
+  <li>{{ person.name }}</li>
+  {% endfor %}
+  </ul>
 {% endfor %}
-</ul>
 {% endfor %}
 
 <ul>
-{% for acknowledgements_hash in site.data.acknowledgements %}
-  {% assign acknowledgement = acknowledgements_hash[1] %}
+{% for version_hash in site.data.acknowledgements %}
+  {% assign version = acknowledgements_hash[1] | sort: "version" | reverse  %}
   <li>
-    Mr <a href="version/{{acknowledgement.version}}">
-      {{ acknowledgement.title }}
+     <a href="version/{{acknowledgement.version}}">
+      {{ version.title }}
     </a>
-    ({{ acknowledgement.people | size }} contributors), <em>Contribution:</em> {{acknowledgement.contribution}}
+    ({{ version.people | size }} contributors)
+    <ul>
+      {% for person in version %}
+      <li>
+        {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
+      </li>
+    </ul>
   </li>
 {% endfor %}
 </ul>
