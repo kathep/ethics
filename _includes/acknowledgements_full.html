@@ -21,20 +21,13 @@
 
 
 <ul>
-{% for version_hash in site.data.acknowledgements %}
-{% assign vers = version_hash[1]  %}
-  {% for filter in vers %}
-    {% if filter.version == "3.2" %}
+{% assign speaking = site.data.speaking | sort: "date" | reverse %}
+{% for talk in speaking %}
+
+{% assign contribs = site.data.acknowledgements.3.2  %}
+  {% for person in contribs %}
       <li>
-        test {% if filter.people %}
-        <ul>
-          {% for person in filter.people %}
-          <li>
             {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
-          </li>
-          {% endfor %}
-        {% endif %}
-        </ul>
       </li>
     {% endif %}
   {% endfor %}
