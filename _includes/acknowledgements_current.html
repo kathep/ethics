@@ -1,9 +1,8 @@
-{% for current in site.data.acknowledgements %}
-{% assign org = org_hash[1] %}
-{% for acknowledgement in site.data.acknowledgements | where:"version","3.2" %}
-
-  {% for person in acknowledgement.people %}
-- {{ person.name }}
+<ul>
+{% assign contribs = site.data.acknowledgements.3-2  %}
+  {% for person in contribs.people %}
+      <li>
+            {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
+      </li>
   {% endfor %}
-
-{% endfor %}
+</ul>
