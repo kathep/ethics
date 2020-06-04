@@ -11,10 +11,12 @@
     {% if vers.people %}
         <ul>
         {% for person in vers.people %}
-          <li>
-            <strong>{{ person.name }}</strong>, <br>
-            <em>Contribution:</em> {{ person.contribution }}
-          </li>
+          {% if person.contribution %}
+            <li>
+              <strong>{{ person.name }}</strong>, <br>
+              <em>Contribution:</em> {{ person.contribution }}
+            </li>
+          {% endif %}
         {% endfor %}
         </ul>
     {% endif %}

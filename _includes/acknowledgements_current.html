@@ -2,6 +2,7 @@
   {% for person in site.data.acknowledgements.3point2.people %}
 
     <li>
+
     {% if person.link %}
       <a href="{{ person.link }}">
       {{ person.name }}
@@ -15,7 +16,6 @@
     {% else %}
       ,
     {% endif %}
-      , <em>Contribution:</em> {{ person.contribution }}
 
     </li>
 
