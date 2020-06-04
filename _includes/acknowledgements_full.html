@@ -1,5 +1,6 @@
 {% for version_hash in site.data.acknowledgements %}
-{% assign vers = version_hash[1] %}
+{% assign all_vers = version_hash[1] %}
+{% for vers in all_vers | sort: "date"  %}
 
 <h2>
   {{ vers.version}} {{ vers.title }}
@@ -28,6 +29,8 @@
     {% endif %}
   {% endfor %}
   </ul>
+{% endfor %}
+
 {% endif %}
 
 {% endfor %}
