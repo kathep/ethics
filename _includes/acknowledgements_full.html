@@ -7,7 +7,7 @@
     </a>
     ({{ version.people | size }} contributors)
     <ul>
-      {% for person in people %}
+      {% for person in version.people %}
       <li>
         {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
       </li>
