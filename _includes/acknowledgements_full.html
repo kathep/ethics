@@ -1,15 +1,14 @@
 {% assign versions = site.data.versions | sort: "date" | reverse %}
 {% for versi in versions %}
-<ul >
-<li>{{ versi.version }} {{ versi.title }}</li>
-</ul>
+<h3>{{ versi.version }} {{ versi.title }}</h3>
+
+
 {% endfor %}
 
 
 {% for version_hash in site.data.acknowledgements %}
 {% assign vers = version_hash[1] %}
 
-<p>{{ vers.date }}</p>
 <h2>
   {{ vers.version }} {{ vers.title }}
 </h2>

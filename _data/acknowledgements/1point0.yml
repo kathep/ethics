@@ -1,8 +1,8 @@
-1point0:
-  people:
-  - name: Christopher Church
-    company: University of Nevada, Reno
-    link: http://www.christophermchurch.com/
-    location: Reno
-    relationship: Co-author
-    contribution: Co-conceived ethical visualization workflow while writing Racism in the Machine paper together.
+version: 1.0
+people:
+- name: Christopher Church
+  company: University of Nevada, Reno
+  link: http://www.christophermchurch.com/
+  location: Reno
+  relationship: Co-author
+  contribution: Co-conceived ethical visualization workflow while writing Racism in the Machine paper together.
