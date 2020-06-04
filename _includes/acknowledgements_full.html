@@ -3,17 +3,17 @@
   {% assign vers = version_hash[1]  %}
   <li>
      <a href="version/{{ vers.version }}">
-    {{ vers.version }}  {{ vers.title }}
-    </a>
-    ({{ vers.people | size }} contributors)
+       {{ vers.version }}  {{ vers.title }}
+     </a>
+     ({{ vers.people | size }} contributors)
     {% if vers.people %}
-    <ul>
-      {% for person in vers.people %}
-      <li>
-        {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
-      </li>
-      {% endfor %}
-    </ul>
+        <ul>
+        {% for person in vers.people %}
+          <li>
+            {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
+          </li>
+        {% endfor %}
+        </ul>
     {% endif %}
   </li>
 {% endfor %}
@@ -26,7 +26,7 @@
   {% for filter in vers %}
     {% if filter.version == "3.2" %}
       <li>
-        {% if filter.people %}
+        test {% if filter.people %}
         <ul>
           {% for person in filter.people %}
           <li>
