@@ -1,7 +1,7 @@
 {% for version_hash in site.data.acknowledgements %}
 {% assign vers = version_hash[1] %}
 <h2>
-  {{ vers.version | concat: vers.title | sort: 'date' }}
+  {{ vers.version | sort: 'date' }} {{ vers.title }}
 </h2>
 {% if vers.people %}
 <h3>Summary</h3>
