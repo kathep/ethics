@@ -1,8 +1,25 @@
+<p>test1:</p>
 <ul>
-{% assign peeps = site.data.acknowledgements.3point2  %}
+{% assign people = site.data.acknowledgements  %}
   {% for person in peeps.people %}
       <li>
             {{ person.name }}, <em>Contribution:</em> {{ person.contribution }}
       </li>
   {% endfor %}
+</ul>
+
+<p>test2:</p>
+<ul>
+{% for person in site.data.acknowledgements.3.2 %}
+  <li>
+      {{ person.name }}
+  </li>
+{% endfor %}
+</ul>
+
+<p>test 3:</p>
+<ul>
+{% for item in site.data.acknowledgements.3.2.people %}
+<li>{{item.name}}</li>
+{% endfor %}
 </ul>
