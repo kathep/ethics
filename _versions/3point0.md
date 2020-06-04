@@ -6,5 +6,3 @@ date: 2018-12-01
 ---
 
 Some summary of this version here.
-
-{% include %}

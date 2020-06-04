@@ -6,5 +6,3 @@ date: 2020-04-29
 ---
 
 Some summary of this version here.
-
-{% include acknowledgements_in_version_coll.html %}
