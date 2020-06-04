@@ -210,9 +210,13 @@ Acknowledgement of previous versions can be found in the documentation for each 
 
 The people who influenced this version are detailed below, along with details of their contribution.
 
+#### current version list
+
   {% include acknowledgements_current.html %}
 
 ---
+
+#### full version list
 
   {% include acknowledgements_full.html %}
 
