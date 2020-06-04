@@ -5,26 +5,6 @@
 </ul>
 {% endfor %}
 
-{% for version_hash in site.data.acknowledgements %}
-  {% capture filename %}{{ version_hash | first }}{% endcapture %}
-
-  {% assign vers = site.data.acknowledgements.[filename].version | sort: 'date' %}
-
-
-{% for collection in site.collections %}
-  {% capture label %}{{ collection | first }}{% endcapture %}
-  <h2>{{ label | capitalize }}</h2>
-  {% assign ordenados = site.collections.[label].docs | sort: 'title' %}
-  {% for doc in ordenados %}
-    <li>
-      <a href="{{ doc.url }}">{{ doc.title }}</a>
-    </li>
-  {% endfor %}
-{% endfor %}
-
-EXPERIMENTS
----
-OLD STUFF
 
 {% for version_hash in site.data.acknowledgements %}
 {% assign vers = version_hash[1] %}
