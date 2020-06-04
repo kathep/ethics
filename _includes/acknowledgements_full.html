@@ -1,4 +1,5 @@
-{% for vers in site.data.acknowledgements %}
+{% for version_hash in site.data.acknowledgements %}
+{% assign vers = version_hash[1]  %}
 <h3>
   {{ vers.version }}  {{ vers.title }}
 </h3>
@@ -19,4 +20,13 @@
   {% endfor %}
   </ul>
   {% endif %}
+{% endfor %}
+
+{% for item in site.data.acknowledgements %}
+<h3>{{item.title}}</h3>
+<ul>
+{% for entry in item.people %}
+<li>{{entry.name}}</li>
+{% endfor %}
+</ul>
 {% endfor %}
