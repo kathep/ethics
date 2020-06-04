@@ -1,7 +1,7 @@
 {% assign versions = site.data.versions | sort: "date" | reverse %}
 {% for versi in versions %}
 <h3>{{ versi.version }} {{ versi.title }}</h3>
-
+<h4>{{ versi.date | date: "%B %Y" }}</h4>
 
 {% endfor %}
 
