@@ -16,7 +16,11 @@
 {% if vers.people %}
 <h3>Summary</h3>
   <p>
-     {{ vers.people | size }} people contributed to this version of the method and/or poster.
+     Exchanges with the following {{ vers.people | size }} people promted Katherine Hepworth to develop this version of the method and/or poster.
+  </p>
+  {% else %}
+  <p>
+    This version of the method and/or poster was developed by Katherine Hepworth based on her own research, without contributions by others.
   </p>
 {% endif %}
 
