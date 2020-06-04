@@ -6,6 +6,7 @@
       {{ vers.title }}
     </a>
     ({{ vers.people | size }} contributors)
+    {% if vers.people %}
     <ul>
       {% for person in vers.people %}
       <li>
@@ -13,6 +14,7 @@
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
