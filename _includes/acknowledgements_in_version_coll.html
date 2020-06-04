@@ -1,0 +1,9 @@
+{% assign acknowledgements = site.data.acknowledgements %}
+{% for person in acknowledgements %}
+
+{% if person.people %}
+
+{{ person.people | where: "ref", "page.object-id"  }}
+
+{% endif %}
+{% endfor %}

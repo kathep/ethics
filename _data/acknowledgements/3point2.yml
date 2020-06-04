@@ -1,4 +1,5 @@
 version: 3.2
+ref: 3point2
 people:
 - name: Amanda Makulec
   company: Excella
@@ -33,7 +34,7 @@ people:
   company: Groupon
   relationship: working group member
   contribution: Discussion of ethical visualization for COVID-19 as part of Data Visualization Society COVID-19 Working Group.
-  
+
 - name: Sue Perks
   company: University of the Creative Arts
   link:
