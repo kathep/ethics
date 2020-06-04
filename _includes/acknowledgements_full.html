@@ -1,10 +1,10 @@
 <h2> versions as collections, ack as data</h2>
 
 {% assign each_versions = site.versions | sort: "date" | reverse %}
-{% for each in each_versions %}
-<h2>{{ each.version }} {{ each.title }}</h2>
-<h4>{{ each.date | date: "%B %Y" }}</h4>
-<p>{{ each.content }}</p>
+{% for each2 in each_versions %}
+<h2>{{ each2.version }} {{ each2.title }}</h2>
+<h4>{{ each2.date | date: "%B %Y" }}</h4>
+<p>{{ each2.content }}</p>
 {% endfor %}
 
 
