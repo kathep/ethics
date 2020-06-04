@@ -11,10 +11,11 @@
       <li>
         {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
       </li>
+      {% endfor %}
     </ul>
   </li>
-</ul>
 {% endfor %}
+</ul>
 
 
 {% assign sabbtalks = site.data.sabbtalks | sort: "date" | reverse %}
