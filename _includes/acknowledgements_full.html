@@ -1,13 +1,13 @@
 <ul>
 {% for version_hash in site.data.acknowledgements %}
-  {% assign version = version_hash[1] %}
+  {% assign vers = version_hash[1] %}
   <li>
-     <a href="version/{{version.version}}">
-      {{ version.title }}
+     <a href="version/{{vers.version}}">
+      {{ vers.title }}
     </a>
-    ({{ version.people | size }} contributors)
+    ({{ vers.people | size }} contributors)
     <ul>
-      {% for person in version.people %}
+      {% for person in vers.people %}
       <li>
         {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
       </li>
