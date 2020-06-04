@@ -28,7 +28,7 @@
       <li>
         {% if filter.people %}
         <ul>
-          {% for person in vers.people %}
+          {% for person in filter.people %}
           <li>
             {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
           </li>
