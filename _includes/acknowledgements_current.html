@@ -12,7 +12,7 @@
 <ul>
 {% for person in site.data.acknowledgements.3.2 %}
   <li>
-      {{ person.name }}
+      {{ person.name }}, <em>Contribution:</em> {{ person.contribution }}
   </li>
 {% endfor %}
 </ul>
@@ -20,6 +20,6 @@
 <p>test 3:</p>
 <ul>
 {% for item in site.data.acknowledgements.3.2.people %}
-<li>{{item.name}}</li>
+<li>{{item.name}}, <em>Contribution:</em> {{ item.contribution }}</li>
 {% endfor %}
 </ul>
