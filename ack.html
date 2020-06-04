@@ -1,0 +1,16 @@
+---
+layout: default
+title: Ack
+---
+<h1>Acknowledgements ack.html</h1>
+
+<ul>
+  {% for version in site.versions %}
+    <li>
+      <h2>{{ version.object-id }}</h2>
+      <h3>{{ version.title }}</h3>
+      <h3>{{ version.date }}</h3>
+      <p>{{ version.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
