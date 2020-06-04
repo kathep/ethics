@@ -1,20 +1,16 @@
-{% for version_hash in site.data.acknowledgements | sort %}
-{% assign vers = version_hash[1]  %}
+{% for version_hash in site.data.acknowledgements %}
+{% assign vers = version_hash[1] | sort: 'date' %}
 <h2>
   {{ vers.version }}  {{ vers.title }}
 </h2>
 {% if vers.people %}
-<h3>
-    Summary
-</h3>
+<h3>Summary</h3>
   <p>
      {{ vers.people | size }} people contributed to this version of the method and/or poster.
   </p>
 {% endif %}
   {% if vers.people %}
-<h3>
-    People
-</h3>
+<h3>People</h3>
   <ul>
   {% for person in vers.people %}
     {% if person.contribution %}
