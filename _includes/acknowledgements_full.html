@@ -1,24 +1,6 @@
-{% assign acknowledgements = site.data.acknowledgements | sort: "version" | reverse %}
-  {% for version in acknowledgements %}
-
-<h3>{{ version.version }} {{ version.title }}</h3>
-
-<h4>{{ version.date-end | date: '%B %Y'  }}</h4>
-
-    {% for people in version %}
-  <ul>
-    <li>
-      test {% for person in version.people %}
-      {{ person.name }}
-      {% endfor %}
-    </li>
-  </ul>
-    {% endfor %}
-  {% endfor %}
-
-<ul>
 {% for version_hash in site.data.acknowledgements %}
   {% assign version = acknowledgements_hash[1] | sort: "version" | reverse  %}
+<ul>
   <li>
      <a href="version/{{acknowledgement.version}}">
       {{ version.title }}
@@ -31,8 +13,8 @@
       </li>
     </ul>
   </li>
-{% endfor %}
 </ul>
+{% endfor %}
 
 
 {% assign sabbtalks = site.data.sabbtalks | sort: "date" | reverse %}
