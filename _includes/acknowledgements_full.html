@@ -3,7 +3,7 @@
   {% assign vers = version_hash[1] %}
   <li>
      <a href="version/{{vers.version}}">
-      {{ vers.title }}
+    {{ vers.version }}  {{ vers.title }}
     </a>
     ({{ vers.people | size }} contributors)
     {% if vers.people %}
