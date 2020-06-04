@@ -1,4 +1,3 @@
-<ul>
 {% for version_hash in site.data.acknowledgements %}
   {% assign vers = version_hash[1]  %}
   <h3>
@@ -6,7 +5,7 @@
   </h3>
   {% if vers.people %}
     <p>
-       ({{ vers.people | size }} people contributed to this version of the method and/or poster.
+       {{ vers.people | size }} people contributed to this version of the method and/or poster.
     </p>
   {% endif %}
     {% if vers.people %}
@@ -19,6 +18,4 @@
         {% endfor %}
         </ul>
     {% endif %}
-  </li>
 {% endfor %}
-</ul>

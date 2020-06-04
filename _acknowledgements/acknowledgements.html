@@ -1,9 +1,9 @@
 ---
 title: Acknowledgements
 ---
-{% for acknowledgement in site.data.acknowledgements.versions %}
+{% for acknowledgement in site.data.acknowledgements %}
     <h2>Version {{ acknowledgement.version }} {{ acknowledgement.title }}</h2>
-    <h4>Date: {{ acknowledgement.date-start | date_to_long_string }} - {{ acknowledgement.date-end | date_to_long_string }}</h4>
+    <h4>Date: {{ acknowledgement.date | date_to_long_string }} - {{ acknowledgement.date-end | date_to_long_string }}</h4>
     {% for person in acknowledgement.people %}
       <p>Mr {{person.name}}</p>
     {% endfor %}

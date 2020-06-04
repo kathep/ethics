@@ -204,7 +204,7 @@ The following institutions have supported development of this method.
 - Mick Hitchcock Ph.D. Project for Visualizing Science
 
 ### Acknowledgements
-I am grateful for the discussion, exchanges and feedback from the following people, that have informed this version:
+I am grateful for the improvements in this version made possible by discussion and exchanges with, and feedback from, the following people:
 
   {% include acknowledgements_current.html %}
 
