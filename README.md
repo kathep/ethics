@@ -204,23 +204,14 @@ The following institutions have supported development of this method.
 - Mick Hitchcock Ph.D. Project for Visualizing Science
 
 ### Acknowledgements
-Acknowledgement of previous versions can be found in the documentation for each one, listed below. In addition to previous contributions, I am grateful for the discussion and exchanges with the following people, who have informed this version:
-
-#### test acknowledgement
-
-The people who influenced this version are detailed below, along with details of their contribution.
-
-#### current version list
+I am grateful for the discussion, exchanges and feedback from the following people, that have informed this version:
 
   {% include acknowledgements_current.html %}
 
----
+#### Full list of contributors
 
-#### full version list
+Acknowledgement of previous versions can be found in the the full documentation list [here](acknowledgements.md).
 
-  {% include acknowledgements_full.html %}
-
----
 
 &nbsp;
 
