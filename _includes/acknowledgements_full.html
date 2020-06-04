@@ -1,23 +1,23 @@
 {% for version_hash in site.data.acknowledgements %}
-  {% assign vers = version_hash[1]  %}
-  <h3>
-       {{ vers.version }}  {{ vers.title }}
-  </h3>
+{% assign vers = version_hash[1]  %}
+<h3>
+  {{ vers.version }}  {{ vers.title }}
+</h3>
+{% if vers.people %}
+  <p>
+     {{ vers.people | size }} people contributed to this version of the method and/or poster.
+  </p>
+{% endif %}
   {% if vers.people %}
-    <p>
-       {{ vers.people | size }} people contributed to this version of the method and/or poster.
-    </p>
-  {% endif %}
-    {% if vers.people %}
-        <ul>
-        {% for person in vers.people %}
-          {% if person.contribution %}
-            <li>
-              <strong>{{ person.name }}</strong>, <br>
-              <em>Contribution:</em> {{ person.contribution }}
-            </li>
-          {% endif %}
-        {% endfor %}
-        </ul>
+  <ul>
+  {% for person in vers.people %}
+    {% if person.contribution %}
+    <li>
+      <strong>{{ person.name }}</strong>, <br>
+      <em>Contribution:</em> {{ person.contribution }}
+    </li>
     {% endif %}
+  {% endfor %}
+  </ul>
+  {% endif %}
 {% endfor %}
