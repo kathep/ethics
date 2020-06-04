@@ -1,7 +1,7 @@
 {% assign versions = site.data.versions | sort: "date" | reverse %}
-{% for versi in versions %}
-<h3>{{ versi.version }} {{ versi.title }}</h3>
-<h4>{{ versi.date | date: "%B %Y" }}</h4>
+{% for each in versions %}
+<h2>{{ each.version }} {{ each.title }}</h2>
+<h4>{{ each.date | date: "%B %Y" }}</h4>
 
 {% endfor %}
 
@@ -10,7 +10,7 @@
 {% assign vers = version_hash[1] %}
 
 <h2>
-  {{ vers.version }} {{ vers.title }}
+  {{ vers.version }}
 </h2>
 
 {% if vers.people %}
