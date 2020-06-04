@@ -21,15 +21,10 @@
 
 
 <ul>
-{% assign speaking = site.data.speaking | sort: "date" | reverse %}
-{% for talk in speaking %}
-
 {% assign contribs = site.data.acknowledgements.3.2  %}
   {% for person in contribs %}
       <li>
             {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
       </li>
-    {% endif %}
   {% endfor %}
-{% endfor %}
 </ul>
