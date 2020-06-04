@@ -20,9 +20,23 @@
 </ul>
 
 
-{% assign sabbtalks = site.data.sabbtalks | sort: "date" | reverse %}
-{% for talk in sabbtalks %}
-<ul class="list-archive">
-<li>{{ talk.title }} {{ talk.date | date: '%B %Y'  }} / {{ talk.city }}, {{ talk.country}}</li>
+<ul>
+{% for version_hash in site.data.acknowledgements %}
+{% assign vers = version_hash[1]  %}
+  {% for filter in vers %}
+    {% if filter.version == "3.2" %}
+      <li>
+        {% if filter.people %}
+        <ul>
+          {% for person in vers.people %}
+          <li>
+            {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
+          </li>
+          {% endfor %}
+        {% endif %}
+        </ul>
+      </li>
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 </ul>
