@@ -212,6 +212,12 @@ The people who influenced this version are detailed below, along with details of
 
   {% include acknowledgements_current.html %}
 
+---
+
+  {% include acknowledgements_full.html %}
+
+---
+
 &nbsp;
 
 -----------------------------
