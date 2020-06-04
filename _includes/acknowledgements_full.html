@@ -1,6 +1,6 @@
 <ul>
 {% for version_hash in site.data.acknowledgements %}
-  {% assign vers = ( version_hash[1] | sort ) %}
+  {% assign vers = version_hash[1]  %}
   <li>
      <a href="version/{{ vers.version }}">
     {{ vers.version }}  {{ vers.title }}
