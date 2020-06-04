@@ -1,7 +1,5 @@
-version: 1.0
-title: Ethical Visualization Workflow
-date: 2018-12-01
-people:
+1point0:
+  people:
   - name: Christopher Church
     company: University of Nevada, Reno
     link: http://www.christophermchurch.com/

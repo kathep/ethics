@@ -1,20 +1,29 @@
-32:
-  people:
-  - name: Amanda Makulec
-    company: Excella
-    link: https://www.linkedin.com/in/abmakulec/
-    location: New York
-    relationship: co-author
-    contribution: Co-author ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
+amanda:
+  name: Amanda Makulec
+  company: Excella
+  link: https://www.linkedin.com/in/abmakulec/
+  location: New York
+  relationship: co-author
+  contribution: Co-author ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
 
-  - name: Jason Forrest
-    company: McKinsey & Company
-    link: https://www.linkedin.com/in/jasonforrestftw/
-    location: New York
-    relationship: editor
-    contribution: Discussion of and edited ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
+chris:
+  name: Christopher Church
+  company: University of Nevada, Reno
+  link: http://www.christophermchurch.com/
+  location: Reno
+  relationship: Co-author
+  contribution: Co-conceived ethical visualization workflow while writing Racism in the Machine paper together.
 
-  - name: Georgina Rogers
+jason:
+  name: Jason Forrest
+  company: McKinsey & Company
+  link: https://www.linkedin.com/in/jasonforrestftw/
+  location: New York
+  relationship: editor
+  contribution: Discussion of and edited ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
+
+georgina:
+    name: Georgina Rogers
     link:
     relationship: personal
     contribution: Discussion of ethical visualization; feedback on 3.1 from Make Me Care paper and poster.
