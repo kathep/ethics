@@ -1,7 +1,7 @@
 <p>test1:</p>
 <ul>
 {% assign people = site.data.acknowledgements  %}
-  {% for person in peeps.people %}
+  {% for person in peeps.3point2.people %}
       <li>
             {{ person.name }}, <em>Contribution:</em> {{ person.contribution }}
       </li>
@@ -10,7 +10,7 @@
 
 <p>test2:</p>
 <ul>
-{% for person in site.data.acknowledgements.3.2 %}
+{% for person in site.data.acknowledgements.3point2 %}
   <li>
       {{ person.name }}, <em>Contribution:</em> {{ person.contribution }}
   </li>
@@ -19,7 +19,7 @@
 
 <p>test 3:</p>
 <ul>
-{% for item in site.data.acknowledgements.3.2.people %}
+{% for item in site.data.acknowledgements.3point2.people %}
 <li>{{item.name}}, <em>Contribution:</em> {{ item.contribution }}</li>
 {% endfor %}
 </ul>
