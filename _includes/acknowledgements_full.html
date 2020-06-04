@@ -20,14 +20,14 @@
     <li>
       <strong>{{ person.name }}</strong>
         {% if person.company %}
-           at {{ person.company -}}
-        {% else %}
+           at {{ person.company }}
+        {% endif %}
       <br>
       <em>Contribution:</em> {{ person.contribution }}
     </li>
     {% endif %}
   {% endfor %}
   </ul>
-  {% endif %}
+{% endif %}
 
 {% endfor %}
