@@ -2,7 +2,7 @@
 {% assign vers = version_hash[1] %}
 
 <h2>
-  {{ vers.version }} {{ vers.title }}
+  {{ vers.version  | sort: 'vers.date' }} {{ vers.title }}
 </h2>
 
 {% if vers.people %}
