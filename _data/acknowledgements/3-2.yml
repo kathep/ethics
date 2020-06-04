@@ -1,8 +1,9 @@
-version: 3.2
-title: Ethical & Effective Visualization
-date-start: 2020-01-04
-date-end: 2020-11-05
-people:
+3_2:
+  version: 3.2
+  title: Ethical & Effective Visualization
+  date-start: 2020-01-04
+  date-end: 2020-11-05
+  people:
   - name: Amanda Makulec
     company: Excella
     link: https://www.linkedin.com/in/abmakulec/
