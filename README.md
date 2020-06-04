@@ -210,7 +210,7 @@ Acknowledgement of previous versions can be found in the documentation for each 
 
 The people who influenced this version are detailed below, along with details of their contribution.
 
-  {% include acknowledgements_full.html %}
+  {% include acknowledgements_current.html %}
 
 &nbsp;
 
