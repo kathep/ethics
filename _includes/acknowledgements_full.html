@@ -1,7 +1,7 @@
 {% for version in site.data.acknowledgements %}
 <h3>{{version.version}} {{version.title}}</h3>
 <ul>
-{% for person in version.people %}
+test {% for person in version.people %}
 <li>{{person.name}}</li>
 {% endfor %}
 </ul>
@@ -9,12 +9,20 @@
 
 <ul>
 {% for acknowledgements_hash in site.data.acknowledgements %}
-{% assign acknowledgement = acknowledgements_hash[1] %}
+  {% assign acknowledgement = acknowledgements_hash[1] %}
   <li>
-    <a href="acknowledgement.name">
-      {{ acknowledgement.name }}
+    Mr <a href="version/{{acknowledgement.version}}">
+      {{ acknowledgement.title }}
     </a>
     ({{ acknowledgement.people | size }} contributors), <em>Contribution:</em> {{acknowledgement.contribution}}
   </li>
+{% endfor %}
+</ul>
+
+
+{% assign sabbtalks = site.data.sabbtalks | sort: "date" | reverse %}
+{% for talk in sabbtalks %}
+<ul class="list-archive">
+<li>{{ talk.title }} {{ talk.date | date: '%B %Y'  }} / {{ talk.city }}, {{ talk.country}}</li>
 {% endfor %}
 </ul>
