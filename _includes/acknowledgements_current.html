@@ -1,8 +1,8 @@
 <ul>
 {% assign contribs = site.data.acknowledgements.3.2  %}
-  {% for person in contribs.people %}
+  {% for person in contribs %}
       <li>
-            {{ person.name }}, <em>Contribution:</em> {{person.contribution}}
+            {{ person.people.name }}, <em>Contribution:</em> {{person.people.contribution}}
       </li>
   {% endfor %}
 </ul>
