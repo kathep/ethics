@@ -1,25 +1,17 @@
-<p>test1:</p>
 <ul>
-{% assign people = site.data.acknowledgements  %}
-  {% for person in peeps.3point2.people %}
-      <li>
-            {{ person.name }}, <em>Contribution:</em> {{ person.contribution }}
-      </li>
+  {% for person in site.data.acknowledgements.3point2.people %}
+
+    <li>
+    {% if person.link %}
+      <a href="{{ person.link }}">
+      {{ person.name }}
+      </a>
+    {% else %}
+      {{ person.name }}
+    {% endif %}
+      , <em>Contribution:</em> {{ person.contribution }}
+
+    </li>
+
   {% endfor %}
-</ul>
-
-<p>test2:</p>
-<ul>
-{% for person in site.data.acknowledgements.3point2 %}
-  <li>
-      {{ person.name }}, <em>Contribution:</em> {{ person.contribution }}
-  </li>
-{% endfor %}
-</ul>
-
-<p>test 3:</p>
-<ul>
-{% for item in site.data.acknowledgements.3point2.people %}
-<li>{{item.name}}, <em>Contribution:</em> {{ item.contribution }}</li>
-{% endfor %}
 </ul>

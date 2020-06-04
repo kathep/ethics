@@ -18,7 +18,7 @@ people:
     contribution: Discussion of and edited ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
 
   - name: Georgie Rogers
-    link: ...
+    link:
     relationship: personal
     contribution: Discussion of ethical visualization; feedback on 3.1 from Make Me Care paper and poster.
 
@@ -39,7 +39,7 @@ people:
 
   - name: Sue Perks
     company: University of the Creative Arts
-    link: ...
+    link: 
     relationship: research collaborator
     contribution: Feedback on 3.1 in Make Me Care paper; suggestion of checklist format.
 
