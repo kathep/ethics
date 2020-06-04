@@ -1,10 +1,10 @@
 {% for version_hash in site.data.acknowledgements %}
 {% assign all_vers = version_hash[1] %}
-{% assign vers = all_vers | sort: "date" %}
+{% assign vers = all_vers %}
 
 <p>{{ vers.date }}</p>
 <h2>
-  {{ vers.version}} {{ vers.title }}
+  {{ vers.version | sort: "date" }} {{ vers.title }}
 </h2>
 
 {% if vers.people %}
