@@ -1,6 +1,6 @@
 {% for version_hash in site.data.acknowledgements %}
 {% assign vers = version_hash[1] %}
-{{ vers  | sort: 'vers.date'  }}
+{{ vers  | sort: 'date'  }}
 
 <h2>
   {{ vers.version}} {{ vers.title }}
