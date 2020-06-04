@@ -2,7 +2,7 @@
 {% for version_hash in site.data.acknowledgements %}
   {% assign version = version_hash[1] %}
   <li>
-     <a href="version/{{acknowledgement.version}}">
+     <a href="version/{{version.version}}">
       {{ version.title }}
     </a>
     ({{ version.people | size }} contributors)
