@@ -2,29 +2,29 @@
 layout: default
 ---
 {% capture label %}{{ page.object-id  }}{% endcapture %}
-{% capture poster_file %}{{ page.pdf }}{% endcapture %}
-{% capture poster_image %}{{ page.image }}{% endcapture %}
+<!--{% capture poster_file %}{{ page.pdf }}{% endcapture %}
+{% capture poster_image %}{{ page.image }}{% endcapture %}-->
 
 <h2>{{ page.version }} {{ page.title }}</h2>
 
 <hr>
 
-{% for poster_f in poster_file %}
+<!--{% for poster_f in page.pdf %}-->
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
-  {% if poster_f %}
+  {% if page.pdf %}
     <em>Poster link:</em> Download high resolution poster <a href="{{ page.image }}" alt="{{ page.title }}">(here)</a><br>
   {% else %}
     <em>This version does not have a poster.</em></p>
   {% endif %}
-{% endfor %}
+<!--{% endfor %}-->
 
 <hr>
 
-{% for poster_i in poster_image %}
-  {% if poster_i %}
+<!--{% for poster_i in page.image %}-->
+  {% if page.image %}
     <img src="{{ page.image }}" alt="{{ page.title }}, version {{ page.version }}">
   {% endif %}
-{% endfor %}
+<!--{% endfor %}-->
 
 {{ content | markdownify }}
 
@@ -37,8 +37,7 @@ layout: default
     {% else %}
       {{ person.name }}
     {% endif %}
-    {% if person.company %}
-      at {{ person.company }}
+    {% if person.company %} at {{ person.company }}
     {% endif %}<br>
     <em>Contribution:</em> {{ person.contribution }}</li>
   </ul>
