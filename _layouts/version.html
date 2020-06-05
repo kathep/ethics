@@ -13,17 +13,16 @@ layout: default
 <hr>
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
   {% if poster.pdf %}
-  <em>Poster link:</em> Download high resolution poster <a href="{{ poster.image }}" alt="{{ page.title }}">(here)</a><br>
+    <em>Poster link:</em> Download high resolution poster <a href="{{ poster.image }}" alt="{{ page.title }}">(here)</a><br>
   {% else %}
-  <em>This version does not have a poster.</em><br>
+    <em>This version does not have a poster.</em></p>
   {% endif %}
-  Download link</p>
 
 <hr>
 
 {% if poster.image %}
   <img src="{{ poster.image }}" alt="{{ page.title }}, version {{ page.version }}">
-{% endif %}-->
+{% endif %}
 
 {% endfor %}
 
