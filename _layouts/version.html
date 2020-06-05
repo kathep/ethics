@@ -5,10 +5,11 @@ layout: default
 
 <h2>{{ page.version }} {{ page.title }}</h2>
 
-<hr>
+{% for poster in page %}
 
+<hr>
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
-  {% if page.pdf %}
+  {% if poster.pdf %}
   <em>Poster link:</em> Download high resolution poster (here)[{{ page.pdf }}]<br>
   {% else %}
   <em>This version does not have a poster.</em><br>
@@ -17,9 +18,11 @@ layout: default
 
 <hr>
 
-{% if page.image %}
+{% if poster.image %}
   ![ethical visualization workflow](page.image)
 {% endif %}
+
+{% endfor %}
 
 {{ content | markdownify }}
 
