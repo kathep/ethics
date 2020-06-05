@@ -3,31 +3,28 @@ layout: default
 ---
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
-{% for vers in site.versions %}
-
 <div class="version">
-  <h2>{{ vers.version }} {{ vers.title }}</h2>
-    {{ vers.content | markdownify }}
+  <h2>{{ page.version }} {{ page.title }}</h2>
+    {{ content | markdownify }}
 
-{% for person in site.data.acknowledgements.[label].people %}
-<ul>
-<li>
+  {% for person in site.data.acknowledgements.[label].people %}
+  <ul>
+  <li>
 
-{% if person.link %}
-  <a href="{{ person.link }}">
-    {{ person.name }}
-  </a>
-{% else %}
-  {{ person.name }}
-{% endif %}
+    {% if person.link %}
+      <a href="{{ person.link }}">
+        {{ person.name }}
+      </a>
+    {% else %}
+      {{ person.name }}
+    {% endif %}
 
-{% if person.company %}
-  at {{ person.company }}
-{% endif %}
+    {% if person.company %}
+      at {{ person.company }}
+    {% endif %}
 
-  </li>
-</ul>
-{% endfor %}
+    </li>
+  </ul>
+  {% endfor %}
 
   </div>
-{% endfor %}
