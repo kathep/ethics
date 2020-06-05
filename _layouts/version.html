@@ -4,14 +4,26 @@ layout: default
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
 <div class="version">
+
   <h2>{{ page.version }} {{ page.title }}</h2>
+
+---
+
+  <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
+  {% if page.pdf %}
+  <em>Poster link:</em> Download{{ page.date |  date: "%B %Y" }}</p>
+  {% else %}
+  <em>This version does not have a poster.</em><br>
+  
+  {% endif %}
+
+---
+
     {{ content | markdownify }}
-    <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
 
   {% for person in site.data.acknowledgements.[label].people %}
   <ul>
   <li>
-    {% if person.link %}
       <a href="{{ person.link }}">
         {{ person.name }}
       </a>
