@@ -6,6 +6,6 @@ title: Ack
 
   {% for vers in site.versions | sort: reverse %}
       <h2>{{ vers.version }} {{ vers.title }}</h2>
-      <p><em>Version:</em> {{ vers.date |  date: "%B %Y" }}</p>
+      <p><em>Date:</em> {{ vers.date |  date: "%B %Y" }}</p>
       {{ vers.content | markdownify }}
   {% endfor %}
