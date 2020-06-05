@@ -9,5 +9,3 @@ pdf: ../pdfs/ethical_visualization_poster_2_1.pdf
 ---
 
 Some summary of this version here.
-
-{% include %}
