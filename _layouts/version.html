@@ -12,7 +12,7 @@ layout: default
 {% for poster_f in poster_file %}
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
   {% if poster_f %}
-    <em>Poster link:</em> Download high resolution poster <a href="{{ poster.image }}" alt="{{ page.title }}">(here)</a><br>
+    <em>Poster link:</em> Download high resolution poster <a href="{{ page.image }}" alt="{{ page.title }}">(here)</a><br>
   {% else %}
     <em>This version does not have a poster.</em></p>
   {% endif %}
@@ -22,7 +22,7 @@ layout: default
 
 {% for poster_i in poster_image %}
   {% if poster_i %}
-    <img src="{{ poster.image }}" alt="{{ page.title }}, version {{ page.version }}">
+    <img src="{{ page.image }}" alt="{{ page.title }}, version {{ page.version }}">
   {% endif %}
 {% endfor %}
 
