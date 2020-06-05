@@ -11,7 +11,7 @@ layout: default
 <hr>
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
   {% if poster.pdf %}
-  <em>Poster link:</em> Download high resolution poster (here)[{{ page.pdf }}]<br>
+  <em>Poster link:</em> Download high resolution poster (here)[{{ poster.pdf }}]<br>
   {% else %}
   <em>This version does not have a poster.</em><br>
   {% endif %}
@@ -20,7 +20,7 @@ layout: default
 <hr>
 
 {% if poster.image %}
-  ![ethical visualization workflow](page.image)
+  ![ethical visualization workflow](poster.image)
 {% endif %}
 
 {% endfor %}
