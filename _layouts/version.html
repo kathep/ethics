@@ -3,6 +3,12 @@ layout: default
 ---
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
+{% for vers in site.versions %}
+
+<div class="version">
+  <h2>{{ vers.version }} {{ vers.title }}</h2>
+    {{ vers.content | markdownify }}
+
 {% for person in site.data.acknowledgements.[label].people %}
 <ul>
 <li>
@@ -21,4 +27,7 @@ layout: default
 
   </li>
 </ul>
+{% endfor %}
+
+  </div>
 {% endfor %}
