@@ -12,10 +12,11 @@ layout: default
 <!--{% for poster_f in page.pdf %}-->
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
     {% if page.pdf %}
-      <em>Poster link:</em> Download high resolution poster <a href="{{ page.image }}" alt="{{ page.title }}">(here)</a></p>
+      <em>Poster link:</em> Download high resolution poster <a href="{{ page.image }}" alt="{{ page.title }}">(here)</a>
     {% else %}
-      <em>This version does not have a poster.</em></p>
+      <em>This version does not have a poster.</em>
     {% endif %}
+  </p>
 <!--{% endfor %}-->
 
 <hr>
