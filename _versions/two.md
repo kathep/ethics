@@ -9,5 +9,3 @@ pdf:
 ---
 
 Some summary of this version here.
-
-{% include %}
