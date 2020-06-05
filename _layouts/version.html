@@ -6,11 +6,11 @@ layout: default
 <div class="version">
   <h2>{{ page.version }} {{ page.title }}</h2>
     {{ content | markdownify }}
+    <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
 
   {% for person in site.data.acknowledgements.[label].people %}
   <ul>
   <li>
-
     {% if person.link %}
       <a href="{{ person.link }}">
         {{ person.name }}
@@ -18,13 +18,12 @@ layout: default
     {% else %}
       {{ person.name }}
     {% endif %}
-
     {% if person.company %}
       at {{ person.company }}
     {% endif %}
-
+    <br>
+    <em>Contribution:</em> {{ person.contribution }}
     </li>
   </ul>
   {% endfor %}
-
-  </div>
+</div>
