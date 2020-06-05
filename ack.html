@@ -4,13 +4,8 @@ title: Ack
 ---
 <h1>Acknowledgements ack.html</h1>
 
-<ul>
-  {% for version in site.versions %}
-    <li>
-      <h2>{{ version.object-id }}</h2>
-      <h3>{{ version.title }}</h3>
-      <h3>{{ version.date }}</h3>
-      <p>{{ version.content | markdownify }}</p>
-    </li>
+  {% for vers in site.versions | sort: reverse %}
+      <h2>{{ vers.version }} {{ version.title }}</h2>
+      <p><em>Version:</em> {{ version.date |  date: "%B %Y" }}</p>
+      {{ version.content | markdownify }}
   {% endfor %}
-</ul>
