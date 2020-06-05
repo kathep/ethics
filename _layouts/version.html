@@ -7,16 +7,15 @@ layout: default
 
 <h2>{{ page.version }} {{ page.title }}</h2>
 
-<hr>
-
-<!--{% for poster_f in page.pdf %}-->
-<p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
-    {% if page.pdf %}
-      <em>Poster link:</em> Download high resolution poster <a href="{{ page.pdf }}" alt="{{ page.title }}">(here)</a>
+<!--<hr>
+{% for poster_f in page.pdf %}-->
+<p><em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
+  {% if page.pdf %}
+    <p><em>Poster link:</em> Download high resolution poster <a href="{{ page.pdf }}" alt="{{ page.title }}">(here)</a>
 <!--    {% else %}
       <em>This version does not have a poster.</em>-->
-    {% endif %}
-</p>
+    </p>
+  {% endif %}
 <!--{% endfor %}-->
 
 <hr>
