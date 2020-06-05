@@ -5,8 +5,8 @@ layout: default
 
 <h2>{{ page.version }} {{ page.title }}</h2>
 
-{% assign poster = page %}
-{% for poster in page %}
+{% assign poster_deets = page %}
+{% for poster in poster_deets %}
 
 <hr>
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
