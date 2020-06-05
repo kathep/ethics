@@ -5,7 +5,7 @@ layout: default
 
 <h2>{{ page.version }} {{ page.title }}</h2>
 
----
+<hr>
 
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
   {% if page.pdf %}
@@ -15,7 +15,8 @@ layout: default
   {% endif %}
   Download link</p>
 
----
+<hr>
+
 {% if page.image %}
   ![ethical visualization workflow](page.image)
 {% endif %}
