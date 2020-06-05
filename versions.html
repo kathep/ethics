@@ -1,0 +1,9 @@
+---
+layout: page
+title: Versions
+---
+{% for version in site.versions %}
+  <div class="version">
+    <h2><a href="{{ version.url }}">{{ version.title }}</a></h2>
+  </div>
+{% endfor %}

@@ -1,5 +1,6 @@
 ---
 object-id: 2point1
+layout: version
 version: 2.1
 title: Ethical Visualization
 date: 2019-10-15

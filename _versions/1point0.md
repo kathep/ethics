@@ -1,5 +1,6 @@
 ---
 object-id: 1point0
+layout: version
 version: 1.0
 title: Ethical Visualization Workflow
 date: 2018-12-01
