@@ -3,25 +3,26 @@ layout: default
 ---
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
-<div class="version">
-
-  <h2>{{ page.version }} {{ page.title }}</h2>
+<h2>{{ page.version }} {{ page.title }}</h2>
 
 ---
 
   <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
   {% if page.pdf %}
-  <em>Poster link:</em> Download{{ page.date |  date: "%B %Y" }}</p>
+  <em>Poster link:</em> Download high resolution poster (here)[{{ page.pdf }}]<br>
   {% else %}
   <em>This version does not have a poster.</em><br>
-  
   {% endif %}
+  Download link</p>
 
 ---
+{% if page.image %}
+  ![ethical visualization workflow](page.image)
+{% elseif %}
 
-    {{ content | markdownify }}
+{{ content | markdownify }}
 
-  {% for person in site.data.acknowledgements.[label].people %}
+{% for person in site.data.acknowledgements.[label].people %}
   <ul>
   <li>
       <a href="{{ person.link }}">
@@ -37,5 +38,4 @@ layout: default
     <em>Contribution:</em> {{ person.contribution }}
     </li>
   </ul>
-  {% endfor %}
-</div>
+{% endfor %}
