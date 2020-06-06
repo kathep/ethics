@@ -1,7 +1,8 @@
 ---
 layout: default
+title: Versions
 ---
-{% for vers in site.versions %}
-    <h2><a href="{{ vers.url }}">{{ vers.title }}</a></h2>
-    {{ vers.content }}
+{% for version in site.versions %}
+    <h2><a href="{{ version.url }}">{{ version.title }}</a></h2>
+    {{ version.content }}
 {% endfor %}
