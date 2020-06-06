@@ -2,9 +2,8 @@
 layout: default
 title: Versions
 ---
-
 {% for version in site.versions %}
-<div class="versions">
+<div class="version">
     <h2><a href="{{ version.url }}">{{ version.title }}</a></h2>
     {{ version.content }}
 </div>
