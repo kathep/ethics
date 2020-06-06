@@ -13,23 +13,23 @@ layout: default
   {{ page.date |  date: "%B %Y" }}
 </p>
 
-<!--{% if page.pdf %}
+{% if page.pdf %}
 <p><em>Poster link:</em> Download high resolution poster <a href="{{ page.pdf }}" alt="{{ page.title }}">(here)</a>
     {% else %}
       <em>This version does not have a poster.</em>
 </p>
 {% endif %}
-<!--{% endfor %}--
+{% endfor %}
 
 <hr>
 
-<!--{% for poster_i in page.image %}
+{% for poster_i in page.image %}
   {% if page.image %}
     <img src="{{ page.image }}" alt="{{ page.title }}">
   {% endif %}
-<!--{% endfor %}-->
+{% endfor %}
 
-<!--{{ content | markdownify }}
+{{ content | markdownify }}
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
