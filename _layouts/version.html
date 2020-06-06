@@ -7,7 +7,7 @@ layout: default
 <h2>{{ page.version }} {{ page.title }}</h2>
 
 <!--<hr>
-{% for poster_f in page.pdf %}-->
+{% for poster_f in page.pdf %}
 <p><em>Date:</em>
   {{ page.date |  date: "%B %Y" }}
 </p>
@@ -18,7 +18,7 @@ layout: default
       <em>This version does not have a poster.</em>
 </p>
 {% endif %}
-<!--{% endfor %}
+<!--{% endfor %}--
 
 <hr>
 
@@ -28,7 +28,7 @@ layout: default
   {% endif %}
 <!--{% endfor %}-->
 
-{{ content | markdownify }}
+<!--{{ content | markdownify }}
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
@@ -45,4 +45,4 @@ layout: default
     {% endif %}<br>
     <em>Contribution:</em> {{ person.contribution }}</li>
   </ul>
-{% endfor %}
+{% endfor %}-->
