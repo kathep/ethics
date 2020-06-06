@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% capture label %}{{ page.object-id  }}{% endcapture %}
 <!--{% capture poster_file %}{{ page.pdf }}{% endcapture %}
 {% capture poster_image %}{{ page.image }}{% endcapture %}-->
 
@@ -30,6 +29,8 @@ layout: default
 <!--{% endfor %}-->
 
 {{ content | markdownify }}
+
+{% capture label %}{{ page.object-id  }}{% endcapture %}
 
 {% for person in site.data.acknowledgements.[label].people %}
   <ul>
