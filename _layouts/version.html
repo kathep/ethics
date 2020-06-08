@@ -8,12 +8,14 @@ layout: default
   <h3>Details</h3>
   <p><em>Version:</em> {{ page.version }}<br>
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
-    <em>About:</em> {{ page.summary }}
+    <em>About:</em> {{ page.summary }} {{ content | markdownify }}
   </p>
+
+<hr>
 
 <img src="{{ page.image }}" alt="{{ page.title }}">
 
-{{ content | markdownify }}
+
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
