@@ -16,15 +16,12 @@ layout: default
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
 {% if site.data.acknowledgements.[label].people %}
-
   <h3> Contributors </h3>
-
 {% endif %}
 
 {% for person in site.data.acknowledgements.[label].people %}
 
 {% if person.link %}
-
     <h4><a href="person.link">  {{ person.name }} </a></h4>
   {% else %}
     <h4> {{ person.name }} </h4>
@@ -32,10 +29,11 @@ layout: default
     {% if person.organization %}
     <p><em>Organization:</em> {{ person.organization }} </p>
     {% endif %}
+
     {% if person.contribution %}
       <p><em>Contribution:</em> {{person.contribution}} </p>
     {% endif %}
-  {% endif %}
+
 {% endif %}
 
 {% endfor %}
