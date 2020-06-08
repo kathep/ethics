@@ -17,7 +17,9 @@ layout: default
   <img src="{{ page.image }}" alt="{{ page.title }} {{ page.version }}">
 {% endif %}
 
+{% if page.pdf %}
   <p>Download the poster <a href="{{ page.pdf }}">here</a>.</p>
+{% endif %}
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
@@ -41,7 +43,7 @@ layout: default
     <br>
 
 {% if person.contribution %}
-    <em>Contribution:</em> {{person.contribution}}
+    <em>Specific contribution:</em> {{person.contribution}}
 {% endif %}
   </li>
 
