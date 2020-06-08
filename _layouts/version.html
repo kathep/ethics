@@ -23,10 +23,10 @@ layout: default
 
 {% for person in site.data.acknowledgements.[label].people %}
 
-{% if person.name %}
-      <h4>  {{ person.name }} </h4>
+{% if person.link %}
+      <h4><a href="person.url">  {{ person.name }} </a></h4>
     {% if person.company %}
-    <p><em:>Company:</em>  {{ person.company }} </p>
+    <p><em>Organization:</em> {{ person.company }} </p>
       {% if person.contribution %}
       <p><em>Contribution:</em> {{person.contribution}} </p>
       {% endif %}
