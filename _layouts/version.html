@@ -11,6 +11,8 @@ layout: default
     <em>About:</em> {{ page.summary }}
   </p>
 
+<img src="{{ page.image }}" alt="{{ page.title }}">
+
 {{ content | markdownify }}
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
