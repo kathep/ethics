@@ -13,13 +13,11 @@ layout: default
 
 <hr>
 
-{% for poster in page %}
 
-{% if poster.image %}
-  <img src="{{ poster.image }}" alt="{{ poster.title }}{{ poster.version }}">
+{% if page.image %}
+  <img src="{{ page.image }}" alt="{{ page.title }}{{ page.version }}">
 {% endif %}
 
-{% endfor %}
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
