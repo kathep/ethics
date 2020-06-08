@@ -3,7 +3,7 @@ ref: 1point0
 people:
 - name: Christopher Church
   organization: University of Nevada, Reno
-  url: http://www.christophermchurch.com/
+  link: http://www.christophermchurch.com/
   location: Reno
   relationship: Co-author
   contribution: Co-conceived ethical visualization workflow while writing Racism in the Machine paper together.

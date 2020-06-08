@@ -24,7 +24,7 @@ layout: default
 {% for person in site.data.acknowledgements.[label].people %}
 
 {% if person.link %}
-    <h4><a href="person.url">  {{ person.name }} </a></h4>
+    <h4><a href="person.link">  {{ person.name }} </a></h4>
   {% else %}
     <h4> {{ person.name }} </h4>
     {% if person.organization %}

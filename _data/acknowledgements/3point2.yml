@@ -3,30 +3,30 @@ ref: 3point2
 people:
 - name: Amanda Makulec
   organization: Excella
-  url: https://www.linkedin.com/in/abmakulec/
+  link: https://www.linkedin.com/in/abmakulec/
   location: New York
   relationship: co-author, committee
   contribution: Co-author ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
 
 - name: Jason Forrest
   organization: McKinsey & Company
-  url: https://www.linkedin.com/in/jasonforrestftw/
+  link: https://www.linkedin.com/in/jasonforrestftw/
   location: New York
   relationship: editor, committee
   contribution: Discussion of and edited ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
 
 - name: Georgina Rogers
-  url:
+  link:
   relationship: personal
   contribution: Discussion of ethical visualization; feedback on 3.1 from Make Me Care paper and poster.
 
 - name: Bridget Cogley
-  url: https://bridgetcogley.wordpress.com/about/
+  link: https://bridgetcogley.wordpress.com/about/
   relationship: proofreader
   contribution: Feedback on ethical visualization checklist for COVID-19.
 
 - name: Josh Smith
-  url: https://www.linkedin.com/in/datajackalope/
+  link: https://www.linkedin.com/in/datajackalope/
   relationship: proofreader
   contribution: Feedback on ethical visualization checklist for COVID-19.
 
@@ -37,13 +37,13 @@ people:
 
 - name: Sue Perks
   organization: University of the Creative Arts
-  url:
+  link:
   relationship: co-author, research collaborator
   contribution: Feedback on 3.1 in Make Me Care paper; suggestion of checklist format.
 
 - name: Wibo Bakker
   organization:
-  url:
+  link:
   relationship: research collaborator
   contribution: Feedback on 3.1 in Make Me Care paper.
 
