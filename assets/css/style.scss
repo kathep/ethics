@@ -95,6 +95,17 @@ strong {
   font-weight: 600;
 }
 
+a strong {
+  color: $orange-dark;
+  font-weight: 600;
+}
+
+a:hover strong {
+  color: $orange;
+  font-weight: 600;
+}
+
+
 ul {
   padding: 0;
   padding-inline-start: 15px;
