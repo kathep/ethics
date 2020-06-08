@@ -17,18 +17,18 @@ layout: default
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
 {% for person in site.data.acknowledgements.[label].people %}
-      <h4>  {{ person.name }} </h4>
-      <p>
-    {% if person.name %}
+
+  {% if person.name %}
       <h3> Contributors </h3>
       <h4>  {{ person.name }} </h4>
-    {% endif %}
     {% if person.company %}
     <p><em:>Company:</em>  {{ person.company }} </p>
+      {% if person.contribution %}
+      <p><em>Contribution:</em> {{person.contribution}} </p>
+      {% endif %}
     {% endif %}
-    {% if person.contribution %}
-    <em>Contribution:</em> {{person.contribution}} </p>
-    {% endif %}
+  {% endif %}
+
 {% endfor %}
 
 </div>
