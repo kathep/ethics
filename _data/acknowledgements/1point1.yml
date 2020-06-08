@@ -3,17 +3,17 @@ ref: 1point1
 people:
 - name: Christopher Church
   organization: University of Nevada, Reno
-  url: http://www.christophermchurch.com/
+  link: http://www.christophermchurch.com/
   location: Reno
   relationship: Co-author
   contribution: Co-conceived ethical visualization workflow while writing Racism in the Machine paper together. Co-supervised student group working on first version.
 
 - name: Dave Maass
   organization: Electronic Frontier Foundation
-  url: https://www.eff.org/about/staff/dave-maass
+  link: https://www.eff.org/about/staff/dave-maass
   location: San Francisco
   relationship: Co-author
-  contribution: The poster was inspired by Dave Maas. In his duties as a visiting professor at the University of Nevada, Reno in May 2018, we talked about ethical visualization and he read an in-press copy of Racism in the Machine. He asked for the figure of the workflow from the paper ‘to stick on his wall’. I realised in that moment that the workflow itself did not follow ethical data visualization principles, was not in a format to be easily shared or understood, and might be of interest to other people who want to pin it on their walls.
+  contribution: The poster was inspired by Dave Maas. In his duties as a visiting professor at the University of Nevada, Reno in May 2018, we talked about ethical visualization and he read an in-press copy of Racism in the Machine. He asked for the figure of the workflow from the paper, in his own words, to stick on his wall. I realised in that moment that the workflow itself did not follow ethical data visualization principles, was not in a format to be easily shared or understood, and might be of interest to other people who want to pin it on their walls.
 
 - name: Aras Diller
   organization: University of Nevada, Reno
