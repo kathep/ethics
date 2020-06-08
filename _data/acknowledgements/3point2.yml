@@ -59,9 +59,7 @@ people:
 
 - name: Chelsea Canon
   organization: University of Nevada, Reno
-  relationship: student
-  relationship: co-author
-  relationship: research collaborator
+  relationship: student, co-author, research collaborator
   contribution: Feedback on 3.1 in Make Me Care paper.
 
 - name: Aya Sato
