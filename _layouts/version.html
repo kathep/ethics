@@ -25,16 +25,15 @@ layout: default
     <h4><a href="person.link">  {{ person.name }} </a></h4>
   {% else %}
     <h4> {{ person.name }} </h4>
+{% endif %}
 
-    {% if person.organization %}
+{% if person.organization %}
     <p><em>Organization:</em> {{ person.organization }} </p>
-    {% else %}
+{% else %}
 
       {% if person.contribution %}
         <p><em>Contribution:</em> {{person.contribution}} </p>
       {% endif %}
-
-    {% endif %}
 
 {% endif %}
 
