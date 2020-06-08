@@ -11,4 +11,11 @@ layout: default
       <em>Date:</em> {{ page.date |  date: "%B %Y" }}
     </p>
 
+<h3> Contributors </h3>
+{% capture label %}{{ page.object-id  }}{% endcapture %}
+
+{% for person in site.data.acknowledgements.[label].people %}
+      <p>  {{ person.name }} </p>
+{% endfor %}
+
 </div>
