@@ -28,10 +28,12 @@ layout: default
 
     {% if person.organization %}
     <p><em>Organization:</em> {{ person.organization }} </p>
-    {% endif %}
+    {% else %}
 
-    {% if person.contribution %}
-      <p><em>Contribution:</em> {{person.contribution}} </p>
+      {% if person.contribution %}
+        <p><em>Contribution:</em> {{person.contribution}} </p>
+      {% endif %}
+
     {% endif %}
 
 {% endif %}
