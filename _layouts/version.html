@@ -5,22 +5,24 @@ layout: default
 <div class="version">
 
 <h2> {{ page.title }}</h2>
-      <h3>Details</h3>
-    <p><em>Version:</em> {{ page.version-id }}<br>
-      <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
-      <em>About:</em> {{ page.summary }}
-    </p>
+  <h3>Details</h3>
+  <p><em>Version:</em> {{ page.version-id }}<br>
+    <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
+    <em>About:</em> {{ page.summary }}
+  </p>
 
 {{ content | markdownify }}
 
-
 {% capture label %}{{ page.object-id  }}{% endcapture %}
+
+{% if site.data.acknowledgements.[label].people %}
+
+  <h3> Contributors </h3>
+
+{% endif %}
 
 {% for person in site.data.acknowledgements.[label].people %}
 
-  {% if person.name %}
-      <h3> Contributors </h3>
-{% endif %}
 {% if person.name %}
       <h4>  {{ person.name }} </h4>
     {% if person.company %}
