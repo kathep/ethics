@@ -192,7 +192,7 @@ Have a high-stakes visualization you need to make an impact? There are a limited
 ## Credits
 
 ### Citation
-Hepworth, K. (2020). *Ethical & Effective Visualization.*  (https://DOI.10.5281/zenodo.3773299])[https://zenodo.org/badge/latestdoi/232150677]
+Hepworth, K. (2020). *Ethical & Effective Visualization.* [https://zenodo.org/badge/latestdoi/232150677](https://DOI.10.5281/zenodo.3773299])
 
 From Hepworth, K. 2020. (forthcoming) "Make Me Care: Ethical Visualization for Impact in the Sciences and Data Sciences", *HCII Conference 2020 Proceedings*.
 
@@ -206,11 +206,11 @@ The following institutions have supported development of this method.
 ### Acknowledgements
 I am grateful for discussions with and/or feedback from the following people. Their perspectives have led to the improvements outlined in the current version.
 
-{% include acknowledgements_current.html %}
+#### include placeholder
 
 #### Full acknowledgements
 
-For more details of how each person contributed and contributions to previous versions can be found in the the full documentation list [here](acknowledgements.md).
+For more details of how each person contributed and contributions to previous versions can be found in the the full documentation list [here]acknowledgements.md.
 
 
 &nbsp;
@@ -236,5 +236,6 @@ This method is regularly updated. It is a key activity of Katherine Hepworth's i
 | [Version 1](ethical_visualization_1_0.md)   | December 2018  | Ethical Visualization Workflow  |
 
 &nbsp;
+
 -----------------------------
 [Back to top](#the-steps)

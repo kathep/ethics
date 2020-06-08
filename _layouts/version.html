@@ -1,30 +1,13 @@
 ---
 layout: default
 ---
-{% capture label %}{{ page.object-id  }}{% endcapture %}
 
 <div class="version">
   <h2>{{ page.version }} {{ page.title }}</h2>
     {{ content | markdownify }}
     <h3>Details</h3>
     <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
+<p><em>Version:</em> &nbsp;<br>
+<em>Date:</em> &nbsp;</p>
 
-  {% for person in site.data.acknowledgements.[label].people %}
-  <ul>
-  <li>
-    {% if person.link %}
-      <a href="{{ person.link }}">
-        {{ person.name }}
-      </a>
-    {% else %}
-      {{ person.name }}
-    {% endif %}
-    {% if person.company %}
-      at {{ person.company }}
-    {% endif %}
-    <br>
-    <em>Contribution:</em> {{ person.contribution }}
-    </li>
-  </ul>
-  {% endfor %}
 </div>
