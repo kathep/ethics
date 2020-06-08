@@ -27,8 +27,8 @@ layout: default
       <h4><a href="person.url">  {{ person.name }} </a></h4>
     {% else %}
       <h4> {{ person.name }} </h4>
-    {% if person.company %}
-    <p><em>Organization:</em> {{ person.company }} </p>
+    {% if person.organization %}
+    <p><em>Organization:</em> {{ person.organization }} </p>
       {% if person.contribution %}
       <p><em>Contribution:</em> {{person.contribution}} </p>
       {% endif %}
