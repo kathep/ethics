@@ -3,11 +3,12 @@ layout: default
 ---
 
 <div class="version">
-  <h2>{{ page.version }} {{ page.title }}</h2>
-    {{ content | markdownify }}
+
+<h2> {{ page.title }}</h2>
+  {{ content | markdownify }}
     <h3>Details</h3>
-    <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
-<p><em>Version:</em> &nbsp;<br>
-<em>Date:</em> &nbsp;</p>
+    <p><em>Version:</em> {{ page.version }}<br>
+      <em>Date:</em> {{ page.date |  date: "%B %Y" }}
+    </p>
 
 </div>
