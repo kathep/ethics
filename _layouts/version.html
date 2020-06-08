@@ -22,8 +22,9 @@ layout: default
 <ul>
 {% for person in site.data.acknowledgements.[label].people %}
 
+  <li>
 {% if person.link %}
-    <li><a href="person.link"><strong>  {{ person.name }} </strong></a>
+    <a href="person.link"><strong>  {{ person.name }} </strong></a>
   {% else %}
     <strong> {{ person.name }} </strong>
 {% endif %}
@@ -33,11 +34,11 @@ layout: default
 {% endif %}
     <br>
 
-      {% if person.contribution %}
-        <em>Contribution:</em> {{person.contribution}}
-      {% endif %}
-    </li>
-    
+{% if person.contribution %}
+    <em>Contribution:</em> {{person.contribution}}
+{% endif %}
+  </li>
+
 {% endfor %}
 </ul>
 
