@@ -13,12 +13,22 @@ layout: default
 
 {{ content | markdownify }}
 
-<h3> Contributors </h3>
+
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
 {% for person in site.data.acknowledgements.[label].people %}
-      <p><strong>  {{ person.name }} </strong></p>
-      <p> {{person.contribution}} </p>
+      <h4>  {{ person.name }} </h4>
+      <p>
+    {% if person.name %}
+      <h3> Contributors </h3>
+      <h4>  {{ person.name }} </h4>
+    {% endif %}
+    {% if person.company %}
+    <p><em:>Company:</em>  {{ person.company }} </p>
+    {% endif %}
+    {% if person.contribution %}
+    <em>Contribution:</em> {{person.contribution}} </p>
+    {% endif %}
 {% endfor %}
 
 </div>
