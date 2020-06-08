@@ -3,53 +3,11 @@ layout: default
 ---
 
 <div class="version">
-  <p>Placeholder</p>
-
-<h2>{{ page.title }}</h2>
-
-<h3>Details</h3>
-
+  <h2>{{ page.version }} {{ page.title }}</h2>
+    {{ content | markdownify }}
+    <h3>Details</h3>
+    <p><em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
 <p><em>Version:</em> &nbsp;<br>
 <em>Date:</em> &nbsp;</p>
 
 </div>
-<!--<hr>
-{% for poster_f in page.pdf %}
-<p><em>Date:</em>
-  {{ page.date |  date: "%B %Y" }}
-</p>
-
-{% if page.pdf %}
-<p><em>Poster link:</em> Download high resolution poster <a href="{{ page.pdf }}" alt="{{ page.title }}">(here)</a>
-    {% else %}
-      <em>This version does not have a poster.</em>
-</p>
-{% endif %}
-{% endfor %}
-
-<hr>
-
-{% for poster_i in page.image %}
-  {% if page.image %}
-    <img src="{{ page.image }}" alt="{{ page.title }}">
-  {% endif %}
-{% endfor %}
-
-{{ content | markdownify }}
-
-{% capture label %}{{ page.object-id  }}{% endcapture %}
-
-{% for person in site.data.acknowledgements.[label].people %}
-  <ul>
-    <li>
-      <a href="{{ person.link }}">
-        {{ person.name }}
-      </a>
-    {% else %}
-      {{ person.name }}
-    {% endif %}
-    {% if person.company %} at {{ person.company }}
-    {% endif %}<br>
-    <em>Contribution:</em> {{ person.contribution }}</li>
-  </ul>
-{% endfor %}-->
