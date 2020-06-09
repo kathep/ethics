@@ -96,11 +96,11 @@ strong {
 }
 
 a strong {
-  color: $orange-dark;
+  color: $blue;
   font-weight: 600;
 }
 
-a:hover strong {
+a:hover $blue-aqua {
   color: $orange;
   font-weight: 600;
 }
