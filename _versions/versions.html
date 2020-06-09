@@ -9,3 +9,24 @@ title: Versions
     {{ version.content }}
 </div>
 {% endfor %}
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Version</th>
+      <th style="text-align: left">Date</th>
+      <th style="text-align: left">Title</th>
+    </tr>
+  </thead>
+  <tbody>
+
+{% for version in site.versions %}
+    <tr>
+      <td style="text-align: left"><a href="{{ version.link }}">Version {{ version.version }}</a></td>
+      <td style="text-align: left">{{ version.date |  date: "%B %Y" }}</td>
+      <td style="text-align: left">{{ version.title }}</td>
+    </tr>
+{% endfor %}
+
+  </tbody>
+</table>
