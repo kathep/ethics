@@ -14,7 +14,9 @@ layout: default
 <hr>
 
 {% if page.image %}
-  <img src="{{ page.image }}" alt="{{ page.title }} {{ page.version }}">
+  <img class="poster" src="{{ page.image }}" alt="{{ page.title }} {{ page.version }}">
+{% else %}
+  <p>This version does not have an associated poster. The most recent poster is available <a href="{{site.url}}">here</a>.</p>
 {% endif %}
 
 {% if page.pdf %}
