@@ -206,10 +206,9 @@ The following institutions have supported development of this method.
 ### Acknowledgements
 I am grateful for discussions with and/or feedback from the following people. Their perspectives have led to the improvements outlined in the current version.
 
-#### include placeholder
+#### placeholder
 
 #### Full acknowledgements
-
 For more details of how each person contributed and contributions to previous versions can be found in the the full documentation list [here]acknowledgements.md.
 
 
