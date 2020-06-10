@@ -8,15 +8,23 @@ layout: default
   <h3>Details</h3>
   <p><em>Version:</em> {{ page.version }}<br>
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
-    <em>About:</em> {{ page.summary }} {{ content | markdownify }}
+    <em>About:</em> {{ page.summary }}
   </p>
 
 <hr>
 
+{% if page.content %}
+  {{ content | markdownify }}
+  <hr>
+{% else %}
+  {{ content | markdownify }}
+{% endif %}
+
 {% if page.image %}
   <img class="poster" src="{{ page.image }}" alt="{{ page.title }} {{ page.version }}">
 {% else %}
-  <p>This version does not have an associated poster. The most recent poster is available <a href="{{site.url}}"  target="_blank">here</a>.</p>
+  <h3>&nbsp;</h3>
+  <p>This version does not have an associated poster. The most recent poster is available <a href="{{site.url}}" target="_blank">here</a>.</p>
 {% endif %}
 
 {% if page.pdf %}
@@ -24,6 +32,10 @@ layout: default
 {% endif %}
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
+
+{% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].institutions %}
+  <h2> Acknowledgements </h2>
+{% endif %}
 
 {% if site.data.acknowledgements.[label].people %}
   <h3> Contributors </h3>
@@ -53,7 +65,31 @@ layout: default
 {% endfor %}
 </ul>
 
-<h3>Licensing</h3>
+{% if site.data.acknowledgements.[label].people %}
+  <h3> Supporting institutions </h3>
+  <p>The following institutions have supported work on this version.</p>
+{% endif %}
+
+<ul>
+
+{% for place in site.data.acknowledgements.[label].institutions %}
+
+  <li>
+{% if place.link %}
+    <a href="place.link"><strong>  {{ place.name }} </strong></a>
+  {% else %}
+    <strong> {{ place.name }} </strong>
+{% endif %}
+
+{% if place.contribution %}
+    <em>Specific contribution:</em> {{place.contribution}}
+{% endif %}
+  </li>
+
+{% endfor %}
+</ul>
+
+<h3>License</h3>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Ethical Visualization</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://kathep.github.io/ethics" property="cc:attributionName" rel="cc:attributionURL">Katherine Hepworth</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://kathep.github.io/ethics" rel="dct:source">https://kathep.github.io/ethics</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://kathep.github.io/ethics" rel="cc:morePermissions">https://kathep.github.io/ethics</a>.
 
 </div>

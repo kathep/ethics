@@ -7,6 +7,14 @@ academic:
   link: http://www.digitalhumanities.org/dhq/vol/12/4/000408/000408.html
   ref: 1point0, 1point1
 
+- name: "Make Me Care: Visualization Ethics in the Sciences and Data Sciences"
+  short-name: Make Me Care
+  publication: HCII DUXU2020 Conference Proceedings
+  issue-vol: 12(4)
+  date: 2018-12-20
+  link:
+  ref: 3point0, 3point1
+
 popular-press:
 - name: Ethical Design Recommendations for COVID-19 Visualizations
   date: 2020-05-15

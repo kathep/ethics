@@ -1,3 +1,16 @@
 version: 3.0
 ref: 3point0
 people:
+
+institutions:
+- name: University of Nevada, Reno
+  relationship: employer
+  contribution: This version was supported by sabbatical leave.
+
+- name: Humboldt University
+  relationship: visited
+  contribution: Allowed access to scientific illustration archive.
+
+- name: University of the Creative Arts, Epsom
+  relationship: visited
+  contribution: Allowed access to information design archive.

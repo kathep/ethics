@@ -4,3 +4,8 @@ people:
 - name: Georgina Rogers
   relationship: personal
   contribution: Discussion of ethical visualization; feedback on 3.0 and poster.
+
+institutions:
+- name: University of Nevada, Reno
+  relationship: employer
+  contribution: This version was supported by sabbatical leave.

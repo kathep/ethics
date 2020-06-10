@@ -29,3 +29,8 @@ people:
   organization: Groupon
   relationship: committee
   contribution: Discussion of ethical visualization for COVID-19 as part of Data Visualization Society COVID-19 Working Group.
+
+institutions:
+- name: Data Visualization Society
+  relationship: member
+  contribution: Formed working group to write about ethical COVID-19 visualization.
