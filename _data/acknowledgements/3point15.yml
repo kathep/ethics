@@ -1,0 +1,31 @@
+version: 3.15
+ref: 3point15
+people:
+- name: Amanda Makulec
+  organization: Excella
+  link: https://www.linkedin.com/in/abmakulec/
+  location: New York
+  relationship: co-author, committee
+  contribution: Co-author ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
+
+- name: Jason Forrest
+  organization: McKinsey & Company
+  link: https://www.linkedin.com/in/jasonforrestftw/
+  location: New York
+  relationship: editor, committee
+  contribution: Discussion of and edited ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
+
+- name: Bridget Cogley
+  link: https://bridgetcogley.wordpress.com/about/
+  relationship: proofreader
+  contribution: Feedback on ethical visualization checklist for COVID-19.
+
+- name: Josh Smith
+  link: https://www.linkedin.com/in/datajackalope/
+  relationship: proofreader
+  contribution: Feedback on ethical visualization checklist for COVID-19.
+
+- name: Neil Richards
+  organization: Groupon
+  relationship: committee
+  contribution: Discussion of ethical visualization for COVID-19 as part of Data Visualization Society COVID-19 Working Group.
