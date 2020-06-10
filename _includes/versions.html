@@ -14,7 +14,7 @@
 
 {% for vers in listed_versions  %}
     <tr>
-      <td class="lalign"><a href="{{ '/' | absolute_url '/' vers.url }}">Version {{ vers.version }}</a></td>
+      <td class="lalign"><a href="{{ '/' vers.url }}">Version {{ vers.version }}</a></td>
       <td class="lalign">{{ vers.date |  date: "%B %Y" }}</td>
       <td class="lalign">{{ vers.title }}</td>
     </tr>
