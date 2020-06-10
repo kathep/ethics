@@ -172,7 +172,7 @@ header {
   h3.tagline {
     color: $blue-dark;
     font-weight: 400;
-    padding: 20px 0 50px 0;
+    padding: 20px 0 40px 0;
     }
 }
 
@@ -184,14 +184,14 @@ header ul.toc {
     border: 0px;
     width: inherit;
     display: inline-block;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
     margin: 0px 0 0px 0 solid $blue-aqua50;
 }
 
 header ul a {
-    line-height: 25px;
-    font-size: 20px;
+    line-height: 20px;
+    font-size: 14px;
     color: $blue;
     border-radius: 0px;
     display: block;
@@ -276,7 +276,7 @@ th, td {
 }
 
 footer {
-  bottom: 30px;
+  bottom: 20px;
 }
 
 .lalign {
