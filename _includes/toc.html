@@ -96,6 +96,14 @@
             {% capture list_item %}{{ anchor_body }}{% endcapture %}
         {% endif %}
 
+<ul class="nav-main">
+<li><a href="/"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+<li><a href="/about/"{% if page.url contains 'about' %} class="active"{% endif %}>About</a></li>
+...
+</ul>
+
+        {% if page.url contains '' %}
+
         {% capture my_toc %}{{ my_toc }}
 {{ space }}{{ listModifier }} {{ listItemClass }} {{ list_item }}{% if include.anchor_class %}{:.{{ include.anchor_class }}}{% endif %}{% endcapture %}
     {% endfor %}
