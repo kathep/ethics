@@ -84,7 +84,7 @@
         {% endfor %}
 
         {% if include.item_class and include.item_class != blank and page.url contains 'anchor_body' %}
-            {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel | prepend: 'active' }}}{% endcapture %}
+            {% capture listItemClass %}{:.{{ include.item_class | prepend: 'active' | replace: '%level%', headerLevel }}}{% endcapture %}
         {% endif %}
 
         {% capture anchor_body %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
