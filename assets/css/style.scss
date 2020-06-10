@@ -184,14 +184,14 @@ header ul.toc {
     border: 0px;
     width: inherit;
     display: inline-block;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 1px 0 1px 0 solid $blue-aqua50;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0px 0 0px 0 solid $blue-aqua50;
 }
 
 header ul a {
-    line-height: 20px;
-    font-size: 14px;
+    line-height: 25px;
+    font-size: 20px;
     color: $blue;
     border-radius: 0px;
     display: block;
@@ -214,20 +214,20 @@ header ul {
 header ul.toc a, header ul.toc a:visited  {
     display: inline;
     text-decoration: none;
-    font-weight: 400;
-    color: $blue;
+    font-weight: 200;
+    color: $taupe;
 }
 
-header ul.toc a:hover {
+header ul.toc a:hover, header ul.toc a:active {
     display: inline;
     font-weight: 400;
     text-decoration: none;
-    color: $blue-aqua;
+    color: $taupe;
 }
 
 header li {
     float: left;
-    border-bottom: 1px solid $blue-aqua50;
+    border-bottom: 0px solid $blue-aqua50;
     border-right: 0px;
     height: auto;
 }
