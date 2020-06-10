@@ -1,0 +1,14 @@
+academic:
+- name: "Racism in the Machine: Visualization Ethics in Digital Humanities Projects"
+  short-name: Racism in the Machine
+  publication: Digital Humanities Quarterly
+  issue-vol: 12(4)
+  date: 2018-12-20
+  link: http://www.digitalhumanities.org/dhq/vol/12/4/000408/000408.html
+  ref: 1point0, 1point1
+
+popular-press:
+- name: Ethical Design Recommendations for COVID-19 Visualizations
+  date: 2020-05-15
+  link: https://medium.com/nightingale/ethical-design-recommendations-for-covid-19-visualizations-cb4a2677ae40
+  ref: 3point15, 3point2

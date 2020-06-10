@@ -1,3 +1,7 @@
+## About
+
+ {% site.description | default: site.github.project_tagline %}
+
 ## Poster
 
 ![image of ethical visualization poster](images/ethical_visualization_poster_3_2.png)
