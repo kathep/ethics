@@ -11,11 +11,11 @@
   <tbody>
 
 
-{% capture version_url %}{{ "/" | absolute_url }}{% endcapture %}
 
 {% assign listed_versions = site.versions | sort: "date" | reverse %}
 
 {% for version in listed_versions  %}
+  {% capture version_url %}{{ "/" | absolute_url | version.url }}{% endcapture %}
     <tr>
       <td class="lalign"><a href="{{ version_url }}">Version {{ version.version }}</a></td>
       <td class="lalign">{{ version.date |  date: "%B %Y" }}</td>
