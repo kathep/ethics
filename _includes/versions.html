@@ -10,7 +10,9 @@
   </thead>
   <tbody>
 
-{% for vers in site.versions | sort: "date" | reverse  %}
+{% assign listed_versions = site.versions | sort: "date" | reverse %}
+
+{% for vers in listed_versions  %}
     <tr>
       <td class="lalign"><a href="{{ '/' | absolute_url '/' vers.url }}">Version {{ vers.version }}</a></td>
       <td class="lalign">{{ vers.date |  date: "%B %Y" }}</td>
