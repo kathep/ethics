@@ -12,11 +12,11 @@
 
 {% assign listed_versions = site.versions | sort: "date" | reverse %}
 
-{% for vers in listed_versions  %}
+{% for version in listed_versions  %}
     <tr>
-      <td class="lalign"><a href="{{ '/' vers.url }}">Version {{ vers.version }}</a></td>
-      <td class="lalign">{{ vers.date |  date: "%B %Y" }}</td>
-      <td class="lalign">{{ vers.title }}</td>
+      <td class="lalign"><a href="{{ '/' vers.url }}">Version {{ version.version }}</a></td>
+      <td class="lalign">{{ version.date |  date: "%B %Y" }}</td>
+      <td class="lalign">{{ version.title }}</td>
     </tr>
 {% endfor %}
 
