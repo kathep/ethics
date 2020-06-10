@@ -8,9 +8,18 @@
   </thead>
   <tbody>
 
-{% for vers in site.versions | sort: "date" |  %}
+{% for staff_member in site.staff_members %}
+  <h2>
+    <a href="{{ staff_member.url }}">
+      {{ staff_member.name }} - {{ staff_member.position }}
+    </a>
+  </h2>
+  <p>{{ staff_member.content | markdownify }}</p>
+{% endfor %}
+
+{% for vers in site.versions | sort: "date" | reverse  %}
     <tr>
-      <td class="lalign"><a href="{{ "/" | absolute_url "/" vers.url }}">Version {{ vers.version }}</a></td>
+      <td class="lalign"><a href="{{ '/' | absolute_url '/' vers.url }}">Version {{ vers.version }}</a></td>
       <td class="lalign">{{ vers.date |  date: "%B %Y" }}</td>
       <td class="lalign">{{ vers.title }}</td>
     </tr>
