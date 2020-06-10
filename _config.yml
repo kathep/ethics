@@ -9,3 +9,14 @@ url: https://kathep.github.io
 collections:
   versions:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "versions"
+    values:
+      layout: "version"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
