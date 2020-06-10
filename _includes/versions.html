@@ -10,7 +10,7 @@
 
 {% for version in site.versions | sort: "date" |  %}
     <tr>
-      <td class="lalign"><a href="{{ version.url }}">Version {{ version.version }}</a></td>
+      <td class="lalign"><a href="{{ "/" | absolute_url "/" version.url }}">Version {{ version.version }}</a></td>
       <td class="lalign">{{ version.date |  date: "%B %Y" }}</td>
       <td class="lalign">{{ version.title }}</td>
     </tr>
