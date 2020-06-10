@@ -34,6 +34,7 @@ layout: default
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
 {% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].institutions %}
+<hr>
   <h2> Acknowledgements </h2>
 {% endif %}
 
@@ -80,7 +81,7 @@ layout: default
   {% else %}
     <strong> {{ place.name }} </strong>
 {% endif %}
-
+  <br>
 {% if place.contribution %}
     <em>Specific contribution:</em> {{place.contribution}}
 {% endif %}
