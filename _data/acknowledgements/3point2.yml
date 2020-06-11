@@ -39,12 +39,12 @@ institutions:
   link: https://www.neh.gov/divisions/odh
   relationship: funder
   contribution: "Awarded the Digital Humanities Advancement Grant for the project Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts."
-  support: grant
-  proposal-name: "Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts"
-  grant-type: Digital Humanities Advancement Grant
-  grant-link: https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-266490-19
-  grant-number: HAA-266490-19
-  grant-date: 2019-07-01
+  grant:
+  - proposal-name: "Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts"
+    grant-type: Digital Humanities Advancement Grant
+    grant-link: https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-266490-19
+    grant-number: HAA-266490-19
+    grant-date: 2019-07-01
 
 - name: University of Nevada, Reno
   link: https://www.unr.edu/
