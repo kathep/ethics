@@ -10,7 +10,7 @@ layout: default
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
     <em>About:</em> {{ page.summary }}<br>
 {% for article in site.data.publications %}
-  {% if article.ref contains {{ site.object-id }} %}
+  {% if article.ref contains {{ page.object-id }} %}
     <em>Featured in:</em> {{ article.name }}
   {% endif %}
 {% endfor %}
@@ -32,11 +32,11 @@ layout: default
   <img class="poster" src="{{ page.image }}" alt="{{ page.title }} {{ page.version }}">
 {% else %}
   <h3>&nbsp;</h3>
-  <p>This version does not have an associated poster. The most recent poster is available <a href="{{ latest_pdf_url }}" target="_blank">here</a>.</p>
+  <p>This version does not have an associated poster. The most recent poster is available <a href="{{ latest_pdf_url }}" >here</a>.</p>
 {% endif %}
 
 {% if page.pdf %}
-  <p>Download the poster <a href="{{ page.pdf }}">here</a>.</p>
+  <p>Download the poster <a target="_blank" href="{{ page.pdf }}">here</a>.</p>
 {% endif %}
 
 {% capture label %}{{ page.object-id  }}{% endcapture %}
