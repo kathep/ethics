@@ -1,6 +1,6 @@
 ## About
 
- {{ site.description | default: site.github.project_tagline }}
+ {{ site.description | default: site.github.project_tagline | markdownify }}
 
 ## Poster
 
@@ -227,7 +227,7 @@ This method is regularly updated. It is a key activity of Katherine Hepworth's i
 
 ### Versions
 
-{% include versions.html %}
+{% include versions.html | markdownify %}
 
 &nbsp;
 
