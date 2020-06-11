@@ -11,7 +11,7 @@ layout: default
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
     <em>About:</em> {{ page.summary }}<br>
 {% for article in site.data.publications %}
-  {% if article.ref contains page-id %}
+  {% if article.ref contains "page-id" %}
     <em>Featured in:</em> {{ article.name }}
   {% endif %}
 {% endfor %}
