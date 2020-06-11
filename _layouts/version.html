@@ -66,7 +66,7 @@ layout: default
 {% endfor %}
 </ul>
 
-{% if site.data.acknowledgements.[label].people %}
+{% if site.data.acknowledgements.[label].institutions %}
   <h3> Supporting institutions </h3>
   <p>The following institutions have supported work on this version.</p>
 {% endif %}
@@ -83,7 +83,7 @@ layout: default
 {% endif %}
   <br>
 {% if place.contribution %}
-    <em>Specific contribution:</em> {{place.contribution}}
+    <em>Institutional support:</em> {{place.contribution}}
 {% endif %}
   </li>
 
