@@ -1,6 +1,6 @@
 ## About
 
- {{ site.description | default: site.github.project_tagline | markdownify }}
+ {{ site.description | default: site.github.project_tagline }}
 
 ## Poster
 
