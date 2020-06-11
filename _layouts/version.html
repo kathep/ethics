@@ -8,7 +8,12 @@ layout: default
   <h3>Details</h3>
   <p><em>Version:</em> {{ page.version }}<br>
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
-    <em>About:</em> {{ page.summary }}
+    <em>About:</em> {{ page.summary }}<br>
+{% for article in site.data.publications %}
+  {% if article.ref contains {{ site.object-id }} %}
+    <em>From:</em> {{ article.name }}
+  {% endif %}
+{% endfor %}
   </p>
 
 <hr>
@@ -20,11 +25,14 @@ layout: default
   {{ content | markdownify }}
 {% endif %}
 
+{% capture latest_pdf_url %}{{ "" | absolute_url }}{% endcapture %}
+{% capture pdf_url %}{{ "" | absolute_url }}{{ page.pdf }}{% endcapture %}
+
 {% if page.image %}
   <img class="poster" src="{{ page.image }}" alt="{{ page.title }} {{ page.version }}">
 {% else %}
   <h3>&nbsp;</h3>
-  <p>This version does not have an associated poster. The most recent poster is available <a href="{{site.url}}" target="_blank">here</a>.</p>
+  <p>This version does not have an associated poster. The most recent poster is available <a href="{{ latest_pdf_url }}" target="_blank">here</a>.</p>
 {% endif %}
 
 {% if page.pdf %}
