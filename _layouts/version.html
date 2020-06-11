@@ -11,7 +11,7 @@ layout: default
     <em>About:</em> {{ page.summary }}<br>
 {% for article in site.data.publications %}
   {% if article.ref contains {{ site.object-id }} %}
-    <em>From:</em> {{ article.name }}
+    <em>Featured in:</em> {{ article.name }}
   {% endif %}
 {% endfor %}
   </p>
