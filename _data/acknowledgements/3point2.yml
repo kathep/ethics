@@ -35,6 +35,17 @@ people:
   contribution: Feedback on 3.1 in Make Me Care paper.
 
 institutions:
+- name: Office of Digital Humanities at the National Endowment of the Humanities
+  link: https://www.neh.gov/divisions/odh
+  relationship: funder
+  contribution: "Awarded the Digital Humanities Advancement Grant for the project Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts."
+  support: grant
+  proposal-name: "Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts"
+  grant-type: Digital Humanities Advancement Grant
+  grant-link: https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-266490-19
+  grant-number: HAA-266490-19
+  grant-date: 2019-07-01
+
 - name: University of Nevada, Reno
   link: https://www.unr.edu/
   relationship: employer
@@ -49,13 +60,3 @@ institutions:
   link: https://www.unr.edu/journalism
   relationship: employer, funder
   contribution: Co-funding the Planning Workshop 'Ethical Visualization in the Age of Big Data', which contributed to the intellectual progress represented in the current version. This version was also supported by a Semenza Professional Development grant, which made possible professional development and teaching travel to DHDownunder in Newcastle, Australia, in December 2019.
-
-- name: Office of Digital Humanities at the National Endowment of the Humanities
-  link: https://www.neh.gov/divisions/odh
-  relationship: funder
-  contribution: "Awarded the Digital Humanities Advancement Grant for the project Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts."
-  support: grant
-  grant-name: "Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts"
-  grant-link: https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-266490-19
-  grant-number: HAA-266490-19
-  grant-date: 2019-07-01
