@@ -227,7 +227,8 @@ This method is regularly updated. It is a key activity of Katherine Hepworth's i
 
 ### Versions
 
-{% include versions.html %}
+{% capture versions %}{% include versions.html %}{% endcapture %}
+{{ versions | markdownify }}
 
 &nbsp;
 
