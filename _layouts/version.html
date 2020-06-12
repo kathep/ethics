@@ -3,7 +3,6 @@ layout: default
 ---
 {% capture label %}{{ page.object-id  }}{% endcapture %}
 
-
 <div class="version">
 
 <h2> {{ page.title }}</h2>
@@ -11,12 +10,21 @@ layout: default
   <p><em>Version:</em> {{ page.version }}<br>
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}<br>
     <em>About:</em> {{ page.summary }}<br>
-{% for article in site.data.publications.academic %}
-  {% if article.ref contains label %}
-    <em>Featured in:</em> {{ article.name }}
+{% assign papers = site.data.publications.academic %}
+{% for paper in papers %}
+  {% if paper.ref contains label %}
+    <em>Pull from data file publications.yml Featured in:</em> {{ paper.name }}
   {% endif %}
 {% endfor %}
   </p>
+
+{% assign speaking = site.data.speaking | sort: "date" | reverse %}
+{% for talk in speaking %}
+<ul class="list-archive">
+<li>{{ talk.title }} {{ talk.date | date: '%B %Y'  }} / {{ talk.city }}, {{ talk.country}}</li>
+{% endfor %}
+</ul>
+
 
 <hr>
 
