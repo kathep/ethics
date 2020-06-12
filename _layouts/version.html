@@ -5,11 +5,12 @@ layout: default
   Below capture statement captures the object-id as a string.
 {% endcomment %}
 
-{% capture label %}{{ page.object-id  }}{% endcapture %}
+  {% capture label %}{{ page.object-id  }}{% endcapture %}
 
-<div class="version">
+  <div class="version">
 
 {% comment %}
+  ABOUT
   Below section conditionally outputs the 'About' section details.
 {% endcomment %}
 
@@ -27,7 +28,7 @@ layout: default
     {% if paper.link and paper.pdf !=""  %}
   <p><a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
     {% elsif paper.link !=""  %}
-  <p><a href="{{ paper_pdf_url }}">{{ paper.name }}</a></p>
+  <p>{{ paper.name }} <a href="{{ paper_pdf_url }}">{{ paper.name }}</a></p>
     {% elsif paper.pdf !=""  %}
 <p>{{ paper.name }}</p>
     {% else %}
@@ -39,19 +40,17 @@ layout: default
 
 <hr>
 
-{% if page.content %}
-  {{ content | markdownify }}
-  <hr>
-{% else %}
-  {{ content | markdownify }}
-{% endif %}
-
 {% comment %}
-  Below section captures full pdf url as a string.
+  POSTER
+  Below section conditionally outputs the 'Poster' section details.
 {% endcomment %}
 
-{% capture latest_pdf_url %}{{ "" | absolute_url }}{% endcapture %}
-{% capture pdf_url %}{{ "" | absolute_url }}{{ page.pdf }}{% endcapture %}
+  {% capture latest_pdf_url %}{{ "" | absolute_url }}{% endcapture %}
+  {% capture pdf_url %}{{ "" | absolute_url }}{{ page.pdf }}{% endcapture %}
+
+{% comment %}
+  Below section conditionally shows poster image.
+{% endcomment %}
 
 {% if page.image %}
   <img class="poster" src="{{ page.image }}" alt="{{ page.title }} {{ page.version }}">
@@ -63,6 +62,23 @@ layout: default
 {% if page.pdf %}
   <p>Download the poster <a target="_blank" href="{{ page.pdf }}">here</a>.</p>
 {% endif %}
+
+{% comment %}
+  RANDOM VERSION CONTENTS MARKDOWN
+  Below section outputs anything contained in the version collection markdown file below the yaml header.
+{% endcomment %}
+
+  {% if page.content %}
+    {{ content | markdownify }}
+    <hr>
+  {% else %}
+    {{ content | markdownify }}
+  {% endif %}
+
+{% comment %}
+  ACKNOWLEDGEMENTS
+  Below section conditionally shows contributors, institutions, and citation.
+{% endcomment %}
 
 {% capture acknowledgements_h2 %}
 <hr>
