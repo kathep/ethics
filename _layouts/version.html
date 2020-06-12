@@ -49,10 +49,15 @@ layout: default
   <p>Download the poster <a target="_blank" href="{{ page.pdf }}">here</a>.</p>
 {% endif %}
 
-{% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].institutions %}
+{% capture acknowledgements_h2 %}
 <hr>
   <h2> Acknowledgements </h2>
+{% endcapture%}
+
+{% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].institutions %}
+  {{ acknowledgements_h2 | markdownify }}
 {% endif %}
+
 
 {% if site.data.acknowledgements.[label].people %}
   <h3> Contributors </h3>
