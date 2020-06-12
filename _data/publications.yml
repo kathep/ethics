@@ -7,7 +7,7 @@ academic:
   issue-vol: 12(4)
   date: 2018-12-20
   link: http://www.digitalhumanities.org/dhq/vol/12/4/000408/000408.html
-  pdf: ../pdfs/Hepworth_Church_ Racism in the Machine_DHQ.pdf
+  pdf: /pdfs/Hepworth_Church_ Racism in the Machine_DHQ.pdf
   ref: 1point0, 1point1
 
 - name: "Make Me Care: Visualization Ethics in the Sciences and Data Sciences"
@@ -17,7 +17,7 @@ academic:
   issue-vol:
   date: 2020-07-15
   link:
-  pdf: ../pdfs/Hepworth_Make_Me_Care_HCII2020.pdf
+  pdf: /pdfs/Hepworth_Make_Me_Care_HCII2020.pdf
   ref: 3point0, 3point1
 
 popular-press:
