@@ -15,8 +15,10 @@ layout: default
 {% for paper in papers %}
   {% if paper.ref contains page.object-id %}
     <h4>Related writing</h4>
-    {% if paper.link !=""  %}
-  <p><a href="{{ paper.link }}">{{ paper.name }}</a></p>
+    {% if paper.link and paper.pdf !=""  %}
+  <p><a href="{{ paper.link }}">{{ paper.name }}</a> PDF</p>
+    {% elsif paper.link !=""  %}
+  <p><a href="{{ paper.pdf }}">{{ paper.name }}</a></p>
     {% elsif paper.pdf !=""  %}
   <p><a href="{{ paper.pdf }}">{{ paper.name }}</a></p>
     {% else %}
