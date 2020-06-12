@@ -12,19 +12,11 @@ layout: default
     <em>About:</em> {{ page.summary }}<br>
 {% assign papers = site.data.publications.academic %}
 {% for paper in papers %}
-  {% if paper.ref contains label %}
+  {% if paper.ref contains page.object-id %}
     <em>Pull from data file publications.yml Featured in:</em> {{ paper.name }}
   {% endif %}
 {% endfor %}
   </p>
-
-{% assign speaking = site.data.speaking | sort: "date" | reverse %}
-{% for talk in speaking %}
-<ul class="list-archive">
-<li>{{ talk.title }} {{ talk.date | date: '%B %Y'  }} / {{ talk.city }}, {{ talk.country}}</li>
-{% endfor %}
-</ul>
-
 
 <hr>
 
