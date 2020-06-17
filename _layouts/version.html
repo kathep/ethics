@@ -20,11 +20,14 @@ layout: default
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
     <h4>About</h4>
   <p>{{ page.summary }}</p>
-{% assign papers = site.data.publications %}
+{% capture papers %}
+  {{site.data.publications | where_exp: "academic !='' or press == !=''" }}
+{% endcapture %}
+
 {% for paper in papers %}
-      {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}
-  {% if paper.ref contains page.object-id %}
+  {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}
     <h4>Related writing</h4>
+  {% if paper.ref contains page.object-id %}
     {% if paper.link and paper.pdf !=""  %}
   <p><a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
     {% elsif paper.link !=""  %}
@@ -35,6 +38,7 @@ layout: default
   <p>{{ paper.name }}</p>
     {% endif %}
   {% endif %}
+
 {% endfor %}
 
 
