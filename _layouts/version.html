@@ -21,11 +21,14 @@ layout: default
     <h4>About</h4>
   <p>{{ page.summary }}</p>
 
-{% assign papers = site.data.publications | sort: reverse | where: "ref", "page.object-id" %}
+{% assign papers = site.data.publications | sort: "date" | reverse | where: "ref", "page.object-id" %}
 
 {% for paper in papers %}
   {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}
+  {% if paper.ref contains page.object-id %}
     <h4>Related writing</h4>
+  {% endif %}
+  {% if paper.ref contains page.object-id %}
     {% if paper.link and paper.pdf !=""  %}
       <p>{{ paper.authors }} <a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
     {% elsif paper.link !=""  %}
@@ -35,6 +38,7 @@ layout: default
     {% else %}
       <p>{{ paper.name }} by {{ paper.authors }}. </p>
     {% endif %}
+  {% endif %}
 {% endfor %}
 
 
