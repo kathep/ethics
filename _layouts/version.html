@@ -20,6 +20,7 @@ layout: default
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
     <h4>About</h4>
   <p>{{ page.summary }}</p>
+
 {% capture papers %}
   {{site.data.publications | where_exp: "academic !='' or press == !=''" }}
 {% endcapture %}
