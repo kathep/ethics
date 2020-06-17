@@ -22,10 +22,9 @@ academic:
   ref: 3point0, 3point1, 3point2
 
 popular-press:
-- name: Ethical Design Recommendations for COVID-19 Visualizations
-  author: Katherine Hepworth and Amanda Makulec
+- name: "Ethical Design Recommendations for COVID-19 Visualizations"
+  authors: Katherine Hepworth and Amanda Makulec
   citation: "Hepworth, K. & Makulec, A. 2020. 'Ethical Design Recommendations for COVID-19 Visualizations.' Nightingale. May 15, 2020. https://medium.com/p/cb4a2677ae40"
-  authors: Katherine Hepworth & Christopher Church
   date: 2020-05-15
   link: https://medium.com/nightingale/ethical-design-recommendations-for-covid-19-visualizations-cb4a2677ae40
   ref: 3point15, 3point2
