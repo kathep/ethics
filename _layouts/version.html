@@ -21,7 +21,7 @@ layout: default
     <h4>About</h4>
   <p>{{ page.summary }}</p>
 
-{% assign papers = site.data.publications | where_exp: "paper", "paper.academic !='' or paper.popular-press == !=''" %}
+{% assign papers = site.data.publications | where_exp: "paper", "paper.academic !='' or paper.popular-press !=''" %}
 
 {% for paper in papers %}
   {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}
