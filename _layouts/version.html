@@ -156,7 +156,7 @@ layout: default
 <p>Hepworth, Katherine. <em>{{ page.title }}</em>, Version {{ page.version }}. ({{ page.date |  date: "%Y" }}).
   {% if page.pdf %}
     Intellectual contribution, text, and artwork by the author.
-  {% elsif %}
+  {% else %}
     From paper
     {% for paper_cite in papers %}
       {% if paper_cite.ref contains page.object-id %}
