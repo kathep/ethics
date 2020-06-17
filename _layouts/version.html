@@ -21,7 +21,7 @@ layout: default
     <h4>About</h4>
   <p>{{ page.summary }}</p>
 
-{% assign papers = site.data.publications | sort: reverse | where_exp: "article", "article.academic.ref != '' or article.popular-press != ''" %}
+{% assign papers = site.data.publications | sort: reverse | where: "ref", "page.object-id" %}
 
 {% for paper in papers %}
   {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}

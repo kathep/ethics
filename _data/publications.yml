@@ -1,4 +1,3 @@
-academic:
 - name: "Racism in the Machine: Visualization Ethics in Digital Humanities Projects"
   type: academic
   authors: Katherine Hepworth and Christopher Church
@@ -23,7 +22,6 @@ academic:
   pdf: /pdfs/Hepworth_Make_Me_Care_HCII2020.pdf
   ref: 3point0, 3point1, 3point2
 
-popular-press:
 - name: "Ethical Design Recommendations for COVID-19 Visualizations"
   type: popular-press
   authors: Katherine Hepworth and Amanda Makulec
