@@ -24,17 +24,20 @@ layout: default
 {% assign papers = site.data.publications | where_exp: "article",
 "article.ref contains page.object-id" %}
 
+{% if papers !="" %}
+  <h4>Related writing</h4>
+{% endif %}
+
 {% for paper in papers %}
   {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}
-    <h4>Related writing</h4>
     {% if paper.link and paper.pdf !=""  %}
-      <p>{{ paper.authors }} <a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
+      <p><a href="{{ paper.link }}">{{ paper.name }}</a> by {{ paper.authors }}. {{ paper.publication }}. <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
     {% elsif paper.link !=""  %}
       <p><a href="{{ paper.link }}">{{ paper.name }}</a> by {{ paper.authors }}. {{ paper.publication }}</p>
     {% elsif paper.pdf !=""  %}
       <p><a href="{{ paper_pdf_url }}" target="_blank">PDF</a> by {{ paper.authors }}. </p>
     {% else %}
-      <p>{{ paper.name }} by {{ paper.authors }}. </p>
+      <p>{{ paper.name }} by {{ paper.authors }}. {{ paper.publication }}. </p>
     {% endif %}
 {% endfor %}
 
