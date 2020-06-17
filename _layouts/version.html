@@ -22,7 +22,7 @@ layout: default
   <p>{{ page.summary }}</p>
 
 {% capture papers %}
-  {{ site.data.publications | where_exp: "item", "item.academic !='' or item.press == !=''" }}
+  {{ site.data.publications | where_exp: "paper", "paper.academic !='' or paper.popular-press == !=''" }}
 {% endcapture %}
 
 {% for paper in papers %}
@@ -33,7 +33,7 @@ layout: default
   {% if paper.link and paper.pdf !=""  %}
     <p><a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
   {% elsif paper.link !=""  %}
-    <p>{{ paper.authors }} <a href="{{ paper_pdf_url }}">{{ paper.name }}.</a>{{ paper.publication }}</p>
+    <p>{{ paper.authors }} <a href="{{ paper.link }}">{{ paper.name }}.</a>{{ paper.publication }}</p>
   {% elsif paper.pdf !=""  %}
     <p>{{ paper.name }}</p>
   {% else %}
