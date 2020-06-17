@@ -22,7 +22,7 @@ layout: default
   <p>{{ page.summary }}</p>
 
 {% capture papers %}
-  {{ site.data.publications | where_exp: "academic !='' or press == !=''" }}
+  {{ site.data.publications | where_exp: "item", "item.academic !='' or item.press == !=''" }}
 {% endcapture %}
 
 {% for paper in papers %}
