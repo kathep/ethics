@@ -21,20 +21,22 @@ layout: default
     <h4>About</h4>
   <p>{{ page.summary }}</p>
 
-{% assign papers = site.data.publications %}
+{% assign papers = site.data.publications | sort: reverse | where_exp: "article", "article.academic.ref != '' or article.popular-press != ''" %}
 
 {% for paper in papers %}
   {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}
   {% if paper.ref contains page.object-id %}
     <h4>Related writing</h4>
+  {% endif %}
+  {% if paper.ref contains page.object-id %}
     {% if paper.link and paper.pdf !=""  %}
-      <p><a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
+      <p>{{ paper.authors }} <a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
     {% elsif paper.link !=""  %}
-      <p>{{ paper.authors }} <a href="{{ paper.link }}">{{ paper.name }}.</a>{{ paper.publication }}</p>
+      <p><a href="{{ paper.link }}">{{ paper.name }}</a> by {{ paper.authors }}. {{ paper.publication }}</p>
     {% elsif paper.pdf !=""  %}
-      <p>{{ paper.name }}</p>
+      <p><a href="{{ paper_pdf_url }}" target="_blank">PDF</a> by {{ paper.authors }}. </p>
     {% else %}
-      <p>{{ paper.name }}</p>
+      <p>{{ paper.name }} by {{ paper.authors }}. </p>
     {% endif %}
   {% endif %}
 {% endfor %}
