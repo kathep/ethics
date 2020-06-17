@@ -14,7 +14,7 @@ layout: default
   Below section conditionally outputs the 'About' section details.
 {% endcomment %}
 
-<h2> {{ page.title }}</h2>
+<h2>{{ page.title }}</h2>
   <h3>Details</h3>
   <p><em>Version:</em> {{ page.version }}<br>
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
@@ -28,7 +28,7 @@ layout: default
     {% if paper.link and paper.pdf !=""  %}
   <p><a href="{{ paper.link }}">{{ paper.name }}</a> <a href="{{ paper_pdf_url }}" target="_blank">PDF</a></p>
     {% elsif paper.link !=""  %}
-  <p>{{ paper.name }} <a href="{{ paper_pdf_url }}">{{ paper.name }}</a></p>
+  <p>{{ paper.authors }} <a href="{{ paper_pdf_url }}">{{ paper.name }}.</a>{{ paper.publication }}</p>
     {% elsif paper.pdf !=""  %}
 <p>{{ paper.name }}</p>
     {% else %}
@@ -36,7 +36,7 @@ layout: default
     {% endif %}
   {% endif %}
 {% endfor %}
-  </p>
+
 
 <hr>
 
@@ -149,7 +149,27 @@ layout: default
 {% endfor %}
 </ul>
 
+
+{% assign versions = site.versions %}
+
+<h3>Citation</h3>
+<p>Hepworth, Katherine. <em>{{ page.title }}</em>, Version {{ page.version }}. ({{ page.date |  date: "%Y" }}).
+  {% if page.pdf %}
+    Intellectual contribution, text, and artwork by the author.
+  {% elsif %}
+    From paper
+    {% for paper_cite in papers %}
+      {% if paper_cite.ref contains page.object-id %}
+        {{ paper_cite.citation }}
+      {% else %}
+        <a href="https://doi.org/10.5281/zenodo.3773299" target="_blank">DOI: 10.5281/zenodo.3773299</a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+
+
 <h3>License</h3>
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Ethical Visualization</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://kathep.github.io/ethics" property="cc:attributionName" rel="cc:attributionURL">Katherine Hepworth</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://kathep.github.io/ethics" rel="dct:source">https://kathep.github.io/ethics</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://kathep.github.io/ethics" rel="cc:morePermissions">https://kathep.github.io/ethics</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Ethical Visualization</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://kathep.github.io/ethics" property="cc:attributionName" rel="cc:attributionURL">Katherine Hepworth</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://kathep.github.io/ethics" rel="dct:source">https://kathep.github.io/ethics</a>.<br />Permissions beyond the scope of this license may be available from personal correspondence with the author.
 
 </div>
