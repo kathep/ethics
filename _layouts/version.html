@@ -20,7 +20,7 @@ layout: default
     <em>Date:</em> {{ page.date |  date: "%B %Y" }}</p>
     <h4>About</h4>
   <p>{{ page.summary }}</p>
-{% assign papers = site.data.publications.academic %}
+{% assign papers = site.data.publications %}
 {% for paper in papers %}
       {% capture paper_pdf_url %}{{ "" | absolute_url }}{{ paper.pdf }}{% endcapture %}
   {% if paper.ref contains page.object-id %}
