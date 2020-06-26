@@ -107,7 +107,7 @@ layout: default
 {% for person in people %}
   {% capture ref %}{{person.ref}}{% endcapture %}
   {% assign details = site.data.people | where_exp: "deets",
-  "deets.short-name == ref" %}
+  "deets.short-name contains ref" %}
 
     <li>
   {% if details.link %}
