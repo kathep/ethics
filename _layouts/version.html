@@ -103,7 +103,6 @@ layout: default
 
 {% assign people = site.data.acknowledgements.[label].people   %}
 {% assign details = site.data.people | where_exp: "deets", "deets.short-name == site.data.acknowledgements.[label].people.ref %}
-  {% capture name %}{{ site.data.people.name | where_exp: "deets", "deets.short-name == site.data.acknowledgements.[label].people.ref"}}{% endcapture %}
 
 <ul>
 {% for person in people %}
