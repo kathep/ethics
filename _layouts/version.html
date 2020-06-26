@@ -99,10 +99,10 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 2158
+### new loop name code - update 2212
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
-{% assign people = site.data.people | where_exp: "item", "item.short-name contains contributors.ref"  %}
+{% assign people = site.data.people  %}
 
 <ul>
 {% for contributor in contributors %}
@@ -116,6 +116,8 @@ layout: default
 
       Contributor.ref var: {{ contributor.ref }}<br>
       Person var: {{ person }}<br>
+      Person.name var: {{ person.name }}<br>
+      Person.link var: {{ person.link }}<br>
 
   {% if contributor.contribution %}
       <em>Specific contribution:</em> {{ contributor.contribution }}
