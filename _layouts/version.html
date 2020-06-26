@@ -81,7 +81,7 @@ layout: default
 
 {% comment %}
   ACKNOWLEDGEMENTS
-  Below section conditionally shows contributors, institutions, and citation.
+  Below section conditionally shows contributors, organizations, and citation.
 {% endcomment %}
 
 {% capture acknowledgements_h2 %}
@@ -89,7 +89,7 @@ layout: default
   <h2> Acknowledgements </h2>
 {% endcapture%}
 
-{% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].institutions %}
+{% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].organizations %}
   {{ acknowledgements_h2 | markdownify }}
 {% endif %}
 
@@ -104,15 +104,13 @@ layout: default
 {% assign people = site.data.acknowledgements.[label].people %}
 {% assign details = site.data.people  %}
 
+
 <ul>
 {% for person in people %}
   {% capture testname %}{{ site.data.people  | where_exp: "deets", "deets.short-name == people.ref" }}{% endcapture %}
 
     <li>
   {% for persons in details %}
-    {% if details.short-name == persons.ref %}
-        <strong> {{ details.name  | where_exp: "deets", "deets.short-name == person.ref" }} </strong>
-    {% endif %}
 
     {{ persons.name  | where_exp: "deets", "deets.short-name == person.ref" }}<br>
       {{ persons.ref }}<br>
@@ -153,14 +151,14 @@ layout: default
 {% endfor %}
 </ul>
 
-{% if site.data.acknowledgements.[label].institutions %}
-  <h3> Supporting institutions </h3>
+{% if site.data.acknowledgements.[label].organizations %}
+  <h3> Supporting organizations </h3>
   <p>The following institutions have supported work on this version.</p>
 {% endif %}
 
 <ul>
 
-{% for place in site.data.acknowledgements.[label].institutions %}
+{% for place in site.data.acknowledgements.[label].organizations %}
 
   <li>
 {% if place.link %}
