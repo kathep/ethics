@@ -99,7 +99,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 2257
+### new loop name code - update 2334
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
@@ -119,6 +119,8 @@ layout: default
 
 
       Contributor.ref var: {{ contributor.ref }}<br>
+      Person.name var: {{ person.name }}<br>
+      Person.link var: {{ person.link }}<br>
       Person var: {{ person }}<br>
       Contributor.person.link var: {{ contributor.person.link }}<br>
 
