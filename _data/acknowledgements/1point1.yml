@@ -1,34 +1,22 @@
 version: 1.1
 ref: 1point1
 people:
-- name: Christopher Church
+- ref: chris
+  name: Christopher Church
   organization: University of Nevada, Reno
   link: http://www.christophermchurch.com/
   location: Reno
   relationship: Co-author
   contribution: Co-conceived ethical visualization workflow while writing Racism in the Machine paper together. Co-supervised student group working on first version.
 
-- name: Dave Maass
-  organization: Electronic Frontier Foundation
-  link: https://www.eff.org/about/staff/dave-maass
-  location: San Francisco
-  relationship: Co-author
-  contribution: The poster was inspired by Dave Maas. In his duties as a visiting professor at the University of Nevada, Reno in May 2018, we talked about ethical visualization and he read an in-press copy of Racism in the Machine. He asked for the figure of the workflow from the paper, in his own words, to stick on his wall. I realised in that moment that the workflow itself did not follow ethical data visualization principles, was not in a format to be easily shared or understood, and might be of interest to other people who want to pin it on their walls.
+- ref: dave
+  contribution: Request for ethical visualization workflow figure was inspiration for the poster.
 
-- name: Aras Diller
-  organization: University of Nevada, Reno
-  location: Reno
-  relationship: student
+- ref: aras
   contribution: Worked on the first version of the ethical visualization poster as a class project for JOUR648 Data Visualization for Social Engagement. While the student group did an excellent job designing the poster, some of the language they used was not ethical. Therefore, this version is not shared publicly.
 
-- name: Kacee Johnson
-  organization: University of Nevada, Reno
-  location: Reno
-  relationship: student
+- ref: kacee
   contribution: Worked on the first version of the ethical visualization poster as a class project for JOUR648 Data Visualization for Social Engagement. While the student group did an excellent job designing the poster, some of the language they used was not ethical. Therefore, this version is not shared publicly.
 
-- name: Sarah Krutz
-  organization: University of Nevada, Reno
-  location: Reno
-  relationship: student
+- ref: sarah
   contribution: Worked on the first version of the ethical visualization poster as a class project for JOUR648 Data Visualization for Social Engagement. While the student group did an excellent job designing the poster, some of the language they used was not ethical. Therefore, this version is not shared publicly.

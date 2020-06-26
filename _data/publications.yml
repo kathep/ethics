@@ -1,9 +1,9 @@
 - name: "Racism in the Machine: Visualization Ethics in Digital Humanities Projects"
+  short-name: machine
   type: academic
   authors: Katherine Hepworth and Christopher Church
   citation: "Hepworth, K. & Church, C. 2018. 'Racism in the Machine: Visualization Ethics in Digital Humanities Projects.' Digital Humanities Quarterly. 12:4."
   publication: Digital Humanities Quarterly
-  short-name: Racism in the Machine
   issue-vol: 12(4)
   date: 2018-12-20
   link: http://www.digitalhumanities.org/dhq/vol/12/4/000408/000408.html
@@ -11,11 +11,11 @@
   ref: 1point0, 1point1
 
 - name: "Make Me Care: Visualization Ethics in the Sciences and Data Sciences"
+  short-name: care
   type: academic
   authors: Katherine Hepworth
   publication: HCII DUXU2020 Conference Proceedings
   citation: "Hepworth, K. 2020(forthcoming). 'Make Me Care: Visualization Ethics in the Sciences and Data Sciences.' HCII DUXU2020 Conference Proceedings."
-  short-name: Make Me Care
   issue-vol:
   date: 2020-07-15
   link:
@@ -23,6 +23,7 @@
   ref: 3point0, 3point1, 3point2
 
 - name: "Ethical Design Recommendations for COVID-19 Visualizations"
+  short-name: covid
   type: popular-press
   authors: Katherine Hepworth and Amanda Makulec
   publication: Nightingale

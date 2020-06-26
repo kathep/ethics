@@ -1,0 +1,44 @@
+- name: Land-Grab Universities
+  short-name: lgu
+  type: map, database, timeline
+  organization: High Country News
+  date: 2020
+  link: https://www.landgrabu.org/
+
+- name: Racial Terror Lynchings Map, Lynching in America
+  short-name: rtl
+  type: map, cards
+  organization: https://lynchinginamerica.eji.org/explore
+  date: 2020
+  publication:
+    ref: machine
+
+- name: Map of White Supremacy's Mob Violence, Monroe and Florence Work Today
+  short-name: mob
+  type: map, database, timeline, cards
+  organization: Auut Studios
+  link: https://plaintalkhistory.com/monroeandflorencework/explore/map2/#3/38/-97.5
+  date: 2020
+  publication:
+    ref: machine
+
+- name: Flatten The Curve
+  short-name: ftc
+  type: illustration, chart, animation
+  date: 2020
+
+- name: Missing and Murdered Indigenous Women
+  short-name: mmiw
+  type: database
+  link: https://www.mmiwdatabase.com/
+  date: 2020
+
+- name: Wage Inequality Maps, Hull House Maps and Papers
+  short-name: wage
+  link: https://en.wikipedia.org/wiki/File:WAGEMAP1.pdf
+  date: 1895
+
+- name: The Killing Times
+  short-name: kill
+  type: map, timeline, cards, database
+  link: https://www.theguardian.com/australia-news/ng-interactive/2019/mar/04/massacre-map-australia-the-killing-times-frontier-wars

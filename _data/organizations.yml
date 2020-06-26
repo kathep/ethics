@@ -1,0 +1,139 @@
+- name: University of Nevada, Reno
+  short-name: unr
+  link: https//www.unr.edu
+  relationship: employer, funder
+  location:
+    city: Reno
+    country: United States
+
+- name: University of Illinois
+  short-name: illinois
+  link: https://illinois.edu/
+  location:
+    city: Detroit
+    country: United States
+
+- name: Data Visualization Society
+  short-name: dvs
+  relationship: member
+
+- name: Electronic Frontier Foundation
+  short-name: eff
+  link: https://www.eff.org/about/staff/dave-maass
+  location:
+    city: San Francisco
+    country: United States
+
+- name: Office of Digital Humanities at the National Endowment of the Humanities
+  short-name: odh
+  link: https://www.neh.gov/divisions/odh
+  relationship: funder
+  location:
+    city: Washington DC
+    country: United States
+
+- name: Humboldt University
+  short-name: humboldt
+  link:
+  relationship: visited, talk
+  archive: Scientific Illustration Archive
+  location:
+    city: Berlin
+    country: Germany
+
+- name: University of the Creative Arts, Epsom
+  short-name: uca
+  link:
+  relationship: visited, archive
+  archive: Diagram Archive
+  location:
+    city: London
+    country: United Kingdom
+
+- name: SimplySecure
+  short-name: simply
+  link:
+  type: ngo
+  location:
+    city: Berlin
+    country: Germany
+
+- name: University of Applied Sciences Potsdam
+  short-name: potsdam
+  link: https://www.potsdam.de/node/276355
+  relationship: visited, talk
+  location:
+    city: Potsdam
+    country: Germany
+
+- name: Malardalen University
+  short-name: malardalen
+  link: https://www.mdh.se/en/malardalen-university
+  relationship: visited, talk, teaching
+  location:
+    city: Eskilstuna
+    country: Sweden
+
+- name: National Endowment of the Humanities
+  short-name: neh
+  link: https://www.neh.gov/
+  relationship: funder
+  location:
+    city: Washington, DC
+    country: United States
+
+- name: Bern University of the Applied Arts
+  short-name: bern
+  relationship: teaching, supervising
+  location:
+    city: Bern
+    country: Switzerland
+
+- name: polypoly
+  short-name: poly
+  relationship: consulting
+  location:
+    city: Berlin
+    country: Germany
+
+- name: Svelte Ventures
+  short-name: svelte
+  relationship: consulting
+  location:
+    city: Adelaide
+    country: Australia
+
+- name: University of Ljubljana
+  short-name: alou
+  relationship: visited, talk
+  location:
+    city: Ljubljana
+    country: Slovenia
+
+- name: University of Newcastle
+  short-name: newcastle
+  relationship: visited, teaching
+  location:
+    city: Newcastle
+    country: Australia
+
+- name: University of Victoria
+  short-name: victoria
+  relationship: visited, teaching
+  location:
+    city: Victoria
+    country: Canada
+
+- name: University of Melbourne
+  short-name: unimelb
+  relationship:
+  location:
+    city: Melbourne
+    country: Australia
+
+- name: AccessNow
+  short-name: access
+  relationship: talk
+  location:
+    city: New York
+    country: United States

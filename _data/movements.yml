@@ -1,0 +1,28 @@
+- name: Data for Black Lives
+  short-name: dbl
+  type: collective
+  link: http://d4bl.org/
+  participate: http://d4bl.org/action.html
+
+- name: Ni Una Menos
+  short-name: num
+  type: collective
+  link: https://niunamenos.org.ar/
+
+- name: Community Data Clinic
+  short-name: cdc
+  type: teaching
+  organization: illinois
+  link: https://publish.illinois.edu/communitydata/
+
+- name: 21 Day Racial Equity Challenge
+  short-name: equity
+  type: teaching
+  organization: MLPP
+  link: https://mlpp.org/21-day-racial-equity-challenge/
+
+- name: Collaborative Design Studio
+  short-name: coll
+  type: teaching
+  organization: MIT
+  link: https://codesign.mit.edu/

@@ -1,29 +1,218 @@
-academic:
-- name: "Racism in the Machine: Visualization Ethics in Digital Humanities Projects"
-  authors: Katherine Hepworth & Christopher Church
-  citation: "Hepworth, K. & Church, C. 2018. 'Racism in the Machine: Visualization Ethics in Digital Humanities Projects.' Digital Humanities Quarterly. 12:4."
-  short-name: Racism in the Machine
-  publication: Digital Humanities Quarterly
-  issue-vol: 12(4)
-  date: 2018-12-20
-  link: http://www.digitalhumanities.org/dhq/vol/12/4/000408/000408.html
-  pdf: /pdfs/Hepworth_Church_ Racism in the Machine_DHQ.pdf
-  ref: 1point0, 1point1
+- name: Christopher Church
+  short-name: chris
+  organization:
+    ref: unr
+  link: http://www.christophermchurch.com/
+  relationship: co-author, colleague
 
-- name: "Make Me Care: Visualization Ethics in the Sciences and Data Sciences"
-  citation: "Hepworth, K. 2020(forthcoming). 'Make Me Care: Visualization Ethics in the Sciences and Data Sciences.' HCII DUXU2020 Conference Proceedings."
-  short-name: Make Me Care
-  publication: HCII DUXU2020 Conference Proceedings
-  issue-vol:
-  date: 2020-07-15
-  link:
-  pdf: /pdfs/Hepworth_Make_Me_Care_HCII2020.pdf
-  ref: 3point0, 3point1
+- name: Aras Diller
+  short-name: aras
+  organization:
+    ref: unr
+  relationship: student
 
-industry:
-- name: Ethical Design Recommendations for COVID-19 Visualizations
-  citation: "Hepworth, K. & Makulec, A. 2020. 'Ethical Design Recommendations for COVID-19 Visualizations.' Nightingale. May 15, 2020. https://medium.com/p/cb4a2677ae40"
-  authors: Katherine Hepworth & Christopher Church
-  date: 2020-05-15
-  link: https://medium.com/nightingale/ethical-design-recommendations-for-covid-19-visualizations-cb4a2677ae40
-  ref: 3point15, 3point2
+- name: Kacee Johnson
+  short-name: kacee
+  organization:
+    ref: unr
+  relationship: student
+
+- name: Sarah Krutz
+  short-name: sarah
+  organization:
+    ref: unr
+  relationship: student
+
+- name: Dave Maas
+  short-name: dave
+  organization:
+    ref: eff
+  relationship: colleague
+  contribution: Request for ethical visualization workflow figure was inspiration for the poster.
+
+- name: Amanda Makulec
+  short-name: amanda
+  organization: Excella
+  link: https://www.linkedin.com/in/abmakulec/
+  location: New York
+  relationship: co-author, committee
+
+- name: Jason Forrest
+  short-name: jason
+  organization: McKinsey & Company
+  link: https://www.linkedin.com/in/jasonforrestftw/
+  location: New York
+  relationship: editor, committee, collaborator
+
+- name: Janice Baker
+  short-name: janice
+  organization:
+    ref: unr
+  relationship: student, co-author, collaborator
+
+- name: Chelsea Canon
+  short-name: chelsea
+  organization:
+    ref: unr
+  relationship: student, co-author, collaborator
+
+- name: Bridget Cogley
+  short-name: bridget
+  link: https://bridgetcogley.wordpress.com/about/
+  relationship: proofreader
+
+- name: Wibo Bakker
+  short-name: wibo
+  relationship: collaborator
+
+- name: Judith Moldenhauer
+  short-name: judith
+  organization: Wayne State University
+  relationship: editor
+
+- name: Sue Perks
+  short-name: sue
+  organization:
+    ref: uca
+  relationship: co-author, collaborator, visited, archive
+
+- name: Georgina Rogers
+  short-name: georgie
+  relationship: personal
+
+- name: Neil Richards
+  short-name: neil
+  organization: Groupon
+  relationship: committee
+
+- name: Aya Sato
+  short-name: aya
+  organization:
+    ref: unr
+  relationship: student
+
+- name: Josh Smith
+  short-name: josh
+  link: https://www.linkedin.com/in/datajackalope/
+  relationship: proofreader
+
+- name: Susan Meissner
+  short-name: suse
+  organization: Finland Immigration
+  relationship: co-presenter
+
+- name: Hannes Hahkio
+  short-name: hannes
+
+- name: Kathrin Amelung
+  short-name: kathrin
+  organization: Humboldt University
+  relationship: visited, archive
+
+- name: John Nyakatura
+  short-name: john
+  organization: Humboldt University
+  relationship: visited, archive
+
+- name: Julia Meer
+  short-name: julia
+  organization:
+    ref: potsdam
+  relationship: visited, talk
+
+- name: Marion Dork
+  short-name: marion
+  organization:
+    ref: potsdam
+  relationship: visited, talk
+
+- name: Robert Lzicar
+  short-name: robert
+  organization:
+    ref: bern
+  relationship: visited, teaching
+
+- name: Yvonne Erikson
+  short-name: yvonne
+  organization:
+    ref: malardalen
+  relationship: visited, talk, teaching
+
+- name: Karolina Uggla
+  short-name: karolina
+  organization:
+    ref: malardalen
+  relationship: visited, talk, teaching
+
+- name: Sven Ehrlman
+  short-name: sven
+  organization:
+    ref: poly
+  relationship: consulting
+
+- name: Joseph Cassar
+  short-name: joey
+  relationship: consulting
+  organization:
+    ref: svelte
+
+- name: Max Frischknecht
+  short-name: max
+  relationship: student
+  organization:
+    ref: bern
+
+- name: Sage Cheng
+  short-name: sage
+  organization:
+    ref: access
+  relationship: committee, co-presenter, co-facilitator
+
+- name: Georgia Bullen
+  short-name: georgia
+  organization:
+    ref: simply
+  relationship: co-presenter
+
+- name: Karla Wagner
+  short-name: karla
+  organization:
+    ref: unr
+  relationship: co-author, collaborator, colleague
+
+- name: Heather Holmes
+  short-name: heather
+  organization:
+    ref: unr
+  relationship: co-author, collaborator
+
+- name: Krysti Smith
+  short-name: krysti
+  organization:
+    ref: unr
+  relationship: co-author, collaborator
+
+- name: Soraya Okuda
+  short-name: soraya
+  organization:
+    ref: eff
+  relationship: co-facilitator, collaborator
+
+- name: Petra Cerne Ovens
+  short-name: petra
+  organization:
+    ref: alou
+  relationship: visited, talk
+
+- name: RJ Ramey
+  short-name: rj
+  organization:
+    ref: auut
+  relationship: studied
+
+- name: Anita Say Chan
+  short-name: anita
+  link: https://ischool.illinois.edu/people/anita-say-chan
+  organization:
+    ref: illinois
+  relationship: studied

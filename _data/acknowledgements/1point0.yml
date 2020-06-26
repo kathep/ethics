@@ -1,7 +1,8 @@
 version: 1.0
 ref: 1point0
 people:
-- name: Christopher Church
+- ref: chris 
+  name: Christopher Church
   organization: University of Nevada, Reno
   link: http://www.christophermchurch.com/
   location: Reno

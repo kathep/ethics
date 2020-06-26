@@ -1,43 +1,31 @@
 version: 3.2
 ref: 3point2
 people:
-- name: Georgina Rogers
+- ref: georgie
+  name: Georgina Rogers
   relationship: personal
   contribution: Discussion of ethical visualization; feedback on 3.1 from Make Me Care paper and poster.
 
-- name: Sue Perks
-  organization: University of the Creative Arts
-  relationship: co-author, research collaborator
+- ref: sue
   contribution: Feedback on 3.1 in Make Me Care paper; suggestion of checklist format.
 
-- name: Wibo Bakker
-  relationship: research collaborator
+- ref: wibo
   contribution: Feedback on 3.1 in Make Me Care paper.
 
-- name: Judith Moldenhauer
-  organization: Wayne State University
-  relationship: editor
+- ref: judith
   contribution: Discussion of ethical visualization; feedback on 3.1 in Make Me Care paper.
 
-- name: Janice Baker
-  organization: University of Nevada, Reno
-  relationship: student
+- ref: janice
   contribution: Feedback on 3.1 in Make Me Care paper.
 
-- name: Chelsea Canon
-  organization: University of Nevada, Reno
-  relationship: student, co-author, research collaborator
+- ref: chelsea
   contribution: Feedback on 3.1 in Make Me Care paper.
 
-- name: Aya Sato
-  organization: University of Nevada, Reno
-  relationship: student
+- ref: aya
   contribution: Feedback on 3.1 in Make Me Care paper.
 
-institutions:
-- name: Office of Digital Humanities at the National Endowment of the Humanities
-  link: https://www.neh.gov/divisions/odh
-  relationship: funder
+organizations:
+- ref: odh
   contribution: "Awarded the Digital Humanities Advancement Grant for the project Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts."
   grant:
   - proposal-name: "Ethical Visualization in the Age of Big Data: Contemporary Cultural Implications of Pre- Twentieth-Century French Texts"
@@ -46,17 +34,11 @@ institutions:
     grant-number: HAA-266490-19
     grant-date: 2019-07-01
 
-- name: University of Nevada, Reno
-  link: https://www.unr.edu/
-  relationship: employer
+- ref: unr
   contribution: This version was supported by sabbatical leave.
 
-- name: College of Liberal Arts, University of Nevada, Reno
-  link: https://www.unr.edu/liberal-arts
-  relationship: employer
+- ref: cla
   contribution: Co-funding the Planning Workshop 'Ethical Visualization in the Age of Big Data', which contributed to the intellectual progress represented in the current version.
 
-- name: Reynolds School of Journalism, University of Nevada, Reno
-  link: https://www.unr.edu/journalism
-  relationship: employer, funder
+- ref: rsj
   contribution: Co-funding the Planning Workshop 'Ethical Visualization in the Age of Big Data', which contributed to the intellectual progress represented in the current version. This version was also supported by a Semenza Professional Development grant, which made possible professional development and teaching travel to DHDownunder in Newcastle, Australia, in December 2019.

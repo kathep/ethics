@@ -2,7 +2,6 @@ version: 2.1
 ref: 2point1
 people:
 
-institutions:
-- name: University of Nevada, Reno
-  relationship: employer
+organizations:
+- ref: unr
   contribution: This version was supported by sabbatical leave and an Institutional Activities Grant.

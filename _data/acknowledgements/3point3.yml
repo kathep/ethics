@@ -1,29 +1,32 @@
 version: 3.3
 ref: 3point3
 people:
-- name: Sue Perks
+- ref: sue
+  name: Sue Perks
   organization: University of the Creative Arts
   url:
   relationship: research collaborator
   contribution: Feedback on 3.1 in Make Me Care paper; suggestion of checklist format.
 
-- name: Wibo Bakker
-  organization:
-  url:
-  relationship: research collaborator
+- ref: wibo
   contribution: Feedback on 3.1 in Make Me Care paper.
 
-- name: Janice Baker
-  organization: University of Nevada, Reno
-  relationship: student
+- ref: janice
   contribution: Suggestions for application to harm reduction context.
 
-- name: Chelsea Canon
-  organization: University of Nevada, Reno
-  relationship: student, co-author, research collaborator
+- ref: chelsea
   contribution: Suggestions for application to harm reduction context.
 
-- name: Aya Sato
-  organization: University of Nevada, Reno
-  relationship: student
+- ref: aya
   contribution: Suggestions for application to harm reduction context.
+
+- ref: anita
+  contribution: Rich discussion of relational infrastructures and feminist data methods. This informed language used in, and positioning of, this version.
+
+organizations:
+- ref: unr
+  contribution: Granted sabbatical leave.
+
+ideas:
+- name: relational infrastructures
+  people: anita
