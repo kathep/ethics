@@ -99,24 +99,23 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 2020
+### new loop name code - update 2027
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
-{% assign details = site.data.people  %}
-
+{% assign people = site.data.people  %}
 
 <ul>
-{% for person in people %}
-  {% capture testname %}{{ site.data.people  | where_exp: "deets", "deets.short-name == people.ref" }}{% endcapture %}
+{% for contributor in contributors %}
+  {% capture testname %}{{ people  | where_exp: "item", "item.short-name == contributor.ref" }}{% endcapture %}
 
+  {% for person in people %}
     <li>
-  {% for persons in details %}
+    {{ person.name  | where_exp: "item", "item.short-name == person.ref" }}<br>
+  {% endfor %}
 
-    {{ persons.name  | where_exp: "deets", "deets.short-name == person.ref" }}<br>
-      Persons.ref var{{ persons.ref }}<br>
-      Testname var: {{ person.testname }}<br>
-
-  {% endfor %}<br>
+      Persons.ref var: {{ persons.ref }}<br>
+      Contributor.testname var: {{ contributor.testname }}<br>
+      Testname.name var: {{ testname.name }}<br>
 
   {% if person.contribution %}
       <em>Specific contribution:</em> {{person.contribution}}
