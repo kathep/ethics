@@ -108,7 +108,7 @@ layout: default
 {% for contributor in contributors %}
   {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
-  {% capture name1 %}{{ person.name }}{% endcapture %}
+  {% capture name1 %}{{ people.name | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
 
