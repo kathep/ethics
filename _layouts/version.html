@@ -99,10 +99,10 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 2000
+### new loop name code - update 2011
 
 {% assign people = site.data.acknowledgements.[label].people %}
-{% assign details = site.data.people | where_exp: "deets", "deets.short-name == people.ref"  %}
+{% assign details = site.data.people  %}
 
 <ul>
 {% for person in people %}
@@ -110,14 +110,15 @@ layout: default
 
     <li>
   {% for persons in details %}
-  {% if persons.ref %}
-      <strong> {{ details.name  | where_exp: "deets", "deets.short-name == person.ref" }} </strong>
-  {% endif %}
+    {% if details.short-name == persons.ref %}
+        <strong> {{ details.name  | where_exp: "deets", "deets.short-name == person.ref" }} </strong>
+    {% endif %}
 
-  {{ persons.name  | where_exp: "deets", "deets.short-name == person.ref" }}<br>
-    {{ person.testname }}<br>
+    {{ persons.name  | where_exp: "deets", "deets.short-name == person.ref" }}<br>
+      {{ persons.ref }}<br>
+      {{ person.testname }}<br>
 
-{% endfor %}<br>
+  {% endfor %}<br>
 
   {% if person.contribution %}
       <em>Specific contribution:</em> {{person.contribution}}
