@@ -110,10 +110,10 @@ layout: default
 
     <li>
   {% for person in people %}
-    {{ person.name  | where_exp: "item", "item.short-name == contributor.ref" }}<br>
+    {{ person.name  | where_exp: "item", "item.short-name == [contributor.ref]" }}.
   {% endfor %}
 
-      Persons.ref var: {{ persons.ref }}<br>
+      Contributor.ref var: {{ contributor.ref }}<br>
       Contributor.testname var: {{ contributor.testname }}<br>
       Testname.name var: {{ testname.name }}<br>
 
