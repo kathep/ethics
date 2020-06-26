@@ -103,7 +103,7 @@ layout: default
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
-{% assign relevant_people = site.data.people | where_exp: "person", "person.short-name contains contributors.ref"   %}
+{% assign relevant_people = site.data.people | where_exp: "person", "person.short-name == contributors.ref"   %}
 
 <ul>
 {% for contributor in contributors %}
