@@ -106,7 +106,7 @@ layout: default
 
 
 <ul>
-{% for people in contributors | where_exp: "person", "person.short-name == contributors.ref" %}
+{% for people in contributors | where_exp: "person", "person.ref contains people.short-name" %}
 
 {% for contributor in contributors %}
 
