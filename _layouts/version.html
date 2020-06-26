@@ -102,22 +102,21 @@ layout: default
 ### new loop name code
 
 {% assign people = site.data.acknowledgements.[label].people %}
-{% assign details = site.data.people | where_exp: "deets",
-  "deets.short-name contains people.ref" %}
+{% assign details = site.data.people %}
 
 <ul>
 {% for person in people %}
 
     <li>
-  {% if person.ref == site.data.people.short-name %}
-    {% if site.data.people.link %}
+  {% if person.ref == details.short-name and details.link != "" %}
       <a href="details.link"><strong>  {{ details.name }} </strong></a>
-    {% else %}
+    {% elsif %}
       <strong> {{ details.name }} </strong>
-    {% endif %}
+    {% else %}
+      {{ person.ref }}
   {% endif %}
 
-  {{ person.ref }}<br>
+    <br>
 
   {% if person.contribution %}
       <em>Specific contribution:</em> {{person.contribution}}
