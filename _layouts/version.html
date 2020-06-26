@@ -105,11 +105,11 @@ layout: default
 
 <ul>
 {% for person in people %}
-  {% capture details %}{{ site.data.people | where_exp: "deets", "deets.short-name == person.ref"}}{% endcapture %}
+  {% capture name %}{{ site.data.people.name | where_exp: "deets", "deets.short-name == site.data.acknowledgements.[label].people.ref"}}{% endcapture %}
 
     <li>
-  {% if details.name and details.link %}
-      <a href="details.link"><strong>  {{ details.name }} </strong></a>
+  {% if person.name %}
+      <a ><strong>  {{ details.name }} </strong></a>
     {% elsif %}
       <strong> {{ details.name }} </strong>
     {% else %}
