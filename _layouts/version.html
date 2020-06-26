@@ -106,11 +106,13 @@ layout: default
 
 <ul>
 {% for contributor in contributors %}
-  {% capture person %}{{ people  | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
+  {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
+  {% for person in people | where_exp: "item", "item.short-name contains contributor.ref"  %}
     {{ person.name }}.
     {{ person.link }}.
+  {% endfor %}
 
       Contributor.ref var: {{ contributor.ref }}<br>
       Person var: {{ person }}<br>
