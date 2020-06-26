@@ -99,7 +99,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 2247
+### new loop name code - update 2257
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
@@ -107,11 +107,16 @@ layout: default
 
 <ul>
 {% for contributor in contributors %}
+
   {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
   {% capture name1 %}{{ people.name | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
+  {% for person1 in people %}
+    person1.loop var: {{ person1.name }}
+  {% endfor %}
+
       {% for relevant_person in relevant_people %}
         {{ relevant_person.name }}
       {% endfor %}
