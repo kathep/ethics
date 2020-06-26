@@ -7,7 +7,7 @@ layout: default
 
   {% capture label %}{{ page.object-id  }}{% endcapture %}
 
-  <div class="version">
+<div class="version">
 
 {% comment %}
   ABOUT
@@ -99,6 +99,29 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
+### new loop name code
+
+{% assign people = site.data.acknowledgements.[label].people %}
+
+<ul>
+{% for person in people %}
+  {% capture ref %}{{person.ref}}{% endcapture %}
+  {% assign details = site.data.people | where_exp: "deets",
+  "deets.short-name == [ref]" %}
+
+    <li>
+  {% if details.link %}
+      <a href="details.link"><strong>  {{ details.name }} </strong></a>
+    {% else %}
+      <strong> {{ details.name }} </strong>
+  {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+
+
+### old loop name code
 <ul>
 {% for person in site.data.acknowledgements.[label].people %}
 
