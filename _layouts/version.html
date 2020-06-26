@@ -114,7 +114,7 @@ layout: default
     {{ person.ref }}
   {% endif %}
 
-  <br>
+  {{ details.name  | where_exp: "deets", "deets.short-name == person.ref" }}<br>
 
   {% if person.contribution %}
       <em>Specific contribution:</em> {{person.contribution}}
