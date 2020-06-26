@@ -105,9 +105,10 @@ layout: default
 {% assign details = site.data.people  | where_exp: "deets", "deets.short-name == people.ref"  %}
 
 <ul>
-{% for persons in details %}
+{% for person in people %}
 
     <li>
+  {% for persons in details %}
   {% if persons.ref %}
       <strong> {{ details.name  | where_exp: "deets", "deets.short-name == people.ref" }} </strong>
     {% else %}
@@ -118,7 +119,6 @@ layout: default
 
 {% endfor %}<br>
 
-{% for person in people %}
   {% if person.contribution %}
       <em>Specific contribution:</em> {{person.contribution}}
   {% endif %}
