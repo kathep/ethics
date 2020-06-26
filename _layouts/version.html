@@ -101,15 +101,16 @@ layout: default
 
 ### new loop name code
 
-{% assign people = site.data.acknowledgements.[label].people %}
+{% assign people = site.data.acknowledgements.[label].people   %}
+{% assign details = site.data.people | where_exp: "deets", "deets.short-name == site.data.acknowledgements.[label].people.ref %}
+  {% capture name %}{{ site.data.people.name | where_exp: "deets", "deets.short-name == site.data.acknowledgements.[label].people.ref"}}{% endcapture %}
 
 <ul>
 {% for person in people %}
-  {% capture name %}{{ site.data.people.name | where_exp: "deets", "deets.short-name == site.data.acknowledgements.[label].people.ref"}}{% endcapture %}
 
     <li>
   {% if person.name %}
-      <a ><strong>  {{ details.name }} </strong></a>
+      <a href="/"><strong>  {{ details.name }} </strong></a>
     {% elsif %}
       <strong> {{ details.name }} </strong>
     {% else %}
