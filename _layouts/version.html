@@ -109,7 +109,7 @@ layout: default
 
     <li>
   {% if person.ref %}
-      <strong> {{ details.name  | where_exp: "deets", "deets.short-name == person.ref }} </strong>
+      <strong> {{ details.name  | where_exp: "deets", "deets.short-name == person.ref" }} </strong>
     {% else %}
     {{ person.ref }}
   {% endif %}
