@@ -102,14 +102,14 @@ layout: default
 ### new loop name code - update 2147
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
-{% assign people = site.data.people  %}
+{% assign people = site.data.people | where_exp: "item", "item.short-name contains contributor.ref  %}
 
 <ul>
 {% for contributor in contributors %}
   {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
-  {% for person in people | where_exp: "item", "item.short-name contains contributor.ref"  %}
+  {% for person in people  %}
     {{ person.name }}.
     {{ person.link }}.
   {% endfor %}
