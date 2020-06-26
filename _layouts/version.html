@@ -106,7 +106,7 @@ layout: default
 
 <ul>
 {% for contributor in contributors %}
-  {% capture testname %}{{ people  | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
+  {% capture person %}{{ people  | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
   {% for person in people %}
@@ -115,9 +115,7 @@ layout: default
   {% endfor %}
 
       Contributor.ref var: {{ contributor.ref }}<br>
-      Contributor.testname var: {{ contributor.testname }}<br>
-      Testname.name var: {{ testname.name }}<br>
-      Testname var: {{ testname }}<br>
+      Person var: {{ person }}<br>
 
   {% if contributor.contribution %}
       <em>Specific contribution:</em> {{ contributor.contribution }}
