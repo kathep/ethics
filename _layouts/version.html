@@ -102,10 +102,10 @@ layout: default
 ### new loop name code
 
 {% assign people = site.data.acknowledgements.[label].people %}
-{% assign details = site.data.people %}
 
 <ul>
 {% for person in people %}
+{% assign details = site.data.people %}
 
     <li>
   {% if person.ref == details.short-name and details.link != "" %}
@@ -113,10 +113,10 @@ layout: default
     {% elsif %}
       <strong> {{ details.name }} </strong>
     {% else %}
-      {{ person.ref }}
+    {{ person.ref }}
   {% endif %}
 
-    <br>
+  <br>
 
   {% if person.contribution %}
       <em>Specific contribution:</em> {{person.contribution}}
