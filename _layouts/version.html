@@ -103,33 +103,30 @@ layout: default
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
-{% assign relevant_people = site.data.people | where_exp: "person", "person.short-name == contributors.ref"   %}
+
 
 <ul>
+{% for people in contributors | where_exp: "person", "person.short-name == contributors.ref" %}
+
 {% for contributor in contributors %}
 
   {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
-
-  {% capture name1 %}{{ people.name | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
   {% for person1 in people %}
     person1.loop var: {{ person1.name }}
   {% endfor %}
 
-      {% for relevant_person in relevant_people %}
-      relevant people var:  {{ relevant_person.name }}<br>
-      {% endfor %}
 
       Contributor.ref var: {{ contributor.ref }}<br>
       Person var: {{ person }}<br>
-      Name var: {{ name1 }}<br>
       Contributor.person.link var: {{ contributor.person.link }}<br>
 
   {% if contributor.contribution %}
       <em>Specific contribution:</em> {{ contributor.contribution }}
   {% endif %}
   </li>
+{% endfor %}
 {% endfor %}
 </ul>
 
