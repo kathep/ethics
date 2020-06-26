@@ -99,17 +99,17 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 1557
+### new loop name code - update 1605
 
 {% assign people = site.data.acknowledgements.[label].people %}
+{% assign details = site.data.people %}
 
 <ul>
 {% for person in people %}
-  {% capture details %}{{ site.data.people | where_exp: "deets", "deets.short-name contains person.ref"}}{% endcapture %}
 
     <li>
   {% if person.ref %}
-      <strong> {{ details.name }} </strong>
+      <strong> {{ details.name  | where_exp: "deets", "deets.short-name == person.ref }} </strong>
     {% else %}
     {{ person.ref }}
   {% endif %}
