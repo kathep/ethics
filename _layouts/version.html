@@ -108,17 +108,17 @@ layout: default
 {% for contributor in contributors %}
   {% capture testname %}{{ people  | where_exp: "item", "item.short-name == contributor.ref" }}{% endcapture %}
 
-  {% for person in people %}
     <li>
-    {{ person.name  | where_exp: "item", "item.short-name == person.ref" }}<br>
+  {% for person in people %}
+    {{ person.name  | where_exp: "item", "item.short-name == contributor.ref" }}<br>
   {% endfor %}
 
       Persons.ref var: {{ persons.ref }}<br>
       Contributor.testname var: {{ contributor.testname }}<br>
       Testname.name var: {{ testname.name }}<br>
 
-  {% if person.contribution %}
-      <em>Specific contribution:</em> {{person.contribution}}
+  {% if contributor.contribution %}
+      <em>Specific contribution:</em> {{ contributor.contribution }}
   {% endif %}
   </li>
 {% endfor %}
