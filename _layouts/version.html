@@ -112,11 +112,11 @@ layout: default
     {{ dog.ref }}
   {% endif %}
 
-{% if contributor.contribution %}
-    <em>Specific contribution:</em> {{contributor.contribution}}
-{% endif %}
-  </li>
+  {% if dogs.contribution %}
+      <em>Specific contribution:</em> {{dogs.contribution}}
+  {% endif %}
 {% endfor %}
+  </li>
 
 ### new loop name code - update 1522
 
