@@ -104,11 +104,11 @@ layout: default
 {% assign allpeople = site.data.people  %}
 {% assign contributors = site.data.acknowledgements.[label].people %}
 
-{% for person in allpeople %}
-{% for person in contributors | where_exp: "person", "person.short-name contains contributors.ref" %}
-  {% if contributor %}
-    <p>Contributor name: {{ person.name }}<p>
-  {% endif %}
+{% for personal in allpeople %}
+{% for personal in contributors | where_exp: "personal", "person.short-name contains contributors.ref" %}
+  {% for pers in personal %}
+    <p>Contributor name: {{ personal.name }}<p>
+  {% endfor %}
 {% endfor %}
 {% endfor %}
 
@@ -125,7 +125,7 @@ layout: default
   {% capture person2 %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
-  {% for person in contributors %}
+  {% for person in contributor %}
     person.loop var: {{ person.name }}
   {% endfor %}
 
