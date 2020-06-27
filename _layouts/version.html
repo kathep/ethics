@@ -101,10 +101,10 @@ layout: default
 
 ### newest loop name code - update 1322
 
-{% assign allpeople = site.data.people  %}
+{% assign allpeople = site.data.people | where_exp: "person", "person.short-name contains contributors.ref"  %}
 {% assign contributors = site.data.acknowledgements.[label].people %}
 
-{% for personal in allpeople | where_exp: "person", "person.short-name contains contributors.ref" %}
+{% for personal in allpeople %}
 {% for personal in contributors %}
   {% for pers in personal %}
     <p>Contributor name: {{ personal.name }}<p>
