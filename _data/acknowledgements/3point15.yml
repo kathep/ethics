@@ -2,11 +2,7 @@ version: 3.15
 ref: 3point15
 people:
 - ref: amanda
-  name: Amanda Makulec
   organization: Excella
-  link: https://www.linkedin.com/in/abmakulec/
-  location: New York
-  relationship: co-author, committee
   contribution: Co-author ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
 
 - ref: jason
@@ -14,9 +10,7 @@ people:
 
 - ref: bridget
   name: Bridget Cogley
-  link: https://bridgetcogley.wordpress.com/about/
-  relationship: proofreader
-  contribution: Feedback on ethical visualization checklist for COVID-19.
+  contribution: Proofreading and feedback on ethical visualization checklist for COVID-19.
 
 - ref: josh
   contribution: Feedback on ethical visualization checklist for COVID-19.
