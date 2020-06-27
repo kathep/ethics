@@ -120,13 +120,13 @@ layout: default
   </li>
 </ul>
 
-### new loop name code - update 1611
+### new loop name code - update 1630
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
 
 <ul>
-{% for contributor in contributors %}
+{% for person in contributors %}
   {% for person in people %}
 
     {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributors.ref" }}{% endcapture %}
