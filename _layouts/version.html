@@ -99,6 +99,25 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
+### newest loop name code 1537
+
+{% assign dogs = site.data.acknowledgements.[label].people %}
+{% assign dogdeets = site.data.people  %}
+
+<ul>
+
+  <li>
+{% for dog in dogs %}
+  {% if dog.ref contains deets.short-name  %}
+    {{ dog.ref }}
+  {% endif %}
+
+{% if contributor.contribution %}
+    <em>Specific contribution:</em> {{contributor.contribution}}
+{% endif %}
+  </li>
+{% endfor %}
+
 ### new loop name code - update 1522
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
