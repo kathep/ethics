@@ -105,8 +105,8 @@ layout: default
 {% assign people = site.data.people  %}
 
 <ul>
-{% for contributor in people %}
-  {% for contributor in contributors %}
+{% for contributor in contributors %}
+  {% for contributor in people %}
 
     {% capture person2 %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
