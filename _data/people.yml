@@ -1,217 +1,217 @@
-- name: Christopher Church
-  short-name: chris
+- short-name: chris
+  name: Christopher Church
   organization:
     ref: unr
   link: http://www.christophermchurch.com/
   relationship: co-author, colleague
 
-- name: Aras Diller
-  short-name: aras
+- short-name: aras
+  name: Aras Diller
   organization:
     ref: unr
   relationship: student
 
-- name: Kacee Johnson
-  short-name: kacee
+- short-name: kacee
+  name: Kacee Johnson
   organization:
     ref: unr
   relationship: student
 
-- name: Sarah Krutz
-  short-name: sarah
+- short-name: sarah
+  name: Sarah Krutz
   organization:
     ref: unr
   relationship: student
 
-- name: Dave Maas
-  short-name: dave
+- short-name: dave
+  name: Dave Maas
   organization:
     ref: eff
   relationship: colleague
   contribution: Request for ethical visualization workflow figure was inspiration for the poster.
 
-- name: Amanda Makulec
-  short-name: amanda
+- short-name: amanda
+  name: Amanda Makulec
   organization: Excella
   link: https://www.linkedin.com/in/abmakulec/
   location: New York
   relationship: co-author, committee
 
-- name: Jason Forrest
-  short-name: jason
+- short-name: jason
+  name: Jason Forrest
   organization: McKinsey & Company
   link: https://www.linkedin.com/in/jasonforrestftw/
   location: New York
   relationship: editor, committee, collaborator
 
-- name: Janice Baker
-  short-name: janice
+- short-name: janice
+  name: Janice Baker
   organization:
     ref: unr
   relationship: student, co-author, collaborator
 
-- name: Chelsea Canon
-  short-name: chelsea
+- short-name: chelsea
+  name: Chelsea Canon
   organization:
     ref: unr
   relationship: student, co-author, collaborator
 
-- name: Bridget Cogley
-  short-name: bridget
+- short-name: bridget
+  name: Bridget Cogley
   link: https://bridgetcogley.wordpress.com/about/
   relationship: proofreader
 
-- name: Wibo Bakker
-  short-name: wibo
+- short-name: wibo
+  name: Wibo Bakker
   relationship: collaborator
 
-- name: Judith Moldenhauer
-  short-name: judith
+- short-name: judith
+  name: Judith Moldenhauer
   organization: Wayne State University
   relationship: editor
 
-- name: Sue Perks
-  short-name: sue
+- short-name: sue
+  name: Sue Perks
   organization:
     ref: uca
   relationship: co-author, collaborator, visited, archive
 
-- name: Georgina Rogers
-  short-name: georgie
+- short-name: georgie
+  name: Georgina Rogers
   relationship: personal
 
-- name: Neil Richards
-  short-name: neil
+- short-name: neil
+  name: Neil Richards
   organization: Groupon
   relationship: committee
 
-- name: Aya Sato
-  short-name: aya
+- short-name: aya
+  name: Aya Sato
   organization:
     ref: unr
   relationship: student
 
-- name: Josh Smith
-  short-name: josh
+- short-name: josh
+  name: Josh Smith
   link: https://www.linkedin.com/in/datajackalope/
   relationship: proofreader
 
-- name: Susan Meissner
-  short-name: suse
+- short-name: suse
+  name: Susan Meissner
   organization: Finland Immigration
   relationship: co-presenter
 
-- name: Hannes Hahkio
-  short-name: hannes
+- short-name: hannes
+  name: Hannes Hahkio
 
-- name: Kathrin Amelung
-  short-name: kathrin
+- short-name: kathrin
+  name: Kathrin Amelung
   organization: Humboldt University
   relationship: visited, archive
 
-- name: John Nyakatura
-  short-name: john
+- short-name: john
+  name: John Nyakatura
   organization: Humboldt University
   relationship: visited, archive
 
-- name: Julia Meer
-  short-name: julia
+- short-name: julia
+  name: Julia Meer
   organization:
     ref: potsdam
   relationship: visited, talk
 
-- name: Marion Dork
-  short-name: marion
+- short-name: marion
+  name: Marion Dork
   organization:
     ref: potsdam
   relationship: visited, talk
 
-- name: Robert Lzicar
-  short-name: robert
+- short-name: robert
+  name: Robert Lzicar
   organization:
     ref: bern
   relationship: visited, teaching
 
-- name: Yvonne Erikson
-  short-name: yvonne
+- short-name: yvonne
+  name: Yvonne Erikson
   organization:
     ref: malardalen
   relationship: visited, talk, teaching
 
-- name: Karolina Uggla
-  short-name: karolina
+- short-name: karolina
+  name: Karolina Uggla
   organization:
     ref: malardalen
   relationship: visited, talk, teaching
 
-- name: Sven Ehrlman
-  short-name: sven
+- short-name: sven
+  name: Sven Ehrlman
   organization:
     ref: poly
   relationship: consulting
 
-- name: Joseph Cassar
-  short-name: joey
+- short-name: joey
+  name: Joseph Cassar
   relationship: consulting
   organization:
     ref: svelte
 
-- name: Max Frischknecht
-  short-name: max
+- short-name: max
+  name: Max Frischknecht
   relationship: student
   organization:
     ref: bern
 
-- name: Sage Cheng
-  short-name: sage
+- short-name: sage
+  name: Sage Cheng
   organization:
     ref: access
   relationship: committee, co-presenter, co-facilitator
 
-- name: Georgia Bullen
-  short-name: georgia
+- short-name: georgia
+  name: Georgia Bullen
   organization:
     ref: simply
   relationship: co-presenter
 
-- name: Karla Wagner
-  short-name: karla
+- short-name: karla
+  name: Karla Wagner
   organization:
     ref: unr
   relationship: co-author, collaborator, colleague
 
-- name: Heather Holmes
-  short-name: heather
+- short-name: heather
+  name: Heather Holmes
   organization:
     ref: unr
   relationship: co-author, collaborator
 
-- name: Krysti Smith
-  short-name: krysti
+- short-name: krysti
+  name: Krysti Smith
   organization:
     ref: unr
   relationship: co-author, collaborator
 
-- name: Soraya Okuda
-  short-name: soraya
+- short-name: soraya
+  name: Soraya Okuda
   organization:
     ref: eff
   relationship: co-facilitator, collaborator
 
-- name: Petra Cerne Ovens
-  short-name: petra
+- short-name: petra
+  name: Petra Cerne Ovens
   organization:
     ref: alou
   relationship: visited, talk
 
-- name: RJ Ramey
-  short-name: rj
+- short-name: rj
+  name: RJ Ramey
   organization:
     ref: auut
   relationship: studied
 
-- name: Anita Say Chan
-  short-name: anita
+- short-name: anita
+  name: Anita Say Chan
   link: https://ischool.illinois.edu/people/anita-say-chan
   organization:
     ref: illinois
