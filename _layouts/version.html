@@ -99,16 +99,16 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1542
+### newest loop name code 1602
 
 {% assign dogs = site.data.acknowledgements.[label].people %}
-{% assign dogdeets = site.data.people  %}
+{% assign alldogdeets = site.data.people  %}
 
 <ul>
 
   <li>
 {% for dog in dogs %}
-  {% if dog.ref contains deets.short-name  %}
+  {% if dog.ref contains alldogdeets.short-name  %}
     {{ dog.ref }}
   {% endif %}
 
@@ -118,28 +118,24 @@ layout: default
 {% endfor %}
   </li>
 
-### new loop name code - update 1522
+### new loop name code - update 1602
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
-
 
 <ul>
 {% for person in people %}
   {% for contributor in contributors %}
 
-    {% capture person2 %}{{ people | where_exp: "item", "item.short-name contains contributors.ref" }}{% endcapture %}
+    {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributors.ref" }}{% endcapture %}
 
       <li>
-    {% for person1 in people %}
-      person1.loop var: {{ person1.name | where_exp: "item", "item.short-name contains contributors.ref" }}
-    {% endfor %}
 
         Contributor.ref var: {{ contributor.ref }}<br>
         Contributor.name var: {{ contributor.name }}<br>
         Person.name var: {{ person.name }}<br>
         Person.link var: {{ person.link }}<br>
-        Person2 var: {{ person2 }}<br>
+        Person2 var: {{ person }}<br>
         Contributor.person.link var: {{ contributor.person.link }}<br>
 
     {% if contributor.contribution %}
