@@ -99,7 +99,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 1500
+### new loop name code - update 1503
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
@@ -114,14 +114,13 @@ layout: default
 
     <li>
   {% for person in contributors %}
-    person.loop var: {{ person.name }}
+    person1.loop var: {{ person1.name }}
   {% endfor %}
 
 
       Contributor.ref var: {{ contributor.ref }}<br>
       Contributor.name var: {{ contributor.name }}<br>
-      Contributor.link var: {{ contributor.link }}<br>
-      Person var: {{ person }}<br>
+      Person.link var: {{ person.link }}<br>
       Person.name var: {{ person.name }}<br>
       Person.link var: {{ person.link }}<br>
       Person var: {{ person2 }}<br>
