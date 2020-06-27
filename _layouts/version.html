@@ -106,29 +106,29 @@ layout: default
 
 
 <ul>
-{% for contributors in people | where_exp: "person", "person.ref contains people.short-name" %}
+{% for person in people %}
+  {% for contributor in contributors %}
 
-{% for contributor in contributors %}
+    {% capture person2 %}{{ people | where_exp: "item", "item.short-name contains contributors.ref" }}{% endcapture %}
 
-  {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributors.ref" }}{% endcapture %}
+      <li>
+    {% for person1 in people %}
+      person1.loop var: {{ person1.name | where_exp: "item", "item.short-name contains contributors.ref" }}
+    {% endfor %}
 
-    <li>
-  {% for person1 in people %}
-    person1.loop var: {{ person1.name | where_exp: "item", "item.short-name contains contributors.ref" }}
+
+        Contributor.ref var: {{ contributor.ref }}<br>
+        Contributor.name var: {{ contributor.name }}<br>
+        Person.name var: {{ person.name }}<br>
+        Person.link var: {{ person.link }}<br>
+        Person2 var: {{ person2 }}<br>
+        Contributor.person.link var: {{ contributor.person.link }}<br>
+
+    {% if contributor.contribution %}
+        <em>Specific contribution:</em> {{ contributor.contribution }}
+    {% endif %}
+    </li>
   {% endfor %}
-
-
-      Contributor.ref var: {{ contributor.ref }}<br>
-      Person.name var: {{ person.name }}<br>
-      Person.link var: {{ person.link }}<br>
-      Person var: {{ person }}<br>
-      Contributor.person.link var: {{ contributor.person.link }}<br>
-
-  {% if contributor.contribution %}
-      <em>Specific contribution:</em> {{ contributor.contribution }}
-  {% endif %}
-  </li>
-{% endfor %}
 {% endfor %}
 </ul>
 
