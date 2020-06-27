@@ -99,7 +99,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1620
+### newest loop name code 1627
 
 {% assign dogs = site.data.acknowledgements.[label].people %}
 {% assign alldogdeets = site.data.people  %}
@@ -108,7 +108,7 @@ layout: default
 
 <ul>
 
-  <li>
+  <li>{{ forloop.dogswithdeets }}
 {% for dog in dogswithdeets %}
     {{ dog.ref | where_exp: "dog",
     "dog.short-name contains include.dogs.ref"  }}
