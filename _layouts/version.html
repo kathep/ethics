@@ -108,15 +108,15 @@ layout: default
 
 <ul>
 
-  <li>
 {% for dog in site.data.acknowledgements.[label].people %}
+  <li>
     {{ dog.ref  }}
 
   {% if dog.contribution %}
       <em>Specific contribution:</em> {{dog.contribution}}
   {% endif %}
-{% endfor %}
   </li>
+{% endfor %}
 </ul>
 
 ### new loop name code - update 1630
