@@ -109,8 +109,10 @@ layout: default
 <ul>
 
 {% for dog in site.data.acknowledgements.[label].people %}
+    {% capture dog_hash %}{{ people | where_exp: "item", "item.short-name contains contributors.ref" }}{% endcapture %}
   <li>
-    {{ dog.ref  }}
+    {{ dog.ref  }}<br>
+    {{ dog_hash.name  }}<br>
 
   {% if dog.contribution %}
       <em>Specific contribution:</em> {{dog.contribution}}
