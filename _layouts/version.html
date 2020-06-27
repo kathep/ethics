@@ -112,7 +112,8 @@ layout: default
     {% capture dog_hash %}{{ alldogdeets | where_exp: "item", "item.short-name contains dog.ref" }}{% endcapture %}
   <li>
     {{ dog.ref  }}<br>
-    {{ dog_hash.name  }}<br>
+    Dog_hash.name {{ dog_hash.name  }}<br>
+    Dog_hash {{ dog_hash }}<br>
 
   {% if dog.contribution %}
       <em>Specific contribution:</em> {{dog.contribution}}
