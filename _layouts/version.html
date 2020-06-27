@@ -99,13 +99,13 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code - update 1305
+### newest loop name code - update 1322
 
 {% assign allpeople = site.data.people  %}
 {% assign contributors = site.data.acknowledgements.[label].people %}
 
-{% for personal in allpeople %}
-{% for personal in contributors | where_exp: "personal", "person.short-name contains contributors.ref" %}
+{% for personal in allpeople | where_exp: "person", "person.short-name contains contributors.ref" %}
+{% for personal in contributors %}
   {% for pers in personal %}
     <p>Contributor name: {{ personal.name }}<p>
   {% endfor %}
