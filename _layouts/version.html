@@ -99,38 +99,50 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 1452
+### newest loop name code - update 133
+
+{% assign allpeople = site.data.people %}
+{% assign contributors = site.data.acknowledgements.[label].people %}
+{% assign peoples = allpeople | where_exp: "person", "person.short-name contains contributors.ref"  %}
+
+{% for personal in peoples %}
+  {% for pers in personal %}
+    <p>Contributor name: {{ personal.name }}<p>
+  {% endfor %}
+{% endfor %}
+
+### new loop name code - update 2348
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
-{% assign person = site.data.people  %}
+{% assign people = site.data.people  %}
+
 
 <ul>
+{% for contributor in people | where_exp: "person", "person.short-name contains contributors.ref" %}
 {% for contributor in contributors %}
-  {% if contributor.ref contains include.person.short-name %}
 
-    {% capture person2 %}{{ person | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
+  {% capture person2 %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
-      <li>
-    {% if include.person.short-name contains contributor.ref  %}
-      person.loop var: {{ person.name }}
-      name.loop var: {{ name }}
-    {% endif %}
+    <li>
+  {% for person in contributor %}
+    person.loop var: {{ person.name }}
+  {% endfor %}
 
 
-        Contributor.ref var: {{ contributor.ref }}<br>
-        Contributor.name var: {{ contributor.name }}<br>
-        Contributor.link var: {{ contributor.link }}<br>
-        Person var: {{ person }}<br>
-        Person.name var: {{ person.name }}<br>
-        Person.link var: {{ person.link }}<br>
-        Person2 var: {{ person2 }}<br>
-        Link var: {{ link }}<br>
+      Contributor.ref var: {{ contributor.ref }}<br>
+      Contributor.name var: {{ contributor.name }}<br>
+      Contributor.link var: {{ contributor.link }}<br>
+      Person var: {{ person }}<br>
+      Person.name var: {{ person.name }}<br>
+      Person.link var: {{ person.link }}<br>
+      Person2 var: {{ person2 }}<br>
+      Contributor.person2.link var: {{ contributor.person2.link }}<br>
 
-    {% if contributor.contribution %}
-        <em>Specific contribution:</em> {{ contributor.contribution }}
-    {% endif %}
-    </li>
+  {% if contributor.contribution %}
+      <em>Specific contribution:</em> {{ contributor.contribution }}
   {% endif %}
+  </li>
+{% endfor %}
 {% endfor %}
 </ul>
 
