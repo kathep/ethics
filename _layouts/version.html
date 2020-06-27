@@ -99,32 +99,30 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### new loop name code - update 1503
+### new loop name code - update 2334
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
 
 
 <ul>
+{% for contributors in people | where_exp: "person", "person.ref contains people.short-name" %}
 
 {% for contributor in contributors %}
-{% for contributor in people | where_exp: "person", "person.short-name contains contributors.ref" %}
 
-  {% capture person2 %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
+  {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
-  {% for person in contributors %}
+  {% for person1 in people %}
     person1.loop var: {{ person1.name }}
   {% endfor %}
 
 
       Contributor.ref var: {{ contributor.ref }}<br>
-      Contributor.name var: {{ contributor.name }}<br>
-      Person.link var: {{ person.link }}<br>
       Person.name var: {{ person.name }}<br>
       Person.link var: {{ person.link }}<br>
-      Person var: {{ person2 }}<br>
-      Contributor.person2.link var: {{ contributor.person2.link }}<br>
+      Person var: {{ person }}<br>
+      Contributor.person.link var: {{ contributor.person.link }}<br>
 
   {% if contributor.contribution %}
       <em>Specific contribution:</em> {{ contributor.contribution }}
