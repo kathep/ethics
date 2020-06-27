@@ -99,23 +99,11 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code - update 1330
-
-{% assign allpeople = site.data.people %}
-{% assign contributors = site.data.acknowledgements.[label].people %}
-{% assign peoples = allpeople | where_exp: "person", "person.short-name contains contributors.ref"  %}
-
-{% for personal in peoples %}
-  {% for pers in personal %}
-    <p>Contributor name: {{ personal.name }}<p>
-  {% endfor %}
-{% endfor %}
-
-### new loop name code - update 1346
+### new loop name code - update 1400
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign people = site.data.people  %}
-
+{% assign pers = people | where_exp: "item", "item.short-name contains contributor.ref"  %}
 
 <ul>
 {% for contributor in people | where_exp: "person", "person.short-name contains contributors.ref" %}
@@ -124,9 +112,9 @@ layout: default
   {% capture person2 %}{{ people | where_exp: "item", "item.short-name contains contributor.ref" }}{% endcapture %}
 
     <li>
-  {% for person in contributor %}
-    person.loop var: {{ person.name }}
-  {% endfor %}
+  {% if contributor.short-name contains contributor.ref  %}
+    person.loop var: {{ contributor.name }}
+  {% endif %}
 
 
       Contributor.ref var: {{ contributor.ref }}<br>
