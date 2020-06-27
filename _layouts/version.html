@@ -114,7 +114,7 @@ layout: default
 
     <li>
   {% for person1 in people %}
-    person1.loop var: {{ person1.name }}
+    person1.loop var: {{ person1.name | where_exp: "item", "item.short-name contains contributor.ref" }}
   {% endfor %}
 
 
