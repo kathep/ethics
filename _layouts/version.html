@@ -108,13 +108,12 @@ layout: default
 
 <ul>
 
-  <li>{{ dogswithdeets }}
-{% for dog in dogswithdeets %}
-    {{ dog.ref | where_exp: "dog",
-    "dog.short-name contains include.dogs.ref"  }}
+  <li>
+{% for dog in site.data.acknowledgements.[label].people %}
+    {{ dog.ref  }}
 
-  {% if dogs.contribution %}
-      <em>Specific contribution:</em> {{dogs.contribution}}
+  {% if dog.contribution %}
+      <em>Specific contribution:</em> {{dog.contribution}}
   {% endif %}
 {% endfor %}
   </li>
