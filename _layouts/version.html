@@ -99,7 +99,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1628
+### newest loop name code 0922
 
 {% assign dogs = site.data.acknowledgements.[label].people %}
 {% assign alldogdeets = site.data.people  %}
@@ -109,7 +109,7 @@ layout: default
 <ul>
 
 {% for dog in site.data.acknowledgements.[label].people %}
-    {% capture dog_hash %}{{ alldogdeets | where_exp: "item", "item.short-name contains dogs.ref" }}{% endcapture %}
+    {% capture dog_hash %}{{ alldogdeets | where_exp: "item", "item.short-name contains dog.ref" }}{% endcapture %}
   <li>
     {{ dog.ref  }}<br>
     {{ dog_hash.name  }}<br>
@@ -130,7 +130,7 @@ layout: default
 {% for person in contributors %}
   {% for person in people %}
 
-    {% capture person %}{{ people | where_exp: "item", "item.short-name contains contributors.ref" }}{% endcapture %}
+    {% capture person %}{{ people | where_exp: "item", "item.short-name contains person.ref" }}{% endcapture %}
 
       <li>
 
