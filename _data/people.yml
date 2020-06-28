@@ -57,7 +57,8 @@
   relationship: student, co-author, collaborator
 
 - name: Bridget Cogley
-  short-name: bridgetlink: https://bridgetcogley.wordpress.com/about/
+  short-name: bridget
+  link: https://bridgetcogley.wordpress.com/about/
   relationship: proofreader
 
 - name: Wibo Bakker
