@@ -85,12 +85,11 @@ layout: default
 {% endcomment %}
 
 {% capture acknowledgements_h2 %}
-<hr>
-  <h2> Acknowledgements </h2>
 {% endcapture%}
 
 {% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].organizations %}
-  {{ acknowledgements_h2 | markdownify }}
+<hr>
+  <h2> Acknowledgements </h2>
 {% endif %}
 
 
@@ -107,9 +106,9 @@ layout: default
 
 <ul>
 
-{% for contributor in contributors %}
-    {% assign person_deets = allpeople | where_exp: "item", "item.short-name contains contributor.ref" %}
-    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains contributor.ref" %}
+{% for people in contributors %}
+    {% assign person_deets = allpeople | where_exp: "item", "item.short-name contains people.ref" %}
+    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.ref" %}
   <li>
     {% for person in person_deets %}
       {{ person.name }}<br>
@@ -124,7 +123,7 @@ layout: default
     {% endfor %}
 
   {% if people.contribution %}
-      <em>Specific contribution:</em> {{contributor.contribution}}
+      <em>Specific contribution:</em> {{people.contribution}}
   {% endif %}
   </li>
 {% endfor %}
