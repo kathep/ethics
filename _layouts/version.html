@@ -113,7 +113,7 @@ layout: default
     {% capture dog_hash %}{{ alldogdeets | where_exp: "item", "item.short-name contains dog.ref" }}{% endcapture %}
   <li>
     {{ dog.ref  }}<br>
-    {% for deets in dog_hash %}
+    {% for deets in dog_name %}
       Dog_hash for loop with deets.link: {{ deets.link }}<br>
       Dog_hash for loop with link: {{ link }}<br>
     {% endfor %}
