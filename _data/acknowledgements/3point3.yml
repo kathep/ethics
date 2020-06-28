@@ -2,10 +2,6 @@ version: 3.3
 ref: 3point3
 people:
 - ref: sue
-  name: Sue Perks
-  organization: University of the Creative Arts
-  url:
-  relationship: research collaborator
   contribution: Feedback on 3.1 in Make Me Care paper; suggestion of checklist format.
 
 - ref: wibo

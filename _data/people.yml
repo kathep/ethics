@@ -1,87 +1,86 @@
-- short-name: chris
-  name: Christopher Church
+- name: Christopher Church
+  short-name: chris
   organization:
     ref: unr
   link: http://www.christophermchurch.com/
   relationship: co-author, colleague
 
-- short-name: aras
-  name: Aras Diller
+- name: Aras Diller
+  short-name: aras
   organization:
     ref: unr
   relationship: student
 
-- short-name: kacee
-  name: Kacee Johnson
+- name: Kacee Johnson
+  short-name: kacee
   organization:
     ref: unr
   relationship: student
 
-- short-name: sarah
-  name: Sarah Krutz
+- name: Sarah Krutz
+  short-name: sarah
   organization:
     ref: unr
   relationship: student
 
-- short-name: dave
-  name: Dave Maas
+- name: Dave Maas
+  short-name: dave
   organization:
     ref: eff
   relationship: colleague
   contribution: Request for ethical visualization workflow figure was inspiration for the poster.
 
-- short-name: amanda
-  name: Amanda Makulec
+- name: Amanda Makulec
+  short-name: amanda
   organization: Excella
   link: https://www.linkedin.com/in/abmakulec/
   location: New York
   relationship: co-author, committee
 
-- short-name: jason
-  name: Jason Forrest
+- name: Jason Forrest
+  short-name: jason
   organization: McKinsey & Company
   link: https://www.linkedin.com/in/jasonforrestftw/
   location: New York
   relationship: editor, committee, collaborator
 
-- short-name: janice
-  name: Janice Baker
+- name: Janice Baker
+  short-name: janice
   organization:
     ref: unr
   relationship: student, co-author, collaborator
 
-- short-name: chelsea
-  name: Chelsea Canon
+- name: Chelsea Canon
+  short-name: chelsea
   organization:
     ref: unr
   relationship: student, co-author, collaborator
 
-- short-name: bridget
-  name: Bridget Cogley
-  link: https://bridgetcogley.wordpress.com/about/
+- name: Bridget Cogley
+  short-name: bridgetlink: https://bridgetcogley.wordpress.com/about/
   relationship: proofreader
 
-- short-name: wibo
-  name: Wibo Bakker
+- name: Wibo Bakker
+  short-name: wibo
   relationship: collaborator
 
-- short-name: judith
-  name: Judith Moldenhauer
+- name: Judith Moldenhauer
+  short-name: judith
   organization: Wayne State University
   relationship: editor
 
-- short-name: sue
-  name: Sue Perks
+- name: Sue Perks
+  short-name: sue
   organization:
     ref: uca
   relationship: co-author, collaborator, visited, archive
 
-- short-name: georgie
-  name: Georgina Rogers
+- name: Georgina Rogers
+  short-name: georgie
   relationship: personal
 
-- short-name: neil
-  name: Neil Richards
+- name: Neil Richards
+  short-name: neil
   organization: Groupon
   relationship: committee
 
@@ -106,12 +105,14 @@
 
 - short-name: kathrin
   name: Kathrin Amelung
-  organization: Humboldt University
+  organization:
+    ref: humboldt
   relationship: visited, archive
 
 - short-name: john
   name: John Nyakatura
-  organization: Humboldt University
+  organization:
+    ref: humboldt
   relationship: visited, archive
 
 - short-name: julia
@@ -186,33 +187,33 @@
     ref: unr
   relationship: co-author, collaborator
 
-- short-name: krysti
-  name: Krysti Smith
+- name: Krysti Smith
+  short-name: krysti
   organization:
     ref: unr
   relationship: co-author, collaborator
 
-- short-name: soraya
-  name: Soraya Okuda
+- name: Soraya Okuda
+  short-name: soraya
   organization:
     ref: eff
   relationship: co-facilitator, collaborator
 
-- short-name: petra
-  name: Petra Cerne Ovens
+- name: Petra Cerne Ovens
+  short-name: petra
   organization:
     ref: alou
   relationship: visited, talk
 
-- short-name: rj
-  name: RJ Ramey
+- name: RJ Ramey
+  short-name: rj
   organization:
     ref: auut
   relationship: studied
 
-- short-name: anita
-  name: Anita Say Chan
+- name: Anita Say Chan
+  short-name: anita
   link: https://ischool.illinois.edu/people/anita-say-chan
   organization:
     ref: illinois
-  relationship: studied
+  relationship:  collaborator

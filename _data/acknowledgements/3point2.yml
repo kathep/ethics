@@ -2,8 +2,6 @@ version: 3.2
 ref: 3point2
 people:
 - ref: georgie
-  name: Georgina Rogers
-  relationship: personal
   contribution: Discussion of ethical visualization; feedback on 3.1 from Make Me Care paper and poster.
 
 - ref: sue

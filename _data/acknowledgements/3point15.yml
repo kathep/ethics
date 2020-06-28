@@ -2,7 +2,6 @@ version: 3.15
 ref: 3point15
 people:
 - ref: amanda
-  organization: Excella
   contribution: Co-author ethical visualization checklist for COVID-19, as part of Data Visualization Society COVID-19 Working Group.
 
 - ref: jason
