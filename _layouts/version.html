@@ -99,24 +99,23 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1019
+### newest loop name code 1028
 
 {% assign dogs = site.data.acknowledgements.[label].people %}
 {% assign alldogdeets = site.data.people  %}
+{% assign allorgdeets = site.data.organizations  %}
 
 <ul>
 
 {% for dog in site.data.acknowledgements.[label].people %}
     {% assign dog_deets = alldogdeets | where_exp: "item", "item.short-name contains dog.ref" %}
+    {% assign org_deets = allorgdeets | where_exp: "item", "item.short-name contains dog.ref" %}
   <li>
-    {{ dog.ref  }}<br>
     {% for deets in dog_deets %}
-      deets.name: {{ deets.name }}<br>
-      deets.link: {{ deets.link }}<br>
+      {{ deets.name }}<br>
+      {{ deets.link }}<br>
       deets.org: {{ deets.organization }}<br>
     {% endfor %}
-    Dog_hash {{ dog_hash }}<br>
-    Dog_name {{ dog_name }}<br>
 
   {% if dog.contribution %}
       <em>Specific contribution:</em> {{dog.contribution}}
@@ -124,35 +123,6 @@ layout: default
   </li>
 {% endfor %}
 </ul>
-
-### new loop name code - update 1630
-
-{% assign contributors = site.data.acknowledgements.[label].people %}
-{% assign people = site.data.people  %}
-
-<ul>
-{% for person in contributors %}
-  {% for person in people %}
-
-    {% capture person %}{{ people | where_exp: "item", "item.short-name contains person.ref" }}{% endcapture %}
-
-      <li>
-
-        Contributor.ref var: {{ contributor.ref }}<br>
-        Contributor.name var: {{ contributor.name }}<br>
-        Person.name var: {{ person.name }}<br>
-        Person.link var: {{ person.link }}<br>
-        Person2 var: {{ person }}<br>
-        Contributor.person.link var: {{ contributor.person.link }}<br>
-
-    {% if contributor.contribution %}
-        <em>Specific contribution:</em> {{ contributor.contribution }}
-    {% endif %}
-    </li>
-  {% endfor %}
-{% endfor %}
-</ul>
-
 
 
 ### old loop name code
