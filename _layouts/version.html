@@ -112,8 +112,8 @@ layout: default
     {% capture dog_hash %}{{ alldogdeets | where_exp: "item", "item.short-name contains dog.ref" }}{% endcapture %}
   <li>
     {{ dog.ref  }}<br>
-    {% for dog_hash %}
-      Dog_hash for loop with dog_hash.name: {{ dog_hash.name }}
+    {% for puppy in dog_hash %}
+      Dog_hash for loop with puppy.name: {{ puppy.name }}
     {% endfor %}
     Dog_hash {{ dog_hash }}<br>
 
