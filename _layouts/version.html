@@ -5,7 +5,7 @@ layout: default
   Below capture statement captures the object-id as a string.
 {% endcomment %}
 
-  {% capture label %}{{ page.object-id  }}{% endcapture %}
+{% capture label %}{{ page.object-id  }}{% endcapture %}
 
 <div class="version">
 
@@ -99,26 +99,32 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1538
+### newest loop name code 1554
 
-{% assign dogs = site.data.acknowledgements.[label].people %}
-{% assign alldogdeets = site.data.people  %}
-{% assign allorgdeets = site.data.organizations  %}
+{% assign contributors = site.data.acknowledgements.[label].people %}
+{% assign allpeople = site.data.people  %}
+{% assign allorgs = site.data.organizations  %}
 
 <ul>
 
-{% for dog in site.data.acknowledgements.[label].people %}
-    {% assign dog_deets = alldogdeets | where_exp: "item", "item.short-name contains dog.ref" %}
-    {% assign org_deets = allorgdeets | where_exp: "item", "item.short-name contains dog.ref" %}
+{% for contributor in contributors %}
+    {% assign person_deets = allpeople | where_exp: "item", "item.short-name contains contributor.ref" %}
+    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains contributor.ref" %}
   <li>
-    {% for deets in dog_deets %}
-      {{ deets.name }}<br>
-      {{ deets.link }}<br>
+    {% for person in person_deets %}
+      {{ person.name }}<br>
+      {{ person.link }}<br>
       deets.org: {{ deets.organization }}<br>
     {% endfor %}
 
-  {% if dog.contribution %}
-      <em>Specific contribution:</em> {{dog.contribution}}
+    {% for org in org_deets %}
+      {{ person.name }}<br>
+      {{ person.link }}<br>
+      deets.org: {{ deets.organization }}<br>
+    {% endfor %}
+
+  {% if people.contribution %}
+      <em>Specific contribution:</em> {{contributor.contribution}}
   {% endif %}
   </li>
 {% endfor %}
