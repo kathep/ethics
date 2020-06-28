@@ -109,13 +109,13 @@ layout: default
 <ul>
 
 {% for dog in site.data.acknowledgements.[label].people %}
-    {% assign dog_name = alldogdeets | where_exp: "item", "item.short-name contains dog.ref" %}
-    {% capture dog_hash %}{{ alldogdeets | where_exp: "item", "item.short-name contains dog.ref" }}{% endcapture %}
+    {% assign dog_deets = alldogdeets | where_exp: "item", "item.short-name contains dog.ref" %}
   <li>
     {{ dog.ref  }}<br>
-    {% for deets in dog_name %}
-      Dog_hash for loop with deets.link: {{ deets.link }}<br>
-      Dog_hash for loop with link: {{ link }}<br>
+    {% for deets in dog_deets %}
+      deets.name: {{ deets.name }}<br>
+      deets.link: {{ deets.link }}<br>
+      deets.org: {{ deets.organization }}<br>
     {% endfor %}
     Dog_hash {{ dog_hash }}<br>
     Dog_name {{ dog_name }}<br>
