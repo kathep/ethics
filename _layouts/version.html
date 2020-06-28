@@ -109,7 +109,7 @@ layout: default
 <ul>
 
 {% for dog in site.data.acknowledgements.[label].people %}
-    {% capture dog_name %}{{ alldogdeets | where_exp: "item", "item.short-name contains dog.ref" }}{% endcapture %}
+    {% assign dog_name = alldogdeets | where_exp: "item", "item.short-name contains dog.ref" %}
     {% capture dog_hash %}{{ alldogdeets | where_exp: "item", "item.short-name contains dog.ref" }}{% endcapture %}
   <li>
     {{ dog.ref  }}<br>
