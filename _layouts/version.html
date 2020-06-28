@@ -88,7 +88,6 @@ layout: default
 {% endcapture%}
 
 {% if site.data.acknowledgements.[label].people or site.data.acknowledgements.[label].organizations %}
-<hr>
   <h2> Acknowledgements </h2>
 {% endif %}
 
@@ -102,7 +101,7 @@ layout: default
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
-{% assign allorgs = site.data.organizations  %}
+{% assign allorgs = site.data.organizations %}
 
 <ul>
 
@@ -113,7 +112,14 @@ layout: default
     {% for person in person_deets %}
       {{ person.name }}<br>
       {{ person.link }}<br>
-      deets.org: {{ deets.organization }}<br>
+      {% if person.organization !="" %}
+        deets.org: {{ person.organization }}<br>
+      {% endif %}
+    {% endfor %}
+
+    {% for org in org_deets %}
+      {{ org.name }}<br>
+      {{ org.link }}<br>
     {% endfor %}
 
     {% for org in org_deets %}
