@@ -97,7 +97,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 2020
+### newest loop name code 2030
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
@@ -116,14 +116,15 @@ layout: default
         <strong>{{ person.name }}</strong>
       {% endif %}
       {{ person.organization }}<br>
-    {% endfor %}
       {% for org in org_deets %}
-          then {{ org.name }}
-        {% if org.organization %}
+          test (no if statement): {{ org.name }}
+        {% if org.name %}
           at {{ org.name }}<br>
           {{ org.link }}<br>
         {% endif %}
       {% endfor %}
+    {% endfor %}
+
 
   {% if people.contribution %}
       <em>Specific contribution:</em> {{people.contribution}}
