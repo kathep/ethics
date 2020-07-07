@@ -97,7 +97,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 2038
+### newest loop name code 2041
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
@@ -116,8 +116,7 @@ layout: default
         <strong>{{ person.name }}</strong>
       {% endif %}
       {{ person.organization }}<br>
-      {% for org in allorgs  | where_exp: "item", "item.short-name contains person.organization.ref" %}
-          test (no if statement): {{ org.name }}
+      {% for org in allorgs  | where_exp: "item", "item.short-name == person.organization.ref" %}
         {% if org.name %}
           at {{ org.name }}<br>
           {{ org.link }}<br>
