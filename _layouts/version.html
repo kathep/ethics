@@ -97,8 +97,6 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 2058
-
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
 {% assign allorgs = site.data.organizations %}
@@ -145,41 +143,6 @@ layout: default
   <h3> Supporting organizations </h3>
   <p>The following institutions have supported work on this version.</p>
 {% endif %}
-
-### newest loop org code 2211
-
-{% assign supporters = site.data.acknowledgements.[label].organizations %}
-
-<ul>
-
-{% for organizations in supporters %}
-    {% assign org_deets = allorgs | where_exp: "item", "item.short-name == organizations.ref" %}
-  <li>
-    {% for org in org_deets %}
-      {% if org.link %}
-        <a href="{{ org.link }}" target="_blank">{{ org.name }}</a><br>
-      {% else %}
-        <strong>{{ org.name }}</strong><br>
-      {% endif %}
-
-      {% for grant in org.grant %}
-        {% if grant.grant-link %}
-          <a href="grant.grant-link"> {{ grant.grant-type }} </a>: {{ grant.proposal-name }} ({{ grant.proposal-number }})
-        {% else %}
-          {{ grant.grant-type }}
-        {% endif %}
-      {% endfor %}
-
-      {% if org.contribution %}
-          <em>Institutional support:</em> {{org.contribution}}
-      {% endif %}
-
-    {% endfor %}
-  </li>
-{% endfor %}
-
-</ul>
-
 
 ### old org code
 <ul>
