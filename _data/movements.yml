@@ -12,7 +12,8 @@
 - name: Community Data Clinic
   short-name: cdc
   type: teaching
-  organization: illinois
+  organization:
+    ref: illinois
   link: https://publish.illinois.edu/communitydata/
 
 - name: 21 Day Racial Equity Challenge
@@ -31,3 +32,17 @@
   short-name: aia
   type: repository
   link: https://aiassembly.io/
+
+- name: Calm Technology
+  short-name: calm
+  link: https://calmtech.com/
+
+- name: Center for Humane Technology
+  short-name: humane
+  type: foundation
+  link: https://humanetech.com/
+
+- name: Reset.tech
+  short-name: reset
+  type: foundation
+  link: https://www.reset.tech/

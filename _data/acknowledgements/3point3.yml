@@ -1,4 +1,5 @@
 version: 3.3
+target: public health
 ref: 3point3
 people:
 - ref: sue
@@ -26,3 +27,6 @@ organizations:
 ideas:
 - name: relational infrastructures
   people: anita
+
+- name: intersectional feminism
+  people: laura,

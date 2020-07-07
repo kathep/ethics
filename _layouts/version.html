@@ -124,8 +124,10 @@ layout: default
             {{ org.name }}
           {% endif %}
         {% endfor %}
-      {% else %}
+      {% elsif %}
         at {{ person.organization }}<br>
+      {% else %}
+        <br>
       {% endif %}
 
     {% endfor %}
@@ -144,49 +146,41 @@ layout: default
   <p>The following institutions have supported work on this version.</p>
 {% endif %}
 
-### newest loop name code 2058
+### newest loop org code 2204
 
-{% assign contributors = site.data.acknowledgements.[label].people %}
-{% assign allpeople = site.data.people  %}
-{% assign allorgs = site.data.organizations %}
+{% assign supporters = site.data.acknowledgements.[label].organizations %}
 
 <ul>
 
-{% for people in contributors %}
-    {% assign person_deets = allpeople | where_exp: "item", "item.short-name == people.ref" %}
+{% for organizations in supporters %}
+    {% assign org_deets = allorgs | where_exp: "item", "item.short-name == organizations.ref" %}
   <li>
-    {% for person in person_deets %}
-      {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains person.organization.ref" %}
-      {% if person.link %}
-        <a href="{{ person.link }}" target="_blank">{{ person.name }}</a><br>
+    {% for org in org_deets %}
+      {% if org.link %}
+        <a href="{{ org.link }}" target="_blank">{{ org.name }}</a><br>
       {% else %}
-        <strong>{{ person.name }}</strong>
+        <strong>{{ org.name }}</strong>
       {% endif %}
-
-      {% if person.organization.ref %}
-        {% for org in org_deets %}
-          {% if org.link %}
-            at <a href="{{ org.link }}" target="_blank">{{ org.name }}</a><br>
-          {% else %}
-            {{ org.name }}
-          {% endif %}
-        {% endfor %}
-      {% else %}
-        at {{ person.organization }}<br>
-      {% endif %}
-
     {% endfor %}
 
-  {% if people.contribution %}
-      <em>Specific contribution:</em> {{people.contribution}}
-  {% endif %}
+    {% for grant in org.grant %}
+      {% if grant.grant-link %}
+        <a href="grant.grant-link"> {{ grant.grant-type }} </a>: {{ grant.proposal-name }} ({{ grant.proposal-number }})
+      {% else %}
+        {{ grant.grant-type }}
+      {% endif %}
+    {% endfor %}
+
+    {% if org.contribution %}
+        <em>Institutional support:</em> {{org.contribution}}
+    {% endif %}
   </li>
 {% endfor %}
 
 </ul>
 
 
-### old code
+### old org code
 <ul>
 
 {% for place in site.data.acknowledgements.[label].organizations %}
