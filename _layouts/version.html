@@ -97,7 +97,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1958
+### newest loop name code 2003
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
@@ -107,7 +107,7 @@ layout: default
 
 {% for people in contributors %}
     {% assign person_deets = allpeople | where_exp: "item", "item.short-name contains people.ref" %}
-    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.ref" %}
+    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.organization.ref" %}
   <li>
     {% for person in person_deets %}
       {% if person.link %}
@@ -117,7 +117,7 @@ layout: default
       {% endif %}
       {% for org in org_deets %}
           then {{ org.name }}
-        {% if person.organization %}
+        {% if org.organization %}
           at {{ org.name }}<br>
           {{ org.link }}<br>
         {% endif %}
