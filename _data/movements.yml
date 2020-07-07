@@ -26,3 +26,8 @@
   type: teaching
   organization: MIT
   link: https://codesign.mit.edu/
+
+- name: AI.Assembly
+  short-name: aia
+  type: repository
+  link: https://aiassembly.io/

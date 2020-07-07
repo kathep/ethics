@@ -34,7 +34,7 @@
 
 - name: Humboldt University
   short-name: humboldt
-  link:
+  link: https://www.hu-berlin.de/en
   relationship: visited, talk
   archive: Scientific Illustration Archive
   location:
@@ -43,7 +43,7 @@
 
 - name: University of the Creative Arts, Epsom
   short-name: uca
-  link:
+  link: https://www.uca.ac.uk/
   relationship: visited, archive
   archive: Diagram Archive
   location:
@@ -52,7 +52,7 @@
 
 - name: SimplySecure
   short-name: simply
-  link:
+  link: https://simplysecure.org/
   type: ngo
   location:
     city: Berlin
@@ -84,20 +84,23 @@
 
 - name: Bern University of the Applied Arts
   short-name: bern
+  link: https://www.hkb.bfh.ch/en/
   relationship: teaching, supervising
   location:
     city: Bern
     country: Switzerland
 
 - name: polypoly
+  link: https://polypoly.eu/en/home
   short-name: poly
   relationship: consulting
   location:
     city: Berlin
     country: Germany
 
-- name: Svelte Ventures
+- name: Svelte Studio
   short-name: svelte
+  link: https://www.sveltestudios.com/
   relationship: consulting
   location:
     city: Adelaide
@@ -105,12 +108,14 @@
 
 - name: University of Ljubljana
   short-name: alou
+  link: https://www.uni-lj.si/eng/about_university_of_ljubljana.aspx
   relationship: visited, talk
   location:
     city: Ljubljana
     country: Slovenia
 
 - name: University of Newcastle
+  link: https://www.newcastle.edu.au/
   short-name: newcastle
   relationship: visited, teaching
   location:
@@ -119,6 +124,7 @@
 
 - name: University of Victoria
   short-name: victoria
+  link: https://www.uvic.ca/
   relationship: visited, teaching
   location:
     city: Victoria
@@ -126,6 +132,7 @@
 
 - name: University of Melbourne
   short-name: unimelb
+  link: https://www.unimelb.edu.au/
   relationship:
   location:
     city: Melbourne
@@ -133,6 +140,7 @@
 
 - name: AccessNow
   short-name: access
+  link: https://www.accessnow.org/
   relationship: talk
   location:
     city: New York

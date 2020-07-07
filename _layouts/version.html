@@ -97,7 +97,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1554
+### newest loop name code 1608
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
@@ -110,22 +110,21 @@ layout: default
     {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.ref" %}
   <li>
     {% for person in person_deets %}
-      {{ person.name }}<br>
-      {{ person.link }}<br>
-      {% if person.organization !="" %}
-        deets.org: {{ person.organization }}<br>
+      {% if person.link !="" %}
+        <a href="{{ person.link }}" target="_blank">{{ person.name }}</a><br>
+      {% else %}
+        <strong>{{ person.name }}</strong>
       {% endif %}
+      {% for org in org_deets %}
+        {% if org.short-name == person.organization.ref %}
+          at {{ org.name }}<br>
+          {{ org.link }}<br>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
 
     {% for org in org_deets %}
-      {{ org.name }}<br>
-      {{ org.link }}<br>
-    {% endfor %}
-
-    {% for org in org_deets %}
-      {{ person.name }}<br>
-      {{ person.link }}<br>
-      deets.org: {{ deets.organization }}<br>
+      org: {{ org.organization }}<br>
     {% endfor %}
 
   {% if people.contribution %}
