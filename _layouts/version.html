@@ -97,7 +97,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 2046
+### newest loop name code 2058
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
@@ -115,21 +115,27 @@ layout: default
       {% else %}
         <strong>{{ person.name }}</strong>
       {% endif %}
-      {{ person.organization }}<br>
-      {% for org in org_deets %}
-        {% if org.name %}
-          at {{ org.name }}<br>
-          {{ org.link }}<br>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
 
+      {% if person.organization.ref %}
+        {% for org in org_deets %}
+          {% if org.link %}
+            at <a href="{{ org.link }}" target="_blank">{{ org.name }}</a><br>
+          {% else %}
+            {{ org.name }}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        at {{ person.organization }}<br>
+      {% endif %}
+
+    {% endfor %}
 
   {% if people.contribution %}
       <em>Specific contribution:</em> {{people.contribution}}
   {% endif %}
   </li>
 {% endfor %}
+
 </ul>
 
 
@@ -138,6 +144,49 @@ layout: default
   <p>The following institutions have supported work on this version.</p>
 {% endif %}
 
+### newest loop name code 2058
+
+{% assign contributors = site.data.acknowledgements.[label].people %}
+{% assign allpeople = site.data.people  %}
+{% assign allorgs = site.data.organizations %}
+
+<ul>
+
+{% for people in contributors %}
+    {% assign person_deets = allpeople | where_exp: "item", "item.short-name == people.ref" %}
+  <li>
+    {% for person in person_deets %}
+      {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains person.organization.ref" %}
+      {% if person.link %}
+        <a href="{{ person.link }}" target="_blank">{{ person.name }}</a><br>
+      {% else %}
+        <strong>{{ person.name }}</strong>
+      {% endif %}
+
+      {% if person.organization.ref %}
+        {% for org in org_deets %}
+          {% if org.link %}
+            at <a href="{{ org.link }}" target="_blank">{{ org.name }}</a><br>
+          {% else %}
+            {{ org.name }}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        at {{ person.organization }}<br>
+      {% endif %}
+
+    {% endfor %}
+
+  {% if people.contribution %}
+      <em>Specific contribution:</em> {{people.contribution}}
+  {% endif %}
+  </li>
+{% endfor %}
+
+</ul>
+
+
+### old code
 <ul>
 
 {% for place in site.data.acknowledgements.[label].organizations %}
