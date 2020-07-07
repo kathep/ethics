@@ -106,7 +106,7 @@ layout: default
 <ul>
 
 {% for people in contributors %}
-    {% assign person_deets = allpeople | where_exp: "item", "item.short-name contains people.ref" %}
+    {% assign person_deets = allpeople | where_exp: "item", "item.short-name == people.ref" %}
     {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.organization.ref" %}
   <li>
     {% for person in person_deets %}
