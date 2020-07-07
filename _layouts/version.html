@@ -107,7 +107,7 @@ layout: default
 
 {% for people in contributors %}
     {% assign person_deets = allpeople | where_exp: "item", "item.short-name contains people.ref" %}
-    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.organization.ref" %}
+    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.ref" %}
   <li>
     {% for person in person_deets %}
       {% if person.link %}
@@ -115,6 +115,7 @@ layout: default
       {% else %}
         <strong>{{ person.name }}</strong>
       {% endif %}
+      {{ person.organization }}<br>
       {% for org in org_deets %}
           then {{ org.name }}
         {% if org.organization %}
@@ -122,11 +123,6 @@ layout: default
           {{ org.link }}<br>
         {% endif %}
       {% endfor %}
-    {% endfor %}
-
-
-    {% for org in org_deets %}
-      org: {{ org.organization }}<br>
     {% endfor %}
 
   {% if people.contribution %}
