@@ -2,7 +2,6 @@
   short-name: lgu
   type: map, database, timeline
   organization: High Country News
-  img:
   date-added: 2020
   link: https://www.landgrabu.org/
 
@@ -10,7 +9,6 @@
   short-name: rtl
   type: map, cards
   organization: https://lynchinginamerica.eji.org/explore
-  img:
   date-added: 2020
   publication:
     ref: machine
@@ -20,7 +18,6 @@
   type: map, database, timeline, cards
   organization: Auut Studios
   link: https://plaintalkhistory.com/monroeandflorencework/explore/map2/#3/38/-97.5
-  img:
   date-added: 2020
   publication:
     ref: machine
@@ -28,21 +25,18 @@
 - name: Flatten The Curve
   short-name: ftc
   type: illustration, chart, animation
-  img:
   date-added: 2020
 
 - name: Missing and Murdered Indigenous Women
   short-name: mmiw
   type: database
   link: https://www.mmiwdatabase.com/
-  img:
   date-added: 2020
 
 - name: Wage Inequality Maps, Hull House Maps and Papers
   short-name: wage
   type: map
   link: https://en.wikipedia.org/wiki/File:WAGEMAP1.pdf
-  img:
   date-created: 1895
   date-added: 2020
 
@@ -50,11 +44,10 @@
   short-name: kill
   type: map, timeline, cards, database
   link: https://www.theguardian.com/australia-news/ng-interactive/2019/mar/04/massacre-map-australia-the-killing-times-frontier-wars
-  img:
   date-added: 2020
 
 - name: Colonial Frontier Massacres, Australia
   short-name: mass
   type: map, timeline, cards, database
   link: https://c21ch.newcastle.edu.au/colonialmassacres/map.php
-  date:
+  date-added: 2020
