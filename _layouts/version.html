@@ -97,7 +97,7 @@ layout: default
   <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
-### newest loop name code 1950
+### newest loop name code 1958
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
 {% assign allpeople = site.data.people  %}
@@ -117,7 +117,7 @@ layout: default
       {% endif %}
       {% for org in org_deets %}
           then {{ org.name }}
-        {% if org.short-name == person.organization %}
+        {% if person.organization %}
           at {{ org.name }}<br>
           {{ org.link }}<br>
         {% endif %}
