@@ -116,6 +116,7 @@ layout: default
         <strong>{{ person.name }}</strong>
       {% endif %}
       {{ person.organization }}<br>
+    {% endfor %}
       {% for org in org_deets %}
           then {{ org.name }}
         {% if org.organization %}
@@ -123,7 +124,6 @@ layout: default
           {{ org.link }}<br>
         {% endif %}
       {% endfor %}
-    {% endfor %}
 
   {% if people.contribution %}
       <em>Specific contribution:</em> {{people.contribution}}
