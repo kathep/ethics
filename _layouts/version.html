@@ -107,16 +107,16 @@ layout: default
 
 {% for people in contributors %}
     {% assign person_deets = allpeople | where_exp: "item", "item.short-name == people.ref" %}
-    {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains people.organization.ref" %}
   <li>
     {% for person in person_deets %}
+      {% assign org_deets = allorgs | where_exp: "item", "item.short-name contains person.organization.ref" %}
       {% if person.link %}
         <a href="{{ person.link }}" target="_blank">{{ person.name }}</a><br>
       {% else %}
         <strong>{{ person.name }}</strong>
       {% endif %}
       {{ person.organization }}<br>
-      {% for org in allorgs  | where_exp: "item", "item.short-name == person.organization.ref" %}
+      {% for org in org_deets %}
         {% if org.name %}
           at {{ org.name }}<br>
           {{ org.link }}<br>
