@@ -124,7 +124,7 @@ a {
 
 a:visited {
           color: $orange-dark;
-          font-weight: 400;
+          font-weight: 300;
           text-decoration: none;
 }
 
@@ -218,7 +218,7 @@ header ul.toc a, header ul.toc a:visited  {
     color: $taupe;
 }
 
-header ul.toc a:hover, header ul.toc a:active {
+header ul.toc a:hover, header ul.toc a:active, {
     display: inline;
     font-weight: 400;
     text-decoration: none;

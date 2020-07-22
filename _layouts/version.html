@@ -150,7 +150,7 @@ layout: default
 
 <ul>
 
-{% for organizations in supporters %}
+{% for orgs in supporters %}
     {% assign org_deets = allorgs | where_exp: "item", "item.short-name == organizations.ref" %}
   <li>
     {% for org in org_deets %}
@@ -181,7 +181,6 @@ layout: default
 
 ### old org code
 <ul>
-
 {% for place in site.data.acknowledgements.[label].organizations %}
 
   <li>

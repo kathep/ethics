@@ -1,3 +1,11 @@
+- name: Digital Democracy
+  short-name: digidem
+  link: https://www.digital-democracy.org/
+  relationship: future
+  location:
+    city: Oakland
+    country: United States
+
 - name: University of Nevada, Reno
   short-name: unr
   link: https//www.unr.edu

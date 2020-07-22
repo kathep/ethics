@@ -1,0 +1,165 @@
+- name: Data for Black Lives
+  short-name: dbl
+  type: collective
+  link: http://d4bl.org/
+  participate: http://d4bl.org/action.html
+  categories: justice
+
+- name: Cognitive injustice
+  short-name:
+
+- name: Ni Una Menos
+  short-name: num
+  type: collective
+  link: https://niunamenos.org.ar/
+  categories: justice
+
+- name: Community Data Clinic
+  short-name: cdc
+  type: teaching
+  organization:
+    ref: illinois
+  link: https://publish.illinois.edu/communitydata/
+  categories: pedagogy, justice
+
+- name: 21 Day Racial Equity Challenge
+  short-name: equity
+  type: teaching
+  organization: MLPP
+  link: https://mlpp.org/21-day-racial-equity-challenge/
+  categories: justice
+
+- name: Collaborative Design Studio
+  short-name: coll
+  type: teaching
+  organization: MIT
+  link: https://codesign.mit.edu/
+  categories: pedagogy, justice
+
+- name: AI.Assembly
+  short-name: aia
+  type: repository
+  link: https://aiassembly.io/
+  categories: justice
+
+- name: Calm Technology
+  short-name: calm
+  type: concept
+  link: https://calmtech.com/
+  categories: compassion
+
+- name: Center for Humane Technology
+  short-name: humane
+  type: foundation
+  link: https://humanetech.com/
+
+- name: Reset.tech
+  short-name: reset
+  type: foundation
+  link: https://www.reset.tech/
+
+- name: De-escalating Social Media
+  short-name: desc
+  type: concept
+  link: https://onezero.medium.com/de-escalating-social-media-e8deecda5e78
+
+- name: Remake Data-Driven World
+  short-name: remake
+  type: slack
+  link: http://remakedatadrivenworld.slack.com/
+
+- name: Pixels and Plans
+  short-name: pixels
+  type: consulting
+  link: https://pixelsandplans.com/
+  categories: science
+
+- name: Tabletop Whale
+  short-name: whale
+  type: consulting
+  link: https://tabletopwhale.com/
+  categories: science
+
+- name: Data feminism
+  short-name: fem
+  type: concept, book
+  link: https://data-feminism.mitpress.mit.edu/dash/collection/adaglgld/overview
+  categories: justice
+
+- name: Data Feminism Reading Group
+  short-name: femread
+  type: documentation
+  link: http://datafeminism.io/blog/book/data-feminism-reading-group/
+  categories: justice
+
+- name: Society Centered Design
+  short-name: scd
+  type: manifesto
+  link: https://societycentered.design/
+  categories: activism
+
+- name: First Things First 2014
+  short-name: ftf
+  type: manifesto
+  link: https://firstthingsfirst2014.net/
+  categories: activism
+
+- name: Ethical visualization
+  short-name: eth
+  type: concept
+  link: https://kathep.github.io/ethics/
+  categories: health
+
+- name: Data & Society
+  short-name: das
+  type: research
+  link: https://datasociety.net/
+  categories: health
+
+- name: Carcereal Tech Resistance Network
+  short-name: ctrn
+  type: collective
+  link: https://www.carceral.tech/
+  categories: trauma, justice
+
+- name: Design Justice Network
+  short-name: justnet
+  type: collective
+  link: https://designjustice.org/
+  categories: trauma, justice
+
+- name: Applied Compassion Training, Stanford CCare Center
+  short-name: act
+  organization: standford
+  type: teaching
+  link:
+  categories:
+
+- name: Compassionate Inquiry
+  short-name: cominq
+  organization: Gabor Mate online
+  type: teaching
+  link:
+  categories:
+
+- name: Solidarity Technology
+  short-name: soltech
+  organization: digidem
+  type: concept
+  link: https://www.digital-democracy.org/blog/solidarity-technology-values-for-an-earth-defender-s-toolkit/
+  categories: justice, sovereignty
+
+- name: Data Humanism
+  short-name: dathum
+  type: concept
+  link: https://medium.com/@giorgialupi/data-humanism-the-revolution-will-be-visualized-31486a30dbfb
+
+- name: MyData
+  short-name: mydata
+  type: concept
+  link: https://mydata.org/declaration/
+
+- name: Feminist Data Manifest-No
+  short-name: manno
+  type: manifesto
+  link: https://www.manifestno.com/
