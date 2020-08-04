@@ -114,6 +114,7 @@ layout: default
         <strong>{{ person.name }}</strong>
       {% endif %}
 
+
       {% if person.organization.ref %}
         {% for org in org_deets %}
           {% if org.link %}
@@ -148,7 +149,7 @@ layout: default
 <ul>
 
 {% for orgs in supporters %}
-    {% assign org_deets = allorgs | where_exp: "item", "item.short-name == organizations.ref" %}
+    {% assign org_deets = allorgs | where_exp: "item", "item.short-name == orgs.ref" %}
   <li>
     {% for org in org_deets %}
       {% if org.link %}
