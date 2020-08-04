@@ -148,32 +148,6 @@ layout: default
 {% comment %} CUT ORG LOOP goes here {% endcomment %}
 
 
-### old org code
-<ul>
-{% for place in site.data.acknowledgements.[label].organizations %}
-
-  <li>
-  {% if place.link %}
-      <a href="place.link"><strong>  {{ place.name }} </strong></a>
-    {% else %}
-      <strong> {{ place.name }} </strong>
-  {% endif %}
-    <br>
-  {% for grant in place.grant %}
-    {% if grant.grant_link %}
-      <a href="grant.grant_link"> {{ grant.grant_type }} </a>: {{ grant.proposal_name }} ({{ grant.proposal_number }})
-    {% else %}
-      {{ grant.grant_type }}
-    {% endif %}
-  {% endfor %}
-  {% if place.contribution %}
-      <em>Institutional support:</em> {{place.contribution}}
-  {% endif %}
-  </li>
-
-{% endfor %}
-</ul>
-
 {% assign versions = site.versions %}
 
 <h3>Citation</h3>
