@@ -187,10 +187,10 @@ layout: default
   {% endif %}
     <br>
   {% for grant in place.grant %}
-    {% if grant.grant_link %}
-      <a href="grant.grant_link"> {{ grant.grant_type }} </a>: {{ grant.proposal_name }} ({{ grant.proposal_number }})
+    {% if grant.grant-link %}
+      <a href="grant.grant-link"> {{ grant.grant-type }} </a>: {{ grant.proposal-name }} ({{ grant.proposal-number }})
     {% else %}
-      {{ grant.grant_type }}
+      {{ grant.grant-type }}
     {% endif %}
   {% endfor %}
   {% if place.contribution %}
