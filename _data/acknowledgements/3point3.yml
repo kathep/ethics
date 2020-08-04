@@ -1,5 +1,4 @@
 version: 3.3
-target: public health
 ref: 3point3
 people:
 - ref: sue
