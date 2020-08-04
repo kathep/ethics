@@ -22,6 +22,16 @@
     city: Reno
     country: United States
 
+- name: Reynolds School of Journalism, University of Nevada, Reno
+  short-name: rsj
+  link: https://www.journalism.unr.edu
+  relationship: employer, funder
+
+- name: College of Liberal Arts, University of Nevada, Reno
+  short-name: cla
+  link: https://www.journalism.unr.edu
+  relationship: employer, funder
+
 - name: University of Illinois
   short-name: illinois
   link: https://illinois.edu/
