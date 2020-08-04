@@ -1,6 +1,7 @@
 - name: Emma Jacobi
-  short-name: emjac
+  short-name: emma
   organization:
+    ref: digidem
 
 - name: Christopher Church
   short-name: chris
