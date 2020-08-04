@@ -174,32 +174,6 @@ layout: default
 
 </ul>
 
-### old org code
-<ul>
-{% for place in site.data.acknowledgements.[label].organizations %}
-
-  <li>
-  {% if place.link %}
-      <a href="place.link"><strong>  {{ place.name }} </strong></a>
-    {% else %}
-      <strong> {{ place.name }} </strong>
-  {% endif %}
-    <br>
-  {% for grant in place.grant %}
-    {% if grant.grant-link %}
-      <a href="grant.grant-link"> {{ grant.grant-type }} </a>: {{ grant.proposal-name }} ({{ grant.proposal-number }})
-    {% else %}
-      {{ grant.grant-type }}
-    {% endif %}
-  {% endfor %}
-  {% if place.contribution %}
-      <em>Institutional support:</em> {{place.contribution}}
-  {% endif %}
-  </li>
-
-{% endfor %}
-</ul>
-
 
 {% assign versions = site.versions %}
 
