@@ -160,13 +160,7 @@ layout: default
         <strong>{{ org.name }}</strong><br>
       {% endif %}
 
-      {% for grant in org.grant %}
-        {% if grant.grant-link %}
-          <a href="grant.grant-link"> {{ grant.grant-type }} </a>: {{ grant.proposal-name }} ({{ grant.proposal-number }})
-        {% else %}
-          {{ grant.grant-type }}
-        {% endif %}
-      {% endfor %}
+{% comment %} CUT ORG LOOP goes here {% endcomment %} 
 
       {% if org.contribution %}
           <em>Institutional support:</em> {{org.contribution}}
