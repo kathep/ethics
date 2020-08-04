@@ -157,6 +157,7 @@ layout: default
       {% else %}
         <strong>{{ org.name }}</strong><br>
       {% endif %}
+    {% endfor %}
 
       {% for grant in org.grant %}
         {% if grant.grant-link %}
@@ -170,7 +171,6 @@ layout: default
           <em>Institutional support:</em> {{org.contribution}}
       {% endif %}
 
-    {% endfor %}
   </li>
 {% endfor %}
 
