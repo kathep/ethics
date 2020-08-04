@@ -164,10 +164,11 @@ layout: default
           {{ grant.grant-type }}
         {% endif %}
 
-      {% if org.contribution %}
-          <em>Institutional support:</em> {{org.contribution}}
-      {% endif %}
     {% endfor %}
+
+      {% if orgs.contribution %}
+          <em>Institutional support:</em> {{orgs.contribution}}
+      {% endif %}
   </li>
 {% endfor %}
 
