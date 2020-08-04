@@ -114,7 +114,7 @@ layout: default
         <strong>{{ person.name }}</strong>
       {% endif %}
 
-      {% if person.organization.ref and person.organization !="" %}
+      {% if person.organization.ref %}
         {% for org in org_deets %}
           {% if org.link %}
             at <a href="{{ org.link }}" target="_blank">{{ org.name }}</a><br>
@@ -122,8 +122,6 @@ layout: default
             {{ org.name }}
           {% endif %}
         {% endfor %}
-      {% elsif %}
-        at {{ person.organization }}<br>
       {% else %}
         <br>
       {% endif %}
