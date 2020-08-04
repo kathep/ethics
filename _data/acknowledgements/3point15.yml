@@ -19,3 +19,6 @@ people:
 organizations:
 - ref: dvs
   contribution: Formed working group to write about ethical COVID-19 visualization.
+
+- ref: unr
+  contribution: This version was supported by sabbatical leave.

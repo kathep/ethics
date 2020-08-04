@@ -6,7 +6,7 @@ Values for an Earth Defender’s Toolkit
 - **Respect.**  
   All peoples have the right to determine their future for themselves. Prioritize solutions that increase self-sufficiency and reduce dependence on outside entities.
 
-  - *In practice: Apps should work without access to a server. If a server is required, users should be able to run their own.*
+  - *In practice:* Apps should work without access to a server. If a server is required, users should be able to run their own.
 
 - **Autonomy.**  
   Read the principles of Free Prior and Informed Consent, and recognize your user’s intellectual property rights. Users should be able to take their data with them.

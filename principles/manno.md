@@ -1,6 +1,6 @@
 # FEMINIST DATA MANIFEST-NO
 
-1. We refuse to operate under the assumption that risk and harm associated with data practices can be bounded to mean the same thing for everyone, everywhere, at every time. We commit to acknowledging how historical and systemic patterns of violence and exploitation produce differential vulnerabilities for communities.
+- 1. We refuse to operate under the assumption that risk and harm associated with data practices can be bounded to mean the same thing for everyone, everywhere, at every time. We commit to acknowledging how historical and systemic patterns of violence and exploitation produce differential vulnerabilities for communities.
 
 2. We refuse to be disciplined by data, devices, and practices that seek to shape and normalize racialized, gendered, and differently-abled bodies in ways that make us available to be tracked, monitored, and surveilled. We commit to taking back control over the ways we behave, live, and engage with data and its technologies.
 

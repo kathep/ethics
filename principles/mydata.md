@@ -16,7 +16,7 @@ Our overriding goal is to empower individuals to use their personal data to thei
   - *1.2. FROM DATA PROTECTION TO DATA EMPOWERMENT*
   Data protection regulation and corporate ethics codes are designed to protect people from abuse and misuse of their personal data by organisations. While these will remain necessary, we intend to change common practices towards a situation where individuals are both protected and empowered to use the data that organisations hold about them. Examples of such uses include simplifying administrative paperwork, processing data from multiple sources to improve one’s self-knowledge, personalised AI assistants, decision-making, and data sharing under the individual’s own terms.
 
-  *1.3. FROM CLOSED TO OPEN ECOSYSTEMS*
+  - *1.3. FROM CLOSED TO OPEN ECOSYSTEMS*
   Today’s data economy creates network effects favoring a few platforms able to collect and process the largest masses of personal data. These platforms are locking up markets, not just for their competitors, but also for most businesses who risk losing direct access to their customers. By letting individuals control what happens to their data, we intend to create a truly free flow of data – freely decided by individuals, free from global choke points – and to create balance, fairness, diversity and competition in the digital economy.
 
 - **MYDATA ROLES: WHO DOES WHAT**

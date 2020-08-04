@@ -94,7 +94,7 @@ layout: default
 
 {% if site.data.acknowledgements.[label].people %}
   <h3> Contributors </h3>
-  <p>The following people assisted Katherine Hepworth's work on developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
+  <p>The following people assisted with the work of developing this method. Their perspectives have led to the improvements outlined in the current version.</p>
 {% endif %}
 
 {% assign contributors = site.data.acknowledgements.[label].people %}
@@ -191,10 +191,10 @@ layout: default
   {% endif %}
     <br>
   {% for grant in place.grant %}
-    {% if grant.grant-link %}
-      <a href="grant.grant-link"> {{ grant.grant-type }} </a>: {{ grant.proposal-name }} ({{ grant.proposal-number }})
+    {% if grant.grant_link %}
+      <a href="grant.grant_link"> {{ grant.grant_type }} </a>: {{ grant.proposal_name }} ({{ grant.proposal_number }})
     {% else %}
-      {{ grant.grant-type }}
+      {{ grant.grant_type }}
     {% endif %}
   {% endfor %}
   {% if place.contribution %}

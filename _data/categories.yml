@@ -1,23 +1,23 @@
 - name: Computational history
   short-name: history
   tags:
-    ref: digital history, machine learning, artificial intelligence,
+    ref: digital history, machine learning, artificial intelligence, computational processes
 
 - name: Data-oriented social justice
   short-name: justice
-  tags: digital security, digital threats, personal data, data justice
+  tags: digital security, digital threats, personal data, data justice, data sovereignty, decolonizing design
 
 - name: Design activism
   short-name: activism
-  tags: design justice
+  tags: design justice, society-centered design
 
 - name: Data-driven health
   short-name: health
-  tags: covid, pandemic, quantified health, opioid addiction, overdose, harm reduction, epidemiology
+  tags: covid, pandemic, quantified self, opioid addiction, overdose, harm reduction, epidemiology
 
 - name: Science communication
   short-name: science
-  tags: climate communication, communicating uncertainty
+  tags: climate communication, communicating uncertainty,
 
 - name: Intersectional feminist computational pedagogy
   short-name: pedagogy
@@ -25,4 +25,4 @@
 
 - name: Compassionate computing
   short-name: compassion
-  tags: cognitive justice, human factors,
+  tags: cognitive justice, human factors, usability, cognitive load, drawing, hand-rendering

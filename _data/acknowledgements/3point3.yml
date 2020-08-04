@@ -9,20 +9,20 @@ people:
   contribution: Feedback on 3.1 in Make Me Care paper.
 
 - ref: janice
-  contribution: Suggestions for application to harm reduction context.
+  contribution: Feedback on 3.1 in Make Me Care paper. Suggestions for application to harm reduction context.
 
 - ref: chelsea
-  contribution: Suggestions for application to harm reduction context.
+  contribution: Feedback on 3.1 in Make Me Care paper. Suggestions for application to harm reduction context.
 
 - ref: aya
-  contribution: Suggestions for application to harm reduction context.
+  contribution: Feedback on 3.1 in Make Me Care paper. Suggestions for application to harm reduction context.
 
 - ref: anita
   contribution: Rich discussion of relational infrastructures and feminist data methods. This informed language used in, and positioning of, this version.
 
 organizations:
 - ref: unr
-  contribution: Granted sabbatical leave.
+  contribution: This version was supported by sabbatical leave.
 
 ideas:
 - name: relational infrastructures
@@ -30,3 +30,18 @@ ideas:
 
 - name: intersectional feminism
   people: laura
+
+- name: holistic security
+  link: https://www.tacticaltech.org/#/projects/holistic-security
+
+- name: indigenous data sovereignty
+  people: emma
+
+- ref: utility of friction in user experience - slowing down user experience intentionally
+  link: https://qz.com/1869239/how-ux-design-can-counter-racial-bias/
+
+- ref: sovtech
+
+- ref: ctrn
+
+- ref: ihra

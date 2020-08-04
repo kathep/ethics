@@ -1,3 +1,11 @@
+- name: Harm Reduction International
+  short-name: hri
+  link: https://www.hri.global/what-is-harm-reduction
+
+- name: International Harm Reduction Association
+  short-name: ahra
+  link: https://www.hri.global/files/2010/05/31/IHRA_HRStatement.pdf
+
 - name: Digital Democracy
   short-name: digidem
   link: https://www.digital-democracy.org/

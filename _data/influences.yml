@@ -1,18 +1,31 @@
+- name: Indigenous Data Sovereignty
+  short-name: ids
+  categories: justice, data
+
 - name: Data for Black Lives
   short-name: dbl
   type: collective
   link: http://d4bl.org/
   participate: http://d4bl.org/action.html
-  categories: justice
+  categories: justice, data
 
-- name: Cognitive injustice
-  short-name:
+- name: The Decolonial Atlas
+  short-name: tda
+  type: repository
+  link: https://decolonialatlas.wordpress.com/
+  categories: visualization, mapping, data, decolonizing
+
+- name: Cognitive justice
+  short-name: cogind
+  type: concept
+  link: https://en.wikipedia.org/wiki/Cognitive_justice
+  categories: justice, decolonizing, knowledge
 
 - name: Ni Una Menos
   short-name: num
   type: collective
   link: https://niunamenos.org.ar/
-  categories: justice
+  categories: justice,
 
 - name: Community Data Clinic
   short-name: cdc
@@ -27,7 +40,7 @@
   type: teaching
   organization: MLPP
   link: https://mlpp.org/21-day-racial-equity-challenge/
-  categories: justice
+  categories: justice, knowledge
 
 - name: Collaborative Design Studio
   short-name: coll
@@ -40,23 +53,25 @@
   short-name: aia
   type: repository
   link: https://aiassembly.io/
-  categories: justice
+  categories: justice, knowledge
 
 - name: Calm Technology
   short-name: calm
   type: concept
   link: https://calmtech.com/
-  categories: compassion
+  categories: compassion, usability, experience, understanding
 
 - name: Center for Humane Technology
   short-name: humane
   type: foundation
   link: https://humanetech.com/
+  categories: compassion,
 
 - name: Reset.tech
   short-name: reset
   type: foundation
   link: https://www.reset.tech/
+  categories: justice
 
 - name: De-escalating Social Media
   short-name: desc
@@ -67,28 +82,29 @@
   short-name: remake
   type: slack
   link: http://remakedatadrivenworld.slack.com/
+  categories: justice, data, sovereignty
 
 - name: Pixels and Plans
   short-name: pixels
   type: consulting
   link: https://pixelsandplans.com/
-  categories: science
+  categories: science, knowledge, understanding
 
 - name: Tabletop Whale
   short-name: whale
   type: consulting
   link: https://tabletopwhale.com/
-  categories: science
+  categories: science, knowledge, understanding
 
 - name: Data feminism
   short-name: fem
   type: concept, book
   link: https://data-feminism.mitpress.mit.edu/dash/collection/adaglgld/overview
-  categories: justice
+  categories: intersectional feminism, data, justice, visualization
 
 - name: Data Feminism Reading Group
   short-name: femread
-  type: documentation
+  type: documentation, event
   link: http://datafeminism.io/blog/book/data-feminism-reading-group/
   categories: justice
 
@@ -120,7 +136,7 @@
   short-name: ctrn
   type: collective
   link: https://www.carceral.tech/
-  categories: trauma, justice
+  categories: trauma, justice, abolition
 
 - name: Design Justice Network
   short-name: justnet
@@ -133,33 +149,36 @@
   organization: standford
   type: teaching
   link:
-  categories:
+  categories: compassion,
 
 - name: Compassionate Inquiry
   short-name: cominq
   organization: Gabor Mate online
   type: teaching
   link:
-  categories:
+  categories: compassion,
 
 - name: Solidarity Technology
   short-name: soltech
   organization: digidem
   type: concept
   link: https://www.digital-democracy.org/blog/solidarity-technology-values-for-an-earth-defender-s-toolkit/
-  categories: justice, sovereignty
+  categories: justice, sovereignty, data, technology, decolonizing, knowledge, cognitive justice
 
 - name: Data Humanism
   short-name: dathum
   type: concept
   link: https://medium.com/@giorgialupi/data-humanism-the-revolution-will-be-visualized-31486a30dbfb
+  categories: data, cognitive justice
 
 - name: MyData
   short-name: mydata
   type: concept
   link: https://mydata.org/declaration/
+  categories: intersectional feminism, data, sovereignty
 
 - name: Feminist Data Manifest-No
   short-name: manno
   type: manifesto
   link: https://www.manifestno.com/
+  categories: intersectional feminism, data, cognitive justice
