@@ -151,11 +151,11 @@ layout: default
 {% for orgs in supporters %}
     {% assign org_deets = allorgs | where_exp: "item", "item.short-name == orgs.ref" %}
   <li>
-    {% for org in org_deets %}
-      {% if org.link %}
-        <a href="{{ org.link }}" target="_blank">{{ org.name }}</a><br>
+    {% for org_deet in org_deets %}
+      {% if org_deet.link %}
+        <a href="{{ org_deet.link }}" target="_blank">{{ org_deet.name }}</a><br>
       {% else %}
-        <strong>{{ org.name }}</strong><br>
+        <strong>{{ org_deet.name }}</strong><br>
       {% endif %}
     {% endfor %}
 
