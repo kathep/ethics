@@ -157,14 +157,14 @@ layout: default
       {% else %}
         <strong>{{ org.name }}</strong><br>
       {% endif %}
+    {% endfor %}
 
-        {% if org.grant.grant-link %}
+        {% if orgs.grant.grant-link %}
           <a href="grant.grant-link"> {{ grant.grant-type }} </a>: {{ grant.proposal-name }} ({{ grant.proposal-number }})
         {% else %}
           {{ grant.grant-type }}
         {% endif %}
 
-    {% endfor %}
 
       {% if orgs.contribution %}
           <em>Institutional support:</em> {{orgs.contribution}}
